@@ -24,6 +24,7 @@ h6 {
 /*Body*/
 
 body {
+    width: 100%;
     font-size: 1rem;
     font-family: "Sulphur Point", sans-serif;
 }
@@ -34,9 +35,8 @@ body {
 .top-contact {
     padding: 10px;
     display: flex;
-    position: sticky;
     align-items: center;
-    background-color: #f8f8f8e8;
+    background-color: #fff;
     justify-content: space-between;
 }
 
@@ -72,9 +72,10 @@ body {
 /*------------- Header -------------*/
 
 header {
+    top: 0;
     width: 100%;
     display: flex;
-    position: fixed;
+    position: sticky;
     align-items: center;
     padding: 25px 100px;
     background-color: #fff;
@@ -105,19 +106,22 @@ header {
 
 /*---------- Home page- ----------*/
 
-.home-page {
-    height: 100vh;
+section {
+    width: 100%;
+    height: 90vh;
     display: flex;
     color: #fff;
     text-align: center;
     align-items: center;
     background-size: cover;
     justify-content: center;
-    background: linear-gradient(to right, #323232e0 0%, #000000da 100%), url('../images/bg.jpg') no-repeat;
+    background-image: linear-gradient(to right, #436f99 0%, #bcbcbcb5 100%), url('../images/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 
-/* waves part */
+/* waves part*/
 
 .hero-waves {
     display: block;
@@ -125,6 +129,7 @@ header {
     height: 80px;
     position: absolute;
     bottom: 0;
+    left: 0;
 }
 
 .wave1 use {
