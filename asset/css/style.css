@@ -72,11 +72,14 @@ body {
 /*------------- Header -------------*/
 
 header {
+    width: 100%;
     display: flex;
+    position: fixed;
     align-items: center;
-    padding: 20px 100px;
+    padding: 25px 100px;
     background-color: #fff;
     justify-content: space-between;
+    box-shadow: 0px 2px 10px #ebe9e9d2;
 }
 
 .links {
@@ -86,4 +89,15 @@ header {
 
 .links a {
     color: #000;
+    transition-delay: 0.4s;
+    transition: 0.8s ease-in;
+}
+
+.links .active {
+    color: #437099;
+    border-bottom: 1px solid #437099;
+}
+
+.links a:hover {
+    color: #437099;
 }
