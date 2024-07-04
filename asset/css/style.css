@@ -1,0 +1,89 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+/* Title */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway", sans-serif;
+}
+
+
+/*Body*/
+
+body {
+    font-size: 1rem;
+    font-family: "Sulphur Point", sans-serif;
+}
+
+
+/* ------------- Top contact ------------- */
+
+.top-contact {
+    padding: 10px;
+    display: flex;
+    position: sticky;
+    align-items: center;
+    background-color: #f8f8f8e8;
+    justify-content: space-between;
+}
+
+.contact-item {
+    display: flex;
+    gap: 4px;
+    padding-left: 100px;
+    align-items: center;
+    -webkit-column-gap: 4px;
+}
+
+.contact-item a {
+    color: #000;
+}
+
+.contact-item i {
+    color: #1977cc;
+}
+
+.contact-media {
+    display: flex;
+    gap: 10px;
+    padding-right: 100px;
+    -webkit-column-gap: 10px;
+}
+
+.contact-media i {
+    color: #437099;
+    font-size: 0.9rem;
+}
+
+
+/*------------- Header -------------*/
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 20px 100px;
+    background-color: #fff;
+    justify-content: space-between;
+}
+
+.links {
+    display: flex;
+    gap: 25px;
+}
+
+.links a {
+    color: #000;
+}
