@@ -30,25 +30,6 @@ body {
 }
 
 
-/* ------------- Top contact ------------- */
-
-.contact-item i {
-    color: #1977cc;
-}
-
-.contact-media {
-    display: flex;
-    gap: 10px;
-    padding-right: 100px;
-    -webkit-column-gap: 10px;
-}
-
-.contact-media i {
-    color: #437099;
-    font-size: 0.9rem;
-}
-
-
 /*------------- Header -------------*/
 
 header {
