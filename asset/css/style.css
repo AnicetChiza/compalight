@@ -32,14 +32,6 @@ body {
 
 /* ------------- Top contact ------------- */
 
-.top-contact {
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    /*background-color: #fff;*/
-    justify-content: space-between;
-}
-
 .contact-item {
     display: flex;
     gap: 4px;
