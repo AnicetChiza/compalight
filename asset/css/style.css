@@ -20,8 +20,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: 590;
-    font-family: "DM Serif Display", serif;
+    font-family: "Raleway", sans-serif;
 }
 
 
@@ -31,7 +30,12 @@ h6 {
 
 body {
     font-size: 1rem;
-    font-family: "Afacad Flux", sans-serif;
+    font-family: "Raleway", sans-serif;
+}
+
+.padding {
+    padding-left: 120px;
+    padding-right: 120px;
 }
 
 
@@ -41,7 +45,7 @@ body {
 
 header {
     width: fit-content;
-    padding: 25px 60px;
+    padding: 20px 40px;
     margin: auto;
     margin-top: 20px;
     border-radius: 8px;
@@ -50,8 +54,8 @@ header {
     left: 50%;
     z-index: 3;
     transform: translate(-50%, -50%);
-    background-color: #dde1e7;
-    box-shadow: 0px 1px 10px #9e9e9e6d;
+    background-color: #fff;
+    box-shadow: 0px 1px 10px #e1e1e1;
 }
 
 header .header-content {
@@ -62,8 +66,8 @@ header .header-content {
 }
 
 header .header-content a i {
-    color: var(--blackShadow);
-    font-size: 1.4rem;
+    font-size: 20px;
+    color: #141b1fda;
 }
 
 header .header-content .header-items {
@@ -138,24 +142,51 @@ header .header-content .header-items:hover {
 #Cover page
 ----------------------*/
 
-.background {
-    position: relative;
+.home {
+    display: flex;
     width: 100%;
     height: 100vh;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    background-color: #1c1f2a;
-    overflow: hidden;
 }
 
-.light-beam {
-    position: absolute;
-    top: -100px;
-    right: 0;
-    width: 400px;
-    height: 100%;
-    background: radial-gradient(circle, rgba(163, 174, 255, 0.1) 0%, rgba(28, 31, 42, 0.8) 80%);
-    filter: blur(100px);
-    z-index: 1;
+.text-container {
+    white-space: nowrap;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    font-size: 30px;
+}
+
+.cursor {
+    display: flex;
+    width: 0.1em;
+    background-color: rgb(0, 0, 0);
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.bar {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    animation: typing 4s steps(30);
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
 }
