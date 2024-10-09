@@ -24,6 +24,58 @@ h6 {
 }
 
 
+/*---------------------------/
+#General
+/-------------------------- */
+
+.title {
+    margin-top: 30px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    position: relative;
+    color: #37517e;
+}
+
+.title h2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+
+.title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #1977cc;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+
+.padding {
+    padding-top: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 30px;
+}
+
+.title h2 {
+    font-size: 28px;
+}
+
+
 /* ---------------------
 #Body
 ----------------------*/
@@ -34,8 +86,27 @@ body {
 }
 
 .padding {
+    padding-top: 40px;
+    padding-bottom: 40px;
     padding-left: 120px;
     padding-right: 120px;
+}
+
+
+/* Media query */
+
+@media screen and (max-width: 870px) {
+    .padding {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .padding {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 
@@ -153,8 +224,6 @@ header .header-content .header-items:hover {
 }
 
 .text-container {
-    white-space: nowrap;
-    overflow: hidden;
     display: flex;
     position: relative;
     font-size: 24px;
@@ -163,7 +232,6 @@ header .header-content .header-items:hover {
 
 .cursor {
     display: flex;
-    width: 0.1em;
     background-color: #fff;
     animation: blink 0.7s infinite;
 }
@@ -178,7 +246,8 @@ header .header-content .header-items:hover {
     }
 }
 
-.bar {
+
+/* .bar {
     width: 100%;
     background-color: white;
     position: relative;
@@ -192,7 +261,7 @@ header .header-content .header-items:hover {
     to {
         width: 100%;
     }
-}
+} */
 
 .text-box {
     margin-top: 15px;
@@ -211,4 +280,127 @@ header .header-content .header-items:hover {
     border-radius: 30px;
     font-size: 20px;
     border: 1px solid #969696;
+}
+
+
+/* Media query */
+
+@media only screen and (max-width: 1190px) {
+    .text-box {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .text-container {
+        font-size: 20px;
+    }
+    .text-box {
+        font-size: 18px;
+    }
+    .text-box a {
+        font-size: 18px;
+    }
+}
+
+
+/*------------------------/
+#About us
+/----------------------- */
+
+
+/* .about-container {
+    display: flex;
+    align-items: center;
+    padding-left: 150px;
+    padding-right: 150px;
+} */
+
+.all-items {
+    gap: 25px;
+    display: grid;
+    -webkit-column-gap: 25px;
+    grid-template-columns: auto auto;
+}
+
+.item-box {
+    text-align: center;
+    padding: 50px 30px;
+    border-radius: 5px;
+    height: fit-content;
+    transition-delay: 0.4s;
+    background-color: #fff;
+    transition: 0.8s ease-in-out;
+    box-shadow: 0px 1px 10px hsl(0, 0%, 91%);
+}
+
+.item-box p {
+    margin-bottom: 0;
+}
+
+.item-box:nth-child(2) {
+    margin-top: -40px;
+}
+
+.item-box:nth-child(4) {
+    margin-top: -40px;
+}
+
+.item-box h4 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.item-box i {
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: #37517e;
+    transition-delay: 0.4s;
+    transition: 0.8s ease-in-out;
+}
+
+.item-box:hover {
+    border: none;
+    color: #fff;
+    background-color: #37517e;
+    box-shadow: 0px 1px 10px #37517e;
+}
+
+.item-box:hover i {
+    box-shadow: none;
+    color: #37517e;
+    background-color: #fff;
+}
+
+
+/* Media query */
+
+@media screen and (max-width: 1050px) {
+    .about-container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .all-items {
+        gap: 10px;
+        display: grid;
+        -webkit-column-gap: 10px;
+        grid-template-columns: auto;
+    }
+    .item-box:nth-child(2) {
+        margin-top: 0px;
+    }
+    .item-box:nth-child(4) {
+        margin-top: 0px;
+    }
 }
