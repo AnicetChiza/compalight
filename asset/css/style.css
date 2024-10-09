@@ -55,7 +55,7 @@ header {
     z-index: 3;
     transform: translate(-50%, -50%);
     background-color: #fff;
-    box-shadow: 0px 1px 10px #e1e1e1;
+    border: 1px solid #969696;
 }
 
 header .header-content {
@@ -148,7 +148,7 @@ header .header-content .header-items:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: linear-gradient(to left, #324463fc 0%, #f4f4f4ce 100%), url(../images/homeBg.jpg) fixed no-repeat;
+    background: linear-gradient(to left, #263651fc 0%, #28303ea9 100%), url(../images/bg.jpg) fixed no-repeat;
     background-size: cover;
 }
 
@@ -158,13 +158,14 @@ header .header-content .header-items:hover {
     display: flex;
     position: relative;
     font-size: 24px;
+    color: #fff;
     justify-content: flex-end;
 }
 
 .cursor {
     display: flex;
     width: 0.1em;
-    background-color: rgb(0, 0, 0);
+    background-color: #fff;
     animation: blink 0.7s infinite;
 }
 
@@ -196,8 +197,9 @@ header .header-content .header-items:hover {
 
 .text-box {
     margin-top: 15px;
-    width: 70%;
-    font-size: 20px;
+    width: 60%;
+    font-size: 22px;
+    color: #fff;
     display: flex;
     margin-left: auto;
     text-align: right;
