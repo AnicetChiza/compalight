@@ -132,3 +132,30 @@ header .header-content .header-items:hover {
         top: -180%;
     }
 }
+
+
+/* ---------------------
+#Cover page
+----------------------*/
+
+.background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c1f2a;
+    overflow: hidden;
+}
+
+.light-beam {
+    position: absolute;
+    top: -100px;
+    right: 0;
+    width: 400px;
+    height: 100%;
+    background: radial-gradient(circle, rgba(163, 174, 255, 0.1) 0%, rgba(28, 31, 42, 0.8) 80%);
+    filter: blur(100px);
+    z-index: 1;
+}
