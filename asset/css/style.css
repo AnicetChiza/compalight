@@ -159,7 +159,6 @@ header .header-content .header-items:hover {
     position: relative;
     font-size: 24px;
     color: #fff;
-    justify-content: flex-end;
 }
 
 .cursor {
@@ -201,6 +200,15 @@ header .header-content .header-items:hover {
     font-size: 22px;
     color: #fff;
     display: flex;
-    margin-left: auto;
-    text-align: right;
+    flex-direction: column;
+}
+
+.text-box a {
+    color: #fff;
+    margin-top: 20px;
+    width: fit-content;
+    padding: 15px 20px;
+    border-radius: 30px;
+    font-size: 20px;
+    border: 1px solid #969696;
 }
