@@ -143,10 +143,13 @@ header .header-content .header-items:hover {
 ----------------------*/
 
 .home {
-    display: flex;
     width: 100%;
     height: 100vh;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(to left, #324463fc 0%, #f4f4f4ce 100%), url(../images/homeBg.jpg) fixed no-repeat;
+    background-size: cover;
 }
 
 .text-container {
@@ -154,7 +157,8 @@ header .header-content .header-items:hover {
     overflow: hidden;
     display: flex;
     position: relative;
-    font-size: 30px;
+    font-size: 24px;
+    justify-content: flex-end;
 }
 
 .cursor {
@@ -175,7 +179,6 @@ header .header-content .header-items:hover {
 }
 
 .bar {
-    height: 1px;
     width: 100%;
     background-color: white;
     position: relative;
@@ -189,4 +192,13 @@ header .header-content .header-items:hover {
     to {
         width: 100%;
     }
+}
+
+.text-box {
+    margin-top: 15px;
+    width: 70%;
+    font-size: 20px;
+    display: flex;
+    margin-left: auto;
+    text-align: right;
 }
