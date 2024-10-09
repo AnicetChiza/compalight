@@ -308,13 +308,12 @@ header .header-content .header-items:hover {
 #About us
 /----------------------- */
 
-
-/* .about-container {
+.about-container {
     display: flex;
     align-items: center;
     padding-left: 150px;
     padding-right: 150px;
-} */
+}
 
 .all-items {
     gap: 25px;
