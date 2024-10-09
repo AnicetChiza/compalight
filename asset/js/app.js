@@ -1,5 +1,5 @@
-// const texts = ["Votre agence!", "Communiquer pour inpirer!", "Unir pour prosperer!", "Impacter pour briller!"];
-const texts = ["Bienvenue!", "Explorez nos services!", "Contactez-nous!"];
+const texts = ["Votre agence!", "Communiquer pour inpirer!", "Unir pour prosperer!", "Impacter pour briller!"];
+
 let index = 0;
 let charIndex = 0;
 let currentText = '';
