@@ -339,6 +339,12 @@ header .header-content .header-items:hover {
     }
 }
 
+@media screen and (max-width: 432px) {
+    .about {
+        margin-left: 0px;
+    }
+}
+
 
 /*------------------------/
 #Scroller
@@ -429,7 +435,7 @@ header .header-content .header-items:hover {
     outline: none;
     background-color: #fff;
     border-radius: 25px;
-    padding: 10px 15px;
+    padding: 10px 20px;
     width: 20%;
     font-family: "Sulphur Point", sans-serif;
 }
@@ -462,5 +468,19 @@ header .header-content .header-items:hover {
 @media screen and (max-width: 1150px) {
     .newsletter div input {
         width: 60%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .newsletter div {
+        display: flex;
+        flex-direction: column;
+    }
+    .newsletter div input {
+        width: 100%;
+    }
+    .newsletter div button {
+        margin-top: -25px;
+        margin-left: auto;
     }
 }
