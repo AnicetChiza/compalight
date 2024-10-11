@@ -33,53 +33,6 @@ h6 {
 #General
 /-------------------------- */
 
-.title {
-    margin-top: 30px;
-    text-align: center;
-    padding-bottom: 50px;
-}
-
-.title h2 {
-    font-size: 32px;
-    font-weight: bold;
-    padding-bottom: 20px;
-    position: relative;
-    color: #37517e;
-}
-
-.title h2::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 120px;
-    height: 1px;
-    background: #ddd;
-    bottom: 1px;
-    left: calc(50% - 60px);
-}
-
-.title h2::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 40px;
-    height: 3px;
-    background: #1977cc;
-    bottom: 0;
-    left: calc(50% - 20px);
-}
-
-.padding {
-    padding-top: 30px;
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-bottom: 30px;
-}
-
-.title h2 {
-    font-size: 28px;
-}
-
 
 /* ---------------------
 #Body
