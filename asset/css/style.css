@@ -258,6 +258,17 @@ header .header-content .header-items:hover {
 #About us
 /----------------------- */
 
+.about-container {
+    display: flex;
+    align-items: center;
+}
+
+.about-container img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
 
 /*------------------------/
 #Scroller
