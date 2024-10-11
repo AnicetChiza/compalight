@@ -273,18 +273,22 @@ header .header-content .header-items:hover {
     display: flex;
     padding: 60px 30px;
     width: 40%;
-    border-radius: 10px;
     flex-direction: column;
-    background-color: #ffffffca;
-    backdrop-filter: blur(10px);
     font-style: italic;
     font-size: 18px;
-    box-shadow: 0px 1px 10px #e1e1e1;
+    z-index: 222;
+    margin-left: -80px;
+    background: #0000001a;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 40px;
+    border: 1px solid #ffffff1a;
+    border-radius: 10px;
 }
 
 .about i {
-    font-size: 24px;
-    color: #64753967;
+    font-size: 30px;
+    font-style: italic;
 }
 
 .about p {
