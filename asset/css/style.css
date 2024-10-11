@@ -379,6 +379,41 @@ header .header-content .header-items:hover {
     background-size: cover;
 }
 
+.newsletter div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+    -webkit-column-gap: 10px;
+}
+
+.newsletter div input {
+    border: none;
+    outline: none;
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 10px 15px;
+    width: 20%;
+    font-family: "Sulphur Point", sans-serif;
+}
+
+.newsletter div button {
+    border: none;
+    outline: none;
+    padding: 12px 5px;
+    border-radius: 25px;
+    background-color: #0000001a;
+    font-family: "Sulphur Point", sans-serif;
+}
+
+.newsletter div button span {
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #4d71b0;
+}
+
 
 /* Media query */
 
