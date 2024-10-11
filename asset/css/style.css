@@ -275,9 +275,17 @@ header .header-content .header-items:hover {
 
 /* Media query */
 
-@media only screen and (max-width: 1190px) {
+@media screen and (max-width: 1190px) {
     .text-box {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 775px) {
+    .home,
+    .text-box {
+        align-items: center;
+        text-align: center;
     }
 }
 
