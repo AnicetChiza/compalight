@@ -359,3 +359,43 @@ header .header-content .header-items:hover {
         transform: translate(calc(-50% - 0.5rem));
     }
 }
+
+
+/*---------------------------/
+#Newsletter
+/-------------------------- */
+
+.newsletter {
+    width: 100%;
+    color: #fff;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    -webkit-column-gap: 10px;
+    background: linear-gradient(to right, #141b1fea 0%, #dde1e7a7 100%), url(../images/about/newsletter.jpg) fixed top;
+    background-size: cover;
+}
+
+
+/* Media query */
+
+@media screen and (max-width: 1050px) {
+    .newsletter div {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .newsletter div {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .newsletter div {
+        width: 100%;
+    }
+}
