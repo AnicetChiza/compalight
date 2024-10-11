@@ -269,7 +269,19 @@ header .header-content .header-items:hover {
     object-fit: cover;
 }
 
-.about {}
+.about {
+    display: flex;
+    padding: 10px 20px;
+    width: 40%;
+    flex-direction: column;
+    background-color: #fff;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 1px 10px #e9e7e7;
+}
+
+.about p {
+    margin-top: 20px;
+}
 
 
 /*------------------------/
