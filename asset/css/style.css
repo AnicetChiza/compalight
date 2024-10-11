@@ -341,7 +341,7 @@ header .header-content .header-items:hover {
 
 @media screen and (max-width: 432px) {
     .about {
-        margin-left: 0px;
+        margin-left: 30px;
     }
 }
 
