@@ -331,6 +331,12 @@ header .header-content .header-items:hover {
         width: 100%;
         height: 300px;
     }
+    .about {
+        width: 100%;
+        margin-top: -50px;
+        margin-left: 60px;
+        padding: 40px 25px;
+    }
 }
 
 
@@ -447,20 +453,14 @@ header .header-content .header-items:hover {
 
 /* Media query */
 
-@media screen and (max-width: 1050px) {
-    .newsletter div {
+@media screen and (max-width: 1150px) {
+    .newsletter div input {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .newsletter div input {
         width: 60%;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .newsletter div {
-        width: 80%;
-    }
-}
-
-@media screen and (max-width: 430px) {
-    .newsletter div {
-        width: 100%;
     }
 }
