@@ -271,12 +271,20 @@ header .header-content .header-items:hover {
 
 .about {
     display: flex;
-    padding: 10px 20px;
+    padding: 50px 30px;
     width: 40%;
+    border-radius: 10px;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #ffffffca;
     backdrop-filter: blur(10px);
-    box-shadow: 0px 1px 10px #e9e7e7;
+    font-style: italic;
+    font-size: 18px;
+    box-shadow: 0px 1px 10px #0000001a;
+}
+
+.about i {
+    font-size: 24px;
+    color: #64753967;
 }
 
 .about p {
