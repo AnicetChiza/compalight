@@ -261,6 +261,8 @@ header .header-content .header-items:hover {
 .about-container {
     display: flex;
     align-items: center;
+    margin-top: 50px;
+    padding-left: 100px;
 }
 
 .about-container img {
