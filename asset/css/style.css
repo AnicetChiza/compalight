@@ -428,12 +428,48 @@ header .header-content .header-items:hover {
     background-color: #141b1ff5;
 }
 
+.us {
+    width: 70%;
+    display: flex;
+    margin: auto;
+    overflow: hidden;
+    padding: 30px 30px;
+    transform: rotate(15deg) skew(-10deg, -5deg);
+    box-shadow: #00000066 5px 3px, #0000004d 10px 6px, #0000004c 15px 9px, #0000004a 20px 12px;
+}
+
 .goal {
     display: none;
 }
 
 .value {
     display: none;
+}
+
+@media screen and (max-width: 950px) {
+    .us {
+        width: 90%;
+        padding: 20px 20px;
+    }
+}
+
+@media screen and (max-width: 596px) {
+    .us {
+        padding: 15px 15px;
+        transform: rotate(5deg) skew(-5deg, -5deg);
+    }
+}
+
+@media screen and (max-width: 409px) {
+    .us {
+        box-shadow: #0000004d 5px 3px, #0000004c 10px 6px, #0000004a 15px 9px;
+    }
+}
+
+@media screen and (max-width: 365px) {
+    .us {
+        transform: rotate(0deg) skew(-5deg, -5deg);
+    }
 }
 
 
