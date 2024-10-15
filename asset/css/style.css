@@ -587,7 +587,8 @@ textarea {
     padding: 15px 15px;
     font-size: 0.8rem;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 15px;
+    border-radius: 5px;
     border: 1px solid #cecece94;
     font-family: "Sulphur Point", sans-serif;
 }
@@ -598,8 +599,8 @@ textarea {
 
 .contact .contact-input div {
     display: flex;
-    gap: 20px;
-    -webkit-column-gap: 20px;
+    gap: 15px;
+    -webkit-column-gap: 15px;
 }
 
 .contact .contact-input button {
