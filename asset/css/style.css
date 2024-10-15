@@ -265,6 +265,13 @@ header .header-content .header-items:hover {
     border-radius: 30px;
     font-size: 20px;
     border: 1px solid #969696;
+    transition-delay: 0.2s;
+    transition: 0.6s ease-in-out;
+}
+
+.text-box a:hover {
+    border: 1px solid #4d71b0;
+    background-color: #4d71b0;
 }
 
 
