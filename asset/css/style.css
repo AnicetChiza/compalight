@@ -635,4 +635,8 @@ textarea {
         flex-direction: column;
         -webkit-column-gap: 0px;
     }
+    .contact input,
+    textarea {
+        margin-top: 8px;
+    }
 }
