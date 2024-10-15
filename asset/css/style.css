@@ -581,7 +581,7 @@ textarea {
     width: 100%;
     margin-top: 10px;
     border: 1px solid #cecece94;
-    font-family: "Poppins", sans-serif;
+    font-family: "Sulphur Point", sans-serif;
 }
 
 .contact .contact-input {
@@ -607,6 +607,7 @@ textarea {
     background-color: #141b1fda;
     transition-delay: 0.4s;
     transition: 0.8s ease-in-out;
+    font-family: "Sulphur Point", sans-serif;
 }
 
 .contact .contact-input button:hover {
