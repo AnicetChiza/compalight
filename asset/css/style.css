@@ -538,12 +538,6 @@ header .header-content .header-items:hover {
 #Contact
 /----------------------- */
 
-.contact {
-    margin-top: 100px;
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
 .contact .contact-info .info {
     display: flex;
     gap: 10px;
@@ -578,7 +572,6 @@ header .header-content .header-items:hover {
     display: flex;
     gap: 40px;
     -webkit-column-gap: 40px;
-    margin-top: 40px;
 }
 
 .contact input,
@@ -621,4 +614,25 @@ textarea {
 
 .contact .contact-input button:hover {
     background-color: #141b1ff5;
+}
+
+
+/* Media query */
+
+@media screen and (max-width: 950px) {
+    .contact .contact-container {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        -webkit-column-gap: 10px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .contact .contact-input div {
+        display: flex;
+        gap: 0px;
+        flex-direction: column;
+        -webkit-column-gap: 0px;
+    }
 }
