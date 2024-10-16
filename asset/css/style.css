@@ -510,6 +510,15 @@ header .header-content .header-items:hover {
     }
 }
 
+@media screen and (max-width: 470px) {
+    .list-items ul {
+        /* gap: 5px;
+        -webkit-column-gap: 5px; */
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
 
 /*------------------------/
 #Scroller
