@@ -447,10 +447,10 @@ header .header-content .header-items:hover {
     padding: 60px 30px;
     width: 80%;
     flex-direction: column;
-    /* font-style: italic; */
-    font-size: 18px;
+    font-style: italic;
+    /* font-size: 18px; */
     z-index: 2;
-    font-weight: bolder;
+    /* font-weight: bolder; */
     background: #0000001a;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
