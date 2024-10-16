@@ -448,15 +448,20 @@ header .header-content .header-items:hover {
     width: 80%;
     flex-direction: column;
     font-style: italic;
-    /* font-size: 18px; */
     z-index: 2;
-    /* font-weight: bolder; */
+    margin-right: -40px;
     background: #0000001a;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     padding: 40px;
     border: 1px solid #ffffff1a;
     border-radius: 10px;
+}
+
+.us div i {
+    font-size: 25px;
+    color: #8486556e;
+    font-style: italic;
 }
 
 
