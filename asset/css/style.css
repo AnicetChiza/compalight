@@ -464,17 +464,6 @@ header .header-content .header-items:hover {
     font-style: italic;
 }
 
-
-/*.us {
-    width: 70%;
-    display: flex;
-    margin: auto;
-    overflow: hidden;
-    padding: 30px 30px;
-    transform: rotate(15deg) skew(-10deg, -5deg);
-    box-shadow: #00000066 5px 3px, #0000004d 10px 6px, #0000004c 15px 9px, #0000004a 20px 12px;
-}*/
-
 .us {
     display: flex;
     align-items: center;
