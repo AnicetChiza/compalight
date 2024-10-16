@@ -77,9 +77,11 @@ document.addEventListener('DOMContentLoaded', function () {
             const filter = this.getAttribute('data-filter');
             shoeCategories.forEach(category => {
                 if (category.classList.contains(filter)) {
-                    category.style.display = 'flex';
+                    category.classList.remove('hidden');
+                    category.classList.add('flex');
                 } else {
-                    category.style.display = 'none';
+                    category.classList.remove('flex');
+                    category.classList.add('hidden');
                 }
             });
         });
