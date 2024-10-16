@@ -428,7 +428,8 @@ header .header-content .header-items:hover {
     background-color: #141b1ff5;
 }
 
-.us {
+
+/*.us {
     width: 70%;
     display: flex;
     margin: auto;
@@ -436,6 +437,20 @@ header .header-content .header-items:hover {
     padding: 30px 30px;
     transform: rotate(15deg) skew(-10deg, -5deg);
     box-shadow: #00000066 5px 3px, #0000004d 10px 6px, #0000004c 15px 9px, #0000004a 20px 12px;
+}*/
+
+.us {
+    display: grid;
+    align-items: center;
+    margin-top: 40px;
+    grid-template-columns: auto 50%;
+}
+
+.us img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .goal {

@@ -1,3 +1,6 @@
+/* --------------------
+#Home page text
+-------------------- */
 const texts = ["Votre agence!", "Communiquer pour inpirer!", "Unir pour prosperer!", "Impacter pour briller!"];
 
 let index = 0;
@@ -36,7 +39,9 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-// 
+/* --------------------
+#Scroller
+-------------------- */
 const scrollers = document.querySelectorAll(".scroller");
 
 if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
@@ -58,11 +63,9 @@ function addAnimation() {
     });
 }
 
-
-
-
-
-// 
+/* --------------------
+#Mission
+-------------------- */
 document.addEventListener('DOMContentLoaded', function () {
     const categoryItems = document.querySelectorAll('.list-items ul li');
     const shoeCategories = document.querySelectorAll('.us');
