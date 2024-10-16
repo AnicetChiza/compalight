@@ -447,7 +447,7 @@ header .header-content .header-items:hover {
     padding: 60px 30px;
     width: 80%;
     flex-direction: column;
-    font-style: italic;
+    /* font-style: italic; */
     font-size: 18px;
     z-index: 2;
     font-weight: bolder;
