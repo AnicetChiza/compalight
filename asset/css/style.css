@@ -485,29 +485,28 @@ header .header-content .header-items:hover {
     display: none;
 }
 
-@media screen and (max-width: 950px) {
+
+/* Media query */
+
+@media screen and (max-width: 1200px) {
+    .list-items,
     .us {
-        width: 90%;
-        padding: 20px 20px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 }
 
-@media screen and (max-width: 596px) {
+@media screen and (max-width: 960px) {
     .us {
-        padding: 15px 15px;
-        transform: rotate(5deg) skew(-5deg, -5deg);
+        display: flex;
+        flex-direction: column;
     }
-}
-
-@media screen and (max-width: 409px) {
-    .us {
-        box-shadow: #0000004d 5px 3px, #0000004c 10px 6px, #0000004a 15px 9px;
+    .us div {
+        width: 100%;
+        margin-right: -30px;
     }
-}
-
-@media screen and (max-width: 365px) {
-    .us {
-        transform: rotate(0deg) skew(-5deg, -5deg);
+    .us img {
+        margin-top: -30px;
     }
 }
 
