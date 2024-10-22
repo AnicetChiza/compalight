@@ -457,7 +457,7 @@ header .header-content .header-items:hover {
     cursor: pointer;
     padding: 10px 20px;
     border-radius: 25px;
-    font-size: 15px;
+    font-size: 14px;
     transition-delay: 0s;
     transition: 0.2s ease-in-out;
     background-color: #fff;
