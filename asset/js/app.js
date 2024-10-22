@@ -74,9 +74,13 @@ document.addEventListener('DOMContentLoaded', function () {
         item.addEventListener('click', function () {
             categoryItems.forEach(catItem => catItem.classList.remove('active'));
             this.classList.add('active');
+
             const filter = this.getAttribute('data-filter');
+            console.log(`Filtrage pour la catégorie: ${filter}`); // Debugging
+
             shoeCategories.forEach(category => {
                 if (category.classList.contains(filter)) {
+                    console.log(`Affiche l'élément avec la classe: ${filter}`); // Debugging
                     category.classList.remove('hidden');
                     category.classList.add('flex');
                 } else {

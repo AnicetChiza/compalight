@@ -482,6 +482,14 @@ header .header-content .header-items:hover {
     display: none;
 }
 
+.hidden {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
 
 /* Media query */
 
