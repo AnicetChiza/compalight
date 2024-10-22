@@ -588,8 +588,13 @@ header .header-content .header-items:hover {
 }
 
 .service-container {
-    padding: 40px 40px;
+    padding: 60px 40px;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    -webkit-column-gap: 10px;
+    text-align: center;
     border: 1px solid #4645452f;
 }
 
