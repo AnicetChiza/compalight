@@ -86,7 +86,7 @@ h6 {
 }
 
 .title div h4 {
-    font-size: 14px;
+    font-size: 15px;
     color: #1977cc33;
     font-style: italic;
     font-family: "Sulphur Point", sans-serif;
@@ -94,7 +94,7 @@ h6 {
 
 .title div p {
     padding: 0.5px;
-    width: 5%;
+    width: 70px;
     background-color: #ddd;
 }
 
@@ -865,16 +865,12 @@ textarea {
     color: #fff;
     margin: auto;
     margin-top: 10px;
-    padding: 15px 20px;
+    padding: 15px 25px;
     border-radius: 30px;
-    background-color: #141b1fda;
+    background-color: #4d71b0;
     transition-delay: 0.4s;
     transition: 0.8s ease-in-out;
     font-family: "Sulphur Point", sans-serif;
-}
-
-.contact .contact-input button:hover {
-    background-color: #141b1ff5;
 }
 
 
