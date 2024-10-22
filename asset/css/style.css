@@ -684,7 +684,30 @@ header .header-content .header-items:hover {
 
 @media screen and (max-width: 1070px) {
     .our-services {
-        grid-template-columns: auto auto;
+        grid-template-columns: 50% 50%;
+    }
+    .text-intro {
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .our-services {
+        grid-template-columns: 100%;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .our-services {
+        gap: 10px;
+        -webkit-column-gap: 10px;
+    }
+    .service-container {
+        padding: 40px 20px;
+    }
+    .service-container:hover {
+        transform: translateY(3px);
     }
 }
 
