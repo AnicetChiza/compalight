@@ -600,6 +600,10 @@ header .header-content .header-items:hover {
     border: 1px solid #4645452f;
 }
 
+.service-container:hover {
+    transform: translateY(7px);
+}
+
 .service-container div {
     margin: 0 auto;
     width: 50px;
@@ -616,23 +620,12 @@ header .header-content .header-items:hover {
     z-index: 2;
 }
 
-.service-container:hover {
-    color: #fff;
-    border: 1px solid #4d71b0;
+.service-container div {
     background-color: #4d71b0;
-}
-
-.service-container:hover div {
-    background-color: #fff;
-}
-
-.service-container:hover div i {
-    color: #4d71b0;
 }
 
 .service-container i {
     color: #fff;
-    transition: ease-in-out 0.3s;
 }
 
 .service-container div::before {
@@ -647,10 +640,6 @@ header .header-content .header-items:hover {
     transition: all 0.3s ease-out 0s;
     transform: translateZ(-1px);
     z-index: -1;
-}
-
-.service-container:hover div::before {
-    background-color: #ffffff4f;
 }
 
 
