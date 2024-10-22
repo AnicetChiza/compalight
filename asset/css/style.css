@@ -421,16 +421,16 @@ header .header-content .header-items:hover {
     padding: 10px 20px;
     border-radius: 25px;
     font-size: 15px;
-    transition-delay: 0.4s;
-    transition: 0.8s ease-in-out;
+    transition-delay: 0s;
+    transition: 0.2s ease-in-out;
     background-color: #fff;
     box-shadow: 0px 1px 10px #c2c2c25d;
 }
 
 .list-items ul li.active {
     color: #fff;
-    transition-delay: 0.4s;
-    transition: 0.8s ease-in-out;
+    transition-delay: 0s;
+    transition: 0.2s ease-in-out;
     background-color: #4d71b0;
 }
 
@@ -482,13 +482,14 @@ header .header-content .header-items:hover {
     display: none;
 }
 
-.hidden {
+
+/* .hidden {
     display: none;
 }
 
 .flex {
     display: flex;
-}
+} */
 
 
 /* Media query */

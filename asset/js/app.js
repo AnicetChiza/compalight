@@ -67,25 +67,23 @@ function addAnimation() {
 #Mission
 -------------------- */
 document.addEventListener('DOMContentLoaded', function () {
-    const categoryItems = document.querySelectorAll('.list-items ul li');
-    const shoeCategories = document.querySelectorAll('.us');
+    const categoryItems = document.querySelectorAll('.list-items ul li'); // Cibler les éléments de la liste
+    const shoeCategories = document.querySelectorAll('.us'); // Cibler les sections à masquer/afficher
 
     categoryItems.forEach(item => {
         item.addEventListener('click', function () {
+            // Supprimer la classe 'active' de tous les éléments et ajouter à l'élément cliqué
             categoryItems.forEach(catItem => catItem.classList.remove('active'));
             this.classList.add('active');
 
-            const filter = this.getAttribute('data-filter');
-            console.log(`Filtrage pour la catégorie: ${filter}`); // Debugging
+            const filter = this.getAttribute('data-filter'); // Récupérer le filtre à partir de l'attribut data-filter
 
             shoeCategories.forEach(category => {
+                // Si l'élément a la classe correspondant au filtre, on l'affiche, sinon on le masque
                 if (category.classList.contains(filter)) {
-                    console.log(`Affiche l'élément avec la classe: ${filter}`); // Debugging
-                    category.classList.remove('hidden');
-                    category.classList.add('flex');
+                    category.style.display = 'flex'; // Afficher l'élément correspondant
                 } else {
-                    category.classList.remove('flex');
-                    category.classList.add('hidden');
+                    category.style.display = 'none'; // Masquer les autres éléments
                 }
             });
         });
