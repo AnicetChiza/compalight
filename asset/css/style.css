@@ -1004,3 +1004,24 @@ footer {
     width: 43px;
     height: 43px;
 }
+
+.compalight-sign {
+    margin-top: 20px;
+}
+
+.up {
+    position: fixed;
+    right: 40px;
+    bottom: 150px;
+}
+
+.up i {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0px 1px 10px #c2c2c25d;
+}
