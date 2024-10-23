@@ -967,3 +967,31 @@ footer {
     gap: 5px;
     -webkit-column-gap: 5px;
 }
+
+.our-footer a {
+    color: #141b1fda;
+    transition-delay: 0.2s;
+    transition: 0.4s ease-in-out;
+}
+
+.our-footer a:hover {
+    color: #4d71b0;
+}
+
+.media div {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    -webkit-column-gap: 5px;
+}
+
+.media a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0px 1px 10px #c2c2c25d;
+}
