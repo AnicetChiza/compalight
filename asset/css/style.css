@@ -796,6 +796,17 @@ header .header-content .header-items:hover {
 
 
 /*------------------------/
+#Blog
+/----------------------- */
+
+.blog-container img {
+    width: 450px;
+    height: 350px;
+    object-fit: cover;
+}
+
+
+/*------------------------/
 #Contact
 /----------------------- */
 
