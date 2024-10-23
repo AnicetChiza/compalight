@@ -1017,6 +1017,7 @@ footer {
     position: fixed;
     right: 30px;
     bottom: 100px;
+    z-index: 1200;
 }
 
 .up i {
