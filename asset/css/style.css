@@ -121,7 +121,7 @@ header {
     z-index: 3;
     transform: translate(-50%, -50%);
     background-color: #fff;
-    box-shadow: 0px 1px 10px #50505054;
+    box-shadow: 0px 1px 10px #c2c2c25d;
 }
 
 header .header-content {
