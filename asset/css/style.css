@@ -288,6 +288,13 @@ header .header-content .header-items:hover {
     .text-box a {
         font-size: 18px;
     }
+    .home {
+        text-align: left;
+        align-items: flex-start;
+    }
+    .text-box {
+        align-items: flex-start;
+    }
 }
 
 
