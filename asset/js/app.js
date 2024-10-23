@@ -1,7 +1,7 @@
 /* --------------------
 #Home page text
 -------------------- */
-const texts = ["Votre agence!", "Communiquer pour inpirer!", "Unir pour prosperer!", "Impacter pour briller!"];
+const texts = ["Compalight!", "Communiquer pour inpirer!", "Unir pour prosperer!", "Impacter pour briller!"];
 
 let index = 0;
 let charIndex = 0;

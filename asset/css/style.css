@@ -280,7 +280,7 @@ header .header-content .header-items:hover {
 
 @media screen and (max-width: 590px) {
     .text-container {
-        font-size: 19px;
+        font-size: 18px;
     }
     .text-box {
         font-size: 18px;
@@ -1023,7 +1023,7 @@ footer {
 .up {
     position: fixed;
     right: 30px;
-    bottom: 100px;
+    bottom: 140px;
     z-index: 1200;
 }
 
@@ -1048,7 +1048,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
     .footer-container {
         display: flex;
         flex-direction: column;
