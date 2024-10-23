@@ -1012,13 +1012,14 @@ footer {
 .up {
     position: fixed;
     right: 40px;
-    bottom: 150px;
+    bottom: 60px;
 }
 
 .up i {
     width: 40px;
     height: 40px;
     display: flex;
+    color: #4d71b0;
     align-items: center;
     border-radius: 50%;
     justify-content: center;
