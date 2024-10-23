@@ -981,13 +981,14 @@ footer {
 .media div {
     display: flex;
     flex-direction: row;
-    gap: 5px;
-    -webkit-column-gap: 5px;
+    gap: 10px;
+    -webkit-column-gap: 10px;
 }
 
-.media a {
-    width: 45px;
-    height: 45px;
+.media a i {
+    font-size: 14px;
+    width: 40px;
+    height: 40px;
     display: flex;
     border-radius: 50%;
     align-items: center;
