@@ -982,6 +982,7 @@ footer {
     display: flex;
     flex-direction: row;
     gap: 10px;
+    align-items: center;
     -webkit-column-gap: 10px;
 }
 
@@ -994,5 +995,12 @@ footer {
     align-items: center;
     justify-content: center;
     background-color: #fff;
+    transition-delay: 0.2s;
+    transition: 0.4s ease-in-out;
     box-shadow: 0px 1px 10px #c2c2c25d;
+}
+
+.media a i:hover {
+    width: 43px;
+    height: 43px;
 }
