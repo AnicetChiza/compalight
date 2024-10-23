@@ -854,12 +854,12 @@ header .header-content .header-items:hover {
     color: #4d71b0;
 }
 
-.
+
 /*----------------------- /
 #Contact
 /----------------------- */
 
-.contact .contact-info .info {
+.contact .contact-info .infos {
     display: flex;
     gap: 10px;
     font-size: 0.8rem;
@@ -868,16 +868,16 @@ header .header-content .header-items:hover {
     -webkit-column-gap: 10px;
 }
 
-.contact .contact-info .info div {
+.contact .contact-info .infos div {
     display: flex;
     flex-direction: column;
 }
 
-.contact .contact-info .info div a {
+.contact .contact-info .infos div a {
     color: #000;
 }
 
-.contact .contact-info .info i {
+.contact .contact-info .infos i {
     display: flex;
     width: 50px;
     height: 50px;
