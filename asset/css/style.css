@@ -809,6 +809,12 @@ header .header-content .header-items:hover {
     object-fit: cover;
 }
 
+.blog-info {
+    display: flex;
+    gap: 30px;
+    -webkit-column-gap: 30px;
+}
+
 .blog-date {
     display: flex;
     align-items: center;
