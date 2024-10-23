@@ -89,3 +89,28 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+/*------------------------------
+#Up icon
+/-----------------------------*/
+
+document.addEventListener('DOMContentLoaded', () => {
+    const scrollUps = document.querySelectorAll('.scrollUp');
+    const homePageHeight = window.innerHeight;
+
+    window.addEventListener('scroll', () => {
+        scrollUps.forEach((scrollUp) => {
+            if (window.scrollY > homePageHeight) {
+                scrollUp.style.display = 'block';
+            } else {
+                scrollUp.style.display = 'none';
+            }
+        });
+    });
+
+    scrollUps.forEach((scrollUp) => {
+        scrollUp.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    });
+});
