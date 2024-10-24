@@ -691,7 +691,7 @@ header .header-content .header-items:hover {
     flex-direction: column;
     gap: 10px;
     -webkit-column-gap: 10px;
-    background: linear-gradient(to right, #141b1fea 0%, #dde1e7a7 100%), url(../images/about/newsletter.jpg) fixed top;
+    background: linear-gradient(to right, #141b1fda 0%, #a6a6a6 100%), url(../images/about/newsletter.jpg) fixed top;
     background-size: cover;
 }
 
@@ -709,25 +709,20 @@ header .header-content .header-items:hover {
     outline: none;
     background-color: #fff;
     border-radius: 25px;
-    padding: 10px 20px;
-    width: 20%;
+    padding: 15px 20px;
+    width: 25%;
     font-family: "Sulphur Point", sans-serif;
 }
 
 .newsletter div button {
     border: none;
     outline: none;
-    padding: 12px 5px;
+    padding: 15px 25px;
     border-radius: 25px;
-    background-color: #0000001a;
-    font-family: "Sulphur Point", sans-serif;
-}
-
-.newsletter div button span {
     color: #fff;
-    padding: 10px 20px;
-    border-radius: 20px;
     background-color: #4d71b0;
+    border: 1px solid #a6a6a6;
+    font-family: "Sulphur Point", sans-serif;
 }
 
 
