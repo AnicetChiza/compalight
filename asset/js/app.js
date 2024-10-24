@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const scrollUps = document.querySelectorAll('.scrollUp');
     const homePageHeight = window.innerHeight;
 
-    window.addEventListener('scroll', () => {
+    const toggleScrollUpVisibility = () => {
         scrollUps.forEach((scrollUp) => {
             if (window.scrollY > homePageHeight) {
                 scrollUp.style.display = 'block';
@@ -106,7 +106,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 scrollUp.style.display = 'none';
             }
         });
-    });
+    };
+
+    toggleScrollUpVisibility();
+
+    window.addEventListener('scroll', toggleScrollUpVisibility);
 
     scrollUps.forEach((scrollUp) => {
         scrollUp.addEventListener('click', () => {
