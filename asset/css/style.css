@@ -829,44 +829,8 @@ header .header-content .header-items:hover {
 
 
 /*----------------------- /
-#Testimonials
+#team
 /----------------------- */
-
-.testimonial {
-    margin-right: 100px;
-    margin-left: 100px;
-    padding: 40px 40px;
-    background-color: #fff;
-    box-shadow: 0px 1px 10px #c2c2c25d;
-}
-
-.test-item {
-    display: flex;
-}
-
-.test-item img {
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
-}
-
-.test-item div {
-    display: flex;
-    padding: 60px 30px;
-    width: 50%;
-    height: fit-content;
-    flex-direction: column;
-    font-style: italic;
-    font-size: 18px;
-    z-index: 2;
-    margin-left: -80px;
-    background: #0000001a;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    padding: 40px;
-    border: 1px solid #ffffff1a;
-    border-radius: 10px;
-}
 
 
 /*----------------------- /
