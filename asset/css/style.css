@@ -539,14 +539,15 @@ header .header-content .header-items:hover {
 }
 
 .scroller {
-    max-width: 80%;
+    max-width: 90%;
 }
 
 .scroller-inner {
     padding-block: 0.2rem;
     display: flex;
-    gap: 0.5rem;
+    gap: 15px;
     flex-wrap: wrap;
+    -webkit-column-gap: 15px;
 }
 
 .scroller[data-animated=true] {
