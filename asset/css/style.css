@@ -845,12 +845,28 @@ header .header-content .header-items:hover {
 }
 
 .test-item img {
-    width: 350px;
-    height: 350px;
+    width: 400px;
+    height: 400px;
     object-fit: cover;
 }
 
-.test-item div {}
+.test-item div {
+    display: flex;
+    padding: 60px 30px;
+    width: 50%;
+    height: fit-content;
+    flex-direction: column;
+    font-style: italic;
+    font-size: 18px;
+    z-index: 2;
+    margin-left: -80px;
+    background: #0000001a;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 40px;
+    border: 1px solid #ffffff1a;
+    border-radius: 10px;
+}
 
 
 /*----------------------- /
