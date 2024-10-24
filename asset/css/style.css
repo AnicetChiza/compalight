@@ -834,6 +834,60 @@ header .header-content .header-items:hover {
 #team
 /----------------------- */
 
+.team {
+    background-color: #f5f5f5a8;
+}
+
+.team-container {
+    margin-top: 30px;
+}
+
+.member {
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.member img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.member-info {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 20%, rgba(0, 212, 255, 0) 100%);
+    transition: 0.4s;
+}
+
+.member-info-content {
+    position: absolute;
+    left: 100px;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    transition: bottom 0.4s;
+}
+
+.team .member .social {
+    position: absolute;
+    left: -50px;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    transition: left ease-in-out 0.3s;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.team .member .social a {
+    transition: color 0.3s;
+    display: block;
+    color: #fff;
+    margin-top: 15px;
+}
+
 
 /*----------------------- /
 #Contact
