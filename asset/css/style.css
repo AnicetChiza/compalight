@@ -578,9 +578,10 @@ header .header-content .header-items:hover {
 #Services
 /-------------------------- */
 
-.service {
+
+/* .service {
     background-color: #f5f5f5a8;
-}
+} */
 
 .our-services {
     display: grid;
