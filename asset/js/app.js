@@ -118,3 +118,47 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+/*-----------------------------/
+#Team
+/-----------------------------*/
+
+const teamContainer = document.querySelector('.team-container');
+const members = document.querySelectorAll('.team .member');
+const prevButton = document.querySelector('.scroll-btn .prev');
+const nextButton = document.querySelector('.scroll-btn .next');
+
+let currentStartIndex = 0;
+const visibleCount = 4; // Nombre d'images visibles en même temps
+
+// Fonction pour mettre à jour la visibilité des membres
+function updateVisibility() {
+    members.forEach((member, index) => {
+        // Affiche uniquement les membres dans la plage actuelle
+        member.style.display = (index >= currentStartIndex && index < currentStartIndex + visibleCount) ? 'block' : 'none';
+    });
+
+    // Affiche ou cache le bouton Prev en fonction de l'index actuel
+    prevButton.style.display = (currentStartIndex > 0) ? 'inline-block' : 'none';
+}
+
+// Écouteur pour le bouton Next
+nextButton.addEventListener('click', () => {
+    // Vérifie si on peut avancer vers la prochaine image
+    if (currentStartIndex + visibleCount < members.length) {
+        currentStartIndex++;
+        updateVisibility();
+    }
+});
+
+// Écouteur pour le bouton Prev
+prevButton.addEventListener('click', () => {
+    // Vérifie si on peut reculer vers l'image précédente
+    if (currentStartIndex > 0) {
+        currentStartIndex--;
+        updateVisibility();
+    }
+});
+
+// Initialiser la visibilité au chargement de la page
+updateVisibility();
