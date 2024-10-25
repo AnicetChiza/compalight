@@ -839,35 +839,57 @@ header .header-content .header-items:hover {
 }
 
 .team-container {
+    display: flex;
+    gap: 15px;
+    -webkit-column-gap: 15px;
+}
+
+.team .member {
+    text-align: center;
     margin-top: 30px;
-}
-
-.member {
+    background: #343a40;
     position: relative;
-    /* overflow: hidden; */
+    overflow: hidden;
+    /* border-radius: 15px; */
 }
 
-.member img {
-    width: 350px;
-    height: 350px;
+.team .member img {
+    width: 300px;
+    height: 300px;
     object-fit: cover;
 }
 
-.member-info {
+.team .member .member-info {
     position: absolute;
-    top: 0;
     bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    transition: 0.2s;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 20%, rgba(0, 212, 255, 0) 100%);
-    transition: 0.4s;
 }
 
-.member-info-content {
+.team .member .member-info-content {
     position: absolute;
-    left: 100px;
+    left: 50px;
     right: 0;
-    bottom: 0;
-    color: #fff;
+    bottom: 30px;
     transition: bottom 0.4s;
+}
+
+.team .member .member-info-content h4 {
+    font-weight: 700;
+    margin-bottom: 2px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.team .member .member-info-content span {
+    font-style: italic;
+    display: block;
+    font-size: 13px;
+    color: #fff;
 }
 
 .team .member .social {
@@ -876,16 +898,31 @@ header .header-content .header-items:hover {
     top: 0;
     bottom: 0;
     width: 50px;
+    left: 0;
     transition: left ease-in-out 0.3s;
     background: rgba(0, 0, 0, 0.5);
     text-align: center;
 }
 
-.team .member .social a {
-    transition: color 0.3s;
-    display: block;
-    color: #fff;
-    margin-top: 15px;
+.team .member .social {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    gap: 10px;
+    /* justify-content: center; */
+    -webkit-column-gap: 10px;
+    align-items: center;
+}
+
+.team .member .social i {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: #fff;
 }
 
 
