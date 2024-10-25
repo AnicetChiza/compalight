@@ -583,22 +583,25 @@ header .header-content .header-items:hover {
 }
 
 .choose-container {
-    display: flex;
-    align-items: center;
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 180px;
+    padding-right: 180px;
+}
+
+.choose-us .title {
+    padding-left: 180px;
+    padding-right: 180px;
 }
 
 .all-items {
     gap: 25px;
     display: grid;
     -webkit-column-gap: 25px;
-    grid-template-columns: auto auto;
+    grid-template-columns: 50% 50%;
 }
 
 .item-box {
     text-align: center;
-    padding: 50px 30px;
+    padding: 40px 30px;
     border-radius: 5px;
     height: fit-content;
     transition-delay: 0.4s;
@@ -626,8 +629,8 @@ header .header-content .header-items:hover {
 }
 
 .item-box i {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     color: #fff;
     border-radius: 50%;
     display: flex;
@@ -635,7 +638,7 @@ header .header-content .header-items:hover {
     margin-right: auto;
     align-items: center;
     justify-content: center;
-    background-color: #37517e;
+    background-color: #4d71b0;
     transition-delay: 0.4s;
     transition: 0.8s ease-in-out;
 }
@@ -643,13 +646,13 @@ header .header-content .header-items:hover {
 .item-box:hover {
     border: none;
     color: #fff;
-    background-color: #37517e;
-    box-shadow: 0px 1px 10px #37517e;
+    background-color: #4d71b0;
+    box-shadow: 0px 1px 10px #4d71b0;
 }
 
 .item-box:hover i {
     box-shadow: none;
-    color: #37517e;
+    color: #4d71b0;
     background-color: #fff;
 }
 
@@ -661,6 +664,10 @@ header .header-content .header-items:hover {
         padding-left: 0px;
         padding-right: 0px;
     }
+    .choose-us .title {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -668,7 +675,7 @@ header .header-content .header-items:hover {
         gap: 10px;
         display: grid;
         -webkit-column-gap: 10px;
-        grid-template-columns: auto;
+        grid-template-columns: 100%;
     }
     .item-box:nth-child(2) {
         margin-top: 0px;
