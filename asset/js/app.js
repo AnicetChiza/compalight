@@ -129,22 +129,34 @@ const prevButton = document.querySelector('.scroll-btn .prev');
 const nextButton = document.querySelector('.scroll-btn .next');
 
 let currentStartIndex = 0;
-const visibleCount = 4; // Nombre d'images visibles en même temps
+let visibleCount = getVisibleCount(); // Initialiser le nombre d'images visibles
+
+// Fonction pour obtenir visibleCount selon la taille d'écran
+function getVisibleCount() {
+    if (window.innerWidth >= 1230) {
+        return 4; // Ordinateur large
+    } else if (window.innerWidth >= 970) {
+        return 3; // Ordinateur moyen
+    } else if (window.innerWidth >= 560) {
+        return 2; // Tablette
+    } else {
+        return 1; // Mobile
+    }
+}
 
 // Fonction pour mettre à jour la visibilité des membres
 function updateVisibility() {
     members.forEach((member, index) => {
-        // Affiche uniquement les membres dans la plage actuelle
         member.style.display = (index >= currentStartIndex && index < currentStartIndex + visibleCount) ? 'block' : 'none';
     });
 
-    // Affiche ou cache le bouton Prev en fonction de l'index actuel
+    // Gérer l'affichage des boutons Prev et Next
     prevButton.style.display = (currentStartIndex > 0) ? 'inline-block' : 'none';
+    nextButton.style.display = (currentStartIndex + visibleCount < members.length) ? 'inline-block' : 'none';
 }
 
 // Écouteur pour le bouton Next
 nextButton.addEventListener('click', () => {
-    // Vérifie si on peut avancer vers la prochaine image
     if (currentStartIndex + visibleCount < members.length) {
         currentStartIndex++;
         updateVisibility();
@@ -153,11 +165,17 @@ nextButton.addEventListener('click', () => {
 
 // Écouteur pour le bouton Prev
 prevButton.addEventListener('click', () => {
-    // Vérifie si on peut reculer vers l'image précédente
     if (currentStartIndex > 0) {
         currentStartIndex--;
         updateVisibility();
     }
+});
+
+// Mise à jour du nombre d'images visibles au redimensionnement de la fenêtre
+window.addEventListener('resize', () => {
+    visibleCount = getVisibleCount();
+    currentStartIndex = 0; // Réinitialise pour revenir au début de la liste
+    updateVisibility();
 });
 
 // Initialiser la visibilité au chargement de la page
