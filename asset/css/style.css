@@ -850,11 +850,10 @@ header .header-content .header-items:hover {
     background: #343a40;
     position: relative;
     overflow: hidden;
-    /* border-radius: 15px; */
 }
 
 .team .member img {
-    width: 300px;
+    width: 400px;
     height: 300px;
     object-fit: cover;
 }
@@ -872,7 +871,7 @@ header .header-content .header-items:hover {
 
 .team .member .member-info-content {
     position: absolute;
-    left: 50px;
+    left: 30px;
     right: 0;
     bottom: 30px;
     transition: bottom 0.4s;
@@ -894,14 +893,12 @@ header .header-content .header-items:hover {
 
 .team .member .social {
     position: absolute;
-    left: -50px;
-    top: 0;
-    bottom: 0;
+    bottom: 30px;
     width: 50px;
     left: 0;
-    transition: left ease-in-out 0.3s;
-    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
     text-align: center;
+    transition: 0.9s ease-in-out;
 }
 
 .team .member .social {
@@ -909,9 +906,9 @@ header .header-content .header-items:hover {
     flex-direction: column;
     padding-top: 10px;
     gap: 10px;
-    /* justify-content: center; */
     -webkit-column-gap: 10px;
     align-items: center;
+    transition: left ease-in-out 0.3s;
 }
 
 .team .member .social i {
@@ -923,6 +920,10 @@ header .header-content .header-items:hover {
     justify-content: center;
     border-radius: 50px;
     background-color: #fff;
+}
+
+.team .member:hover .social {
+    opacity: 1;
 }
 
 
