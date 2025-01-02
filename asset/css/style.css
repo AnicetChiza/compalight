@@ -820,7 +820,7 @@ header .header-content .header-items:hover {
     border-radius: 25px;
     padding: 15px 20px;
     width: 25%;
-    font-family: "Sulphur Point", sans-serif;
+    font-family: "Teachers", sans-serif;
 }
 
 .newsletter div button {
@@ -831,7 +831,7 @@ header .header-content .header-items:hover {
     color: #fff;
     background-color: #4d71b0;
     border: 1px solid #a6a6a6;
-    font-family: "Sulphur Point", sans-serif;
+    font-family: "Teachers", sans-serif;
 }
 
 
@@ -1104,7 +1104,7 @@ textarea {
     margin-top: 15px;
     border-radius: 5px;
     border: 1px solid #cecece94;
-    font-family: "Sulphur Point", sans-serif;
+    font-family: "Teachers", sans-serif;
 }
 
 .contact .contact-input {
@@ -1130,7 +1130,7 @@ textarea {
     background-color: #4d71b0;
     transition-delay: 0.4s;
     transition: 0.8s ease-in-out;
-    font-family: "Sulphur Point", sans-serif;
+    font-family: "Teachers", sans-serif;
 }
 
 
