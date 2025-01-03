@@ -83,8 +83,8 @@ body {
 .padding {
     padding-top: 40px;
     padding-bottom: 40px;
-    padding-left: 120px;
-    padding-right: 120px;
+    padding-left: 140px;
+    padding-right: 140px;
 }
 
 
@@ -226,7 +226,7 @@ header .header-content .header-items:hover {
 }
 
 .text-container h1{
-    font-size: 50px;
+    font-size: 45px;
     font-style: italic;
     color: #4d71b0;
     font-weight: 800;
@@ -266,7 +266,7 @@ header .header-content .header-items:hover {
     color: #fff;
     margin-top: 20px;
     width: fit-content;
-    padding: 12px 20px;
+    padding: 15px 20px;
     border-radius: 30px;
     border: 1px solid #969696;
     transition-delay: 0.2s;
@@ -353,13 +353,17 @@ header .header-content .header-items:hover {
     border-radius: 10px;
 }
 
+.about h3{
+    font-weight: 800;
+}
+
 .about i {
     font-size: 30px;
     font-style: italic;
 }
 
 .about p {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 
@@ -428,13 +432,14 @@ header .header-content .header-items:hover {
 .list-items ul li {
     color: #4d71b0;
     cursor: pointer;
-    padding: 10px 20px;
+    padding: 14px 20px;
     border-radius: 25px;
     font-size: 14px;
     transition-delay: 0s;
     transition: 0.2s ease-in-out;
-    background-color: #fff;
-    box-shadow: 0px 1px 10px #c2c2c25d;
+    border: 1px solid #4645452f;
+    /* background-color: #fff; */
+    /* box-shadow: 0px 1px 10px #c2c2c25d; */
 }
 
 .list-items ul li.active {
@@ -896,8 +901,8 @@ header .header-content .header-items:hover {
 
 .blog-info {
     display: flex;
-    gap: 30px;
-    -webkit-column-gap: 30px;
+    gap: 15px;
+    -webkit-column-gap: 15px;
 }
 
 .blog-date {
@@ -976,8 +981,8 @@ header .header-content .header-items:hover {
 }
 
 .team .member img {
-    width: 400px;
-    height: 300px;
+    width: 430px;
+    height: 400px;
     object-fit: cover;
 }
 
