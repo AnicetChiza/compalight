@@ -95,7 +95,7 @@ body {
     }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 540px) {
     .padding {
         padding-left: 20px;
         padding-right: 20px;
@@ -276,34 +276,25 @@ header .header-content .header-items:hover {
     background-color: #4d71b0;
 }
 
-
 /* Media query */
-
 @media screen and (max-width: 1190px) {
     .text-box {
         width: 100%;
     }
 }
 
-@media screen and (max-width: 590px) {
+@media screen and (max-width: 730px){
+    .text-container h1{
+        font-size: 32px;
+    }
     .text-container {
         font-size: 18px;
     }
-    .text-box {
+
+    .text-box p{
         font-size: 18px;
-    }
-    .text-box a {
-        font-size: 18px;
-    }
-    .home {
-        text-align: left;
-        align-items: flex-start;
-    }
-    .text-box {
-        align-items: flex-start;
     }
 }
-
 
 /*------------------------/
 #About us
@@ -417,7 +408,7 @@ header .header-content .header-items:hover {
     }
 }
 
-@media screen and (max-width: 432px) {
+@media screen and (max-width: 540px) {
     .about {
         margin-left: 30px;
     }
