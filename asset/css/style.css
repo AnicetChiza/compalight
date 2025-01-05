@@ -366,6 +366,23 @@ header .header-content .header-items:hover {
     margin-top: 10px;
 }
 
+.about a{
+    color: #141b1fda;
+    margin-top: 30px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: fit-content;
+    font-size: 15px;
+    color: #fff;
+    background-color: #4d71b0;
+    transition-delay: 0.4s;
+    transition: 0.5s ease-in-out;
+}
+
+.about a:hover{
+    color: #dddddd;
+    background-color: #4d71b0f1;
+}
 
 /* Media query */
 
