@@ -63,7 +63,7 @@ h6 {
 }
 
 .text-intro {
-    width: 70%;
+    width: 55%;
     font-size: 17px;
     margin-bottom: 30px;
 }
@@ -438,8 +438,8 @@ header .header-content .header-items:hover {
 .list-items ul li {
     color: #4d71b0;
     cursor: pointer;
-    padding: 14px 20px;
-    border-radius: 25px;
+    padding: 10px 20px;
+    border-radius: 5px;
     font-size: 14px;
     transition-delay: 0s;
     transition: 0.2s ease-in-out;
