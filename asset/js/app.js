@@ -137,7 +137,7 @@ function getVisibleCount() {
         return 4; // Ordinateur large
     } else if (window.innerWidth >= 970) {
         return 3; // Ordinateur moyen
-    } else if (window.innerWidth >= 560) {
+    } else if (window.innerWidth >= 670) {
         return 2; // Tablette
     } else {
         return 1; // Mobile
