@@ -456,12 +456,67 @@ header .header-content .header-items:hover {
     font-size: 25px;
 }
 
+.about-message{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    -webkit-column-gap: 20px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: #c0c0c0;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 25px;
+    background: linear-gradient(to left, #12171dd5 0%, #12171dd5 100%), url(../images/bg.jpg) fixed no-repeat;
+    background-size: cover;
+}
+
+.about-message p{
+    width: 70%;
+}
+
+.about-message i{
+    font-size: 55px;
+    font-style: italic;
+}
+
+/* -------------------------- */
+.our-goals{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    -webkit-column-gap: 10px;
+}
+
+.our-goal p{
+    padding: 30px 30px;
+    font-style: italic;
+    box-shadow: 0px 1px 10px #4458901c;
+}
+
+.our-goals i{
+    color: #4d71b0;
+}
+
 /* Media query */
 
 @media screen and (max-width: 1120px) {
     .about-container {
         padding-left: 0;
         padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .about-message p{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .our-goals{
+        grid-template-columns: auto;
     }
 }
 
@@ -488,6 +543,13 @@ header .header-content .header-items:hover {
         margin-top: -50px;
         margin-left: 60px;
         padding: 40px 25px;
+    }
+    .about-message{
+        font-size: 18px;
+    }
+
+    .about-message i{
+        font-size: 35px;
     }
 }
 
