@@ -298,6 +298,59 @@ header .header-content .header-items:hover {
 }
 
 /*------------------------/
+#Hero second page
+/----------------------- */
+.hero-second-page{
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    -webkit-column-gap: 10px;
+    background: linear-gradient(to right, #181c22d0 0%, #181c22d0 100%), url('../images/home.jpg') no-repeat fixed center;
+    background-size: cover;
+}
+
+.hero-second-page a{
+    color: #c0c0c0;
+    border-bottom: 1px solid #c0c0c0;
+}
+
+.hero-second-page h2{
+    color: #c0c0c0;
+    font-weight: 900;
+    font-size: 50px;
+    font-style: italic;
+}
+
+.hero-second-page div{
+    display: flex;
+    align-items: center;
+    color: #c0c0c0;
+    gap: 10px;
+    -webkit-column-gap: 10px;
+    font-weight: 600;
+    -webkit-column-gap: 10px;
+}
+
+.hero-second-page div i{
+    font-size: 25px;
+}
+
+/* Media query */
+@media screen and (max-width: 430px){
+    .hero-second-page h2{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 330px){
+    .hero-second-page h2{
+        font-size: 35px;
+    }
+}
+
+/*------------------------/
 #About us
 /----------------------- */
 
@@ -894,7 +947,10 @@ header .header-content .header-items:hover {
 /----------------------- */
 
 .blog-container {
-    width: 40%;
+    /* width: 40%; */
+    margin-top: 10px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #d1d0d07a;
 }
 
 .blog-container img {
@@ -904,7 +960,8 @@ header .header-content .header-items:hover {
 }
 
 .blog-info {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto;
     gap: 15px;
     -webkit-column-gap: 15px;
 }
@@ -948,16 +1005,16 @@ header .header-content .header-items:hover {
     color: #4d71b0;
 }
 
-
 /* Media query */
+@media screen and (max-width: 950px){
+    .blog-info{
+        grid-template-columns: auto auto;
+    }
+}
 
 @media screen and (max-width: 700px) {
-    .blog-container {
-        width: 100%;
-    }
     .blog-info {
-        display: flex;
-        flex-direction: column;
+        grid-template-columns: auto;
     }
 }
 
