@@ -58,8 +58,9 @@ h6 {
 }
 
 .title h2 {
-    font-size: 25px;
+    font-size: 30px;
     color: #4d71b0;
+    font-style: italic;
 }
 
 .text-intro {
