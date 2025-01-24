@@ -1,0 +1,233 @@
+/* --------------------- /
+#Articles details
+/ --------------------- */
+
+.our-article{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    -webkit-column-gap: 20px;
+}
+
+.our-article .article-details-title h1{
+    font-size: 30px;
+    font-weight: 900;
+    font-style: italic;
+    color: #4879a4;
+}
+
+.article-image img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.article-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    -webkit-column-gap: 20px;
+    text-align: justify;
+}
+
+.article-text h2{
+    color: #4879a4;
+}
+
+.display-article{
+    display: grid;
+    gap: 30px;
+    -webkit-column-gap: 30px;
+    margin-top: 30px;
+    grid-template-columns: auto 30%;
+}
+
+.brief-article{
+    padding: 20px 20px;
+    border-radius: 10px;
+    height: fit-content;
+    font-style: italic;
+    color: #141b1f7a;
+    border: 1px solid #75747458;
+}
+
+.like-article{
+    display: flex;
+}
+
+.commit, .like{
+    padding: 12px 20px;
+    border: 1px solid #75747458;
+}
+
+.commit i, .like i{
+    color: #4879a4;
+    font-size: 18px;
+}
+
+.like-article div{
+    display: flex;
+    align-items: center;
+    -webkit-column-gap: 5px;
+    cursor: pointer;
+}
+
+.medias{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    -webkit-column-gap: 5px;
+    margin-top: 10px;
+}
+
+.medias div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    -webkit-column-gap: 5px;
+}
+
+.medias a{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    font-size: 13px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    transition-delay: 0.4s;
+    transition: 0.7s ease-in-out;
+    border: 1px solid #75747458;
+}
+
+.medias a:hover{
+    border: none;
+}
+
+.comments{
+    margin-top: 15px;
+    padding-top: 20px;
+    border-top: 1px solid #75747458;
+}
+
+.comments span{
+    margin-top: 15px;
+}
+
+.comments form{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    -webkit-column-gap: 10px;
+}
+
+.comments form input{
+    outline: none;
+    background: unset;
+    width: 100%;
+    font-size: 13px;
+    padding: 15px 20px;
+    color: #c0c0c0;
+    border-radius: 5px;
+    border: 1px solid #75747458;
+    font-family: "Teachers", sans-serif;
+}
+
+.comments form textarea{
+    font-size: 13px;
+    height: 150px;
+    background: unset;
+}
+
+.comments form input[type=submit]{
+    color: #4879a4;
+    font-weight: 600;
+    border: none;
+    width: fit-content;
+    display: flex;
+    color: #fff;
+    background-color: #4d71b0;
+}
+
+.all-commits{
+    margin-top: 10px;
+    padding-top: 20px;
+    border-top-left-radius: 5px;
+    text-align: left;
+    border-top: 1px solid #75747458;
+}
+
+.commit-container{
+    display: flex;
+    gap: 20px;
+    -webkit-column-gap: 20px;
+    padding: 20px 30px;
+    border-radius: 5px;
+    background-color: #ebebeb83;
+}
+
+.people-commit i{
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #75747458;
+}
+
+.my-commit{
+    display: flex;
+    flex-direction: column;
+}
+
+.my-commit p{
+    margin-top: 10px;
+}
+
+.my-commit h4{
+    color: #4879a4;
+}
+
+.my-commit span{
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Media query */
+@media screen and (max-width: 1090px){
+    .display-article{
+        grid-template-columns: auto 40%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .display-article{
+        grid-template-columns: auto;
+    }
+
+    .about-ntech{
+        padding: 40px 40px;
+    }
+    .about-ntech img{
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 530px){
+    .comments form input[type=submit]{
+        width: 100%;
+    }
+
+    .like-article{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .article-text{
+        text-align: left;
+    }
+}
