@@ -839,7 +839,6 @@ header .header-content .header-items:hover {
 
 
 /* Media query */
-
 @media screen and (max-width: 1260px) {
     .choose-container {
         padding-left: 0px;
@@ -893,6 +892,7 @@ header .header-content .header-items:hover {
 
 .service-container:hover {
     transform: translateY(7px);
+    box-shadow: 0 0 29px 0 #4458901f;
 }
 
 .service-container div {
