@@ -1636,5 +1636,12 @@ footer {
 .view-img div i{
     color: #fff;
     font-size: 28px;
+    cursor: pointer;
+    transition-delay: 0.3s;
+    transition: 0.4s ease-in-out;
+}
+
+.view-img div i:hover{
+    color: #4d71b0;
 }
 
