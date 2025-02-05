@@ -1583,7 +1583,7 @@ footer {
 / -------------------------------- */
 .gallery-container{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: auto auto auto;
     gap: 20px;
     -webkit-column-gap: 20px;
 }
@@ -1645,3 +1645,9 @@ footer {
     color: #4d71b0;
 }
 
+/* media query */
+@media screen and (max-width: 650px){
+    .gallery-container{
+        grid-template-columns: 100%;
+    }
+}
