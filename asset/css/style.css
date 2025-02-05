@@ -1646,6 +1646,11 @@ footer {
 }
 
 /* media query */
+@media screen and (max-width: 1090px){
+    .gallery-container{
+        grid-template-columns: 50% 50%;
+    }
+}
 @media screen and (max-width: 650px){
     .gallery-container{
         grid-template-columns: 100%;
