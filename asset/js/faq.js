@@ -78,39 +78,35 @@ document.addEventListener("click", function(event) {
     }
 }); 
 
-/* ------------------------------- / 
-#Gallery see images
-/ ------------------------------- */
 document.addEventListener('DOMContentLoaded', () => {
-    // Sélectionner les icônes et l'élément modal
-    const viewIcons = document.querySelectorAll('.vieuw-img');
+    const viewIcons = document.querySelectorAll('.view-img');
     const modal = document.getElementById('modal');
     const modalImage = document.getElementById('modal-image');
     const closeModal = document.getElementById('close-modal');
 
-    // Ajouter un événement au clic sur l'icône
     viewIcons.forEach(icon => {
-        icon.addEventListener('click', function () {
-            // Trouver l'image associée à l'icône
-            const parent = this.closest('.gallery-img');
+        icon.addEventListener('click', function (event) {
+            event.stopPropagation(); // Empêche la fermeture immédiate
+            console.log("Icône cliquée"); // Vérifier si l'événement fonctionne
+
+            const parent = this.closest('.gallery-item');
             const imageElement = parent.querySelector('img');
 
-            // Mettre à jour l'image dans le modal
             if (imageElement) {
-                modalImage.src = imageElement.src; // Mettre à jour la source de l'image dans le modal
-                modal.style.display = 'flex'; // Afficher le modal
+                modalImage.src = imageElement.src;
+                modal.style.display = 'flex';
             }
         });
     });
 
-    // Ajouter un événement pour fermer le modal
     closeModal.addEventListener('click', () => {
-        modal.style.display = 'none'; // Masquer le modal
+        console.log("Fermeture du modal");
+        modal.style.display = 'none';
     });
 
-    // Fermer le modal si l'utilisateur clique en dehors de l'image
     window.addEventListener('click', (event) => {
         if (event.target === modal) {
+            console.log("Modal fermé en cliquant à l'extérieur");
             modal.style.display = 'none';
         }
     });

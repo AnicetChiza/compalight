@@ -179,3 +179,4 @@ window.addEventListener('resize', () => {
 
 // Initialiser la visibilité au chargement de la page
 updateVisibility();
+
