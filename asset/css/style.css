@@ -1523,7 +1523,7 @@ footer {
     transition-delay: 2s;
     transition: 1s ease-in;
     border-radius: 5px;
-    border: 1px solid #75747458;
+    border: 1px solid #4645452f;
 }
 
 .faq-container {
@@ -1552,7 +1552,7 @@ footer {
 }
 
 .faq-answer {
-    border-top: 1px solid #75747458;
+    border-top: 1px solid #4645452f;
 }
 
 .faq-answer p {
@@ -1561,10 +1561,6 @@ footer {
 
 .faq-hidden {
     display: none;
-}
-
-.bi-patch-question-fill {
-    color: #4879a4;
 }
 
 /* Media query */
