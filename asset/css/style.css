@@ -1623,7 +1623,7 @@ footer {
 
 .view-img div{
     position: absolute;
-    bottom: 10px;
+    bottom: 20px;
     left: 50%;
     right: 50%;
     display: flex;
@@ -1645,6 +1645,43 @@ footer {
     color: #4d71b0;
 }
 
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+    display: block;
+}
+
+.close {
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 /* media query */
 @media screen and (max-width: 1090px){
     .gallery-container{
@@ -1654,5 +1691,7 @@ footer {
 @media screen and (max-width: 650px){
     .gallery-container{
         grid-template-columns: 100%;
+        gap: 10px;
+        -webkit-column-gap: 10px;
     }
 }
