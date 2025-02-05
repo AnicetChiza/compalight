@@ -24,12 +24,11 @@ function type() {
     if (!isDeleting && charIndex === fullText.length) {
         setTimeout(() => {
             isDeleting = true;
-        }, 1000); // Temps d'attente avant de commencer à effacer
+        }, 2000); // Temps d'attente avant de commencer à effacer
     } else if (isDeleting && charIndex === 0) {
         isDeleting = false;
         index = (index + 1) % texts.length; // Passe au texte suivant
     }
-
     const typingSpeed = isDeleting ? 50 : 150;
     setTimeout(type, typingSpeed);
 }
