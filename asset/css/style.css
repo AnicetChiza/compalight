@@ -606,12 +606,12 @@ header .header-content .header-items:hover {
     border-left: 3px solid #4d71b0;
 }
 
-.all-list-items .us {
+.mission-item {
     padding-left: 100px;
     padding-right: 100px;
 }
 
-.all-list-items .us div {
+.mission-item div {
     display: flex;
     padding: 60px 30px;
     width: 80%;
@@ -627,19 +627,19 @@ header .header-content .header-items:hover {
     border-radius: 10px;
 }
 
-.all-list-items .us div i {
+.mission-item div i {
     font-size: 25px;
     color: #8486556e;
     font-style: italic;
 }
 
-.all-list-items .us {
+.mission-item {
     display: flex;
     align-items: center;
     margin-top: 40px;
 }
 
-.all-list-items .us img {
+.mission-item img {
     width: 100%;
     height: 350px;
     object-fit: cover;
