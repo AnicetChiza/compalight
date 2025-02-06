@@ -67,7 +67,7 @@ function addAnimation() {
 -------------------- */
 document.addEventListener('DOMContentLoaded', function () {
     const categoryItems = document.querySelectorAll('.list-items ul li'); // Cibler les éléments de la liste
-    const shoeCategories = document.querySelectorAll('.us'); // Cibler les sections à masquer/afficher
+    const category = document.querySelectorAll('.us'); // Cibler les sections à masquer/afficher
 
     categoryItems.forEach(item => {
         item.addEventListener('click', function () {
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             const filter = this.getAttribute('data-filter'); // Récupérer le filtre à partir de l'attribut data-filter
 
-            shoeCategories.forEach(category => {
+            category.forEach(category => {
                 // Si l'élément a la classe correspondant au filtre, on l'affiche, sinon on le masque
                 if (category.classList.contains(filter)) {
                     category.style.display = 'flex'; // Afficher l'élément correspondant
