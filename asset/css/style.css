@@ -1588,6 +1588,12 @@ footer {
     gap: 10px;
     -webkit-column-gap: 10px;
 }
+
+.gallery .list-items ul li{
+    font-weight: 600;
+    font-style: italic;
+}
+
 .gallery-container{
     display: grid;
     grid-template-columns: auto auto auto;
