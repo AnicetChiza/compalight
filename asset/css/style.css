@@ -608,12 +608,12 @@ header .header-content .header-items:hover {
     border-left: 3px solid #4d71b0;
 }
 
-.us {
+.all-list-items .us {
     padding-left: 100px;
     padding-right: 100px;
 }
 
-.us div {
+.all-list-items .us div {
     display: flex;
     padding: 60px 30px;
     width: 80%;
@@ -629,30 +629,26 @@ header .header-content .header-items:hover {
     border-radius: 10px;
 }
 
-.us div i {
+.all-list-items .us div i {
     font-size: 25px;
     color: #8486556e;
     font-style: italic;
 }
 
-.us {
+.v .us {
     display: flex;
     align-items: center;
     margin-top: 40px;
 }
 
-.us img {
+.all-list-items .us img {
     width: 100%;
     height: 350px;
     object-fit: cover;
     border-radius: 10px;
 }
 
-.goal {
-    display: none;
-}
-
-.value {
+.goal, .value, .photo, .video {
     display: none;
 }
 
