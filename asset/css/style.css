@@ -1229,7 +1229,6 @@ header .header-content .header-items:hover {
     bottom: 30px;
     width: 50px;
     left: 15px;
-    opacity: 0;
     text-align: center;
     transition: 0.9s ease-in-out;
 }
@@ -1253,10 +1252,6 @@ header .header-content .header-items:hover {
     justify-content: center;
     border-radius: 50px;
     background-color: #fff;
-}
-
-.team .member:hover .social {
-    opacity: 1;
 }
 
 .scroll-btn {
