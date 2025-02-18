@@ -181,7 +181,6 @@ header .header-content .header-items:hover {
 
 
 /* Media query */
-
 @media screen and (max-width: 500px) {
     header {
         top: auto;
@@ -203,7 +202,6 @@ header .header-content .header-items:hover {
     }
 }
 
-
 /* ---------------------
 #Cover page
 ----------------------*/
@@ -213,7 +211,7 @@ header .header-content .header-items:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: linear-gradient(to left, #12171dd5 0%, #12171dd5 100%), url(../images/bg.jpg) fixed no-repeat;
+    background: linear-gradient(to left, #12171dd5 0%, #12171dd5 100%), url("../images/home.jpg") fixed no-repeat;
     background-size: cover;
 }
 
