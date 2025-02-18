@@ -739,7 +739,6 @@ header .header-content .header-items:hover {
 /*---------------------------/
 #Choose us
 /-------------------------- */
-
 .choose-us {
     background-color: #f5f5f5a8;
 }
@@ -1398,8 +1397,8 @@ textarea {
     width: 100%;
     padding: 30px;
     font-family: "Raleway", sans-serif;
-    box-shadow: 0px 1px 20px #d4d4d4bc;
-    background-color: #ffff;
+    box-shadow: 0px 1px 20px #2c5b843a, 0 0 30px #1c4792 inset;
+    background-color: #fff;
 }
 
 .background {
@@ -1434,7 +1433,6 @@ textarea {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin-top: 10px;
     z-index: 2;
 }
 
