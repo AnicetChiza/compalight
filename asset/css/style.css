@@ -349,7 +349,6 @@ header .header-content .header-items:hover {
 /*------------------------/
 #About us
 /----------------------- */
-
 .about-container {
     display: flex;
     align-items: center;
@@ -572,7 +571,6 @@ header .header-content .header-items:hover {
 /* ---------------------
 #Mission
 ----------------------*/
-
 .mission {
     background-color: #f5f5f5a8;
 }
