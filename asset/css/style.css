@@ -1411,6 +1411,7 @@ textarea {
     display: flex;
     gap: 10px;
     font-style: italic;
+    text-align: center;
     color: #f0f8ff;
     font-weight: 900;
     font-size: 20px;
@@ -1434,7 +1435,7 @@ textarea {
     color: #fff;
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
     gap: 10px;
     -webkit-column-gap: 10px;
 }
@@ -1489,6 +1490,19 @@ textarea {
 .profile-ceo .names span{
     font-style: italic;
 }
+
+/* Media query */
+@media screen and (max-width: 1090px){
+    .card{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 730px){
+    .card{
+        width: 100%;
+    }
+}
+
 
 /*----------------------- /
 #Footer
