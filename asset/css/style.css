@@ -1382,16 +1382,17 @@ textarea {
 /----------------------- */ 
 .card {
     width: 50%;
-    padding: 70px 30px;
+    padding: 50px 30px;
     border-radius: 8px;
     background: linear-gradient(to left, #12171dd5 0%, #12171dd5 100%);
     display: flex;
     flex-direction: column;
+    margin: auto;
     position: relative;
     overflow: hidden;
-  }
+}
   
-  .card::before {
+.card::before {
     content: "";
     height: 100px;
     width: 100px;
@@ -1402,17 +1403,24 @@ textarea {
     border: 35px solid #ffffff1a;
     transition: all 0.8s ease;
     filter: blur(.2rem);
-  }
+}
   
 .text {
-    /* flex-grow: 1; */
-    padding: 15px;
     display: flex;
+    flex-direction: column;
+    gap: 10px;
+    -webkit-column-gap: 10px;
     font-style: italic;
-    color: aliceblue;
+    color: #f0f8ff;
     font-weight: 900;
-    font-size: 20px;
+    font-size: 22px;
     font-family: "Raleway", sans-serif;
+}
+
+.text i{
+    font-size: 45px;
+    font-weight: 1000;
+    font-style: italic;
 }
   
 .card:hover::before {
@@ -1423,54 +1431,8 @@ textarea {
     filter: blur(.1rem);
 }
 
-/* .ceo-word {
-    display: flex;
-    align-items: center;
-}
+/* 
 
-.ceo-container {
-    width: 50%;
-    margin: auto;
-}
-
-.card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    padding: 30px;
-    font-family: "Raleway", sans-serif;
-    box-shadow: 0px 1px 20px #2c5b843a, 0 0 30px #1c4792 inset;
-    background-color: #fff;
-}
-
-.background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    filter: url("#wavy2");
-    z-index: 0;
-    background-color: inherit;
-}
-
-.card p {
-    position: relative;
-    font-size: 18px;
-    font-style: italic;
-    font-weight: 800;
-}
-
-.filter {
-    padding: 20px;
-}
-
-.ceo-message {
-    position: relative;
-    z-index: 2;
-}
 
 .ceo-item {
     display: flex;
