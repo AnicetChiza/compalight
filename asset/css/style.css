@@ -211,7 +211,8 @@ header .header-content .header-items:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: linear-gradient(to left, #12171dd5 0%, #12171dd5 100%), url("../images/home.jpg") fixed no-repeat;
+    /* background: linear-gradient(to left, #12171dd5 0%, #12171dd5 100%), url("../images/home.jpg") fixed no-repeat; */
+    background: radial-gradient(circle 430px at 0% 0%, #ffffff9b, #12171dd5), url("../images/home.jpg") fixed no-repeat;
     background-size: cover;
 }
 
@@ -1378,8 +1379,57 @@ textarea {
 
 /*----------------------- /
 #CEO word
-/----------------------- */
-.ceo-word {
+/----------------------- */ 
+.card {
+    width: 40%;
+    height: 200px;
+    border-radius: 15px;
+    background: linear-gradient(to left, #12171dd5 0%, #12171dd5 100%);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card::before {
+    content: "";
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: -30%;
+    left: -20%;
+    border-radius: 50%;
+    border: 35px solid #ffffff1a;
+    transition: all .8s ease;
+    filter: blur(.2rem);
+  }
+  
+  .text {
+    flex-grow: 1;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    font-weight: 900;
+    font-size: 1.2em;
+  }
+  
+.subtitle {
+    font-size: .6em;
+    font-weight: 300;
+    color: rgba(240, 248, 255, 0.691);
+}
+
+  
+.card:hover::before {
+    width: 30%;
+    height: 140px;
+    top: -40px;
+    left: 70%;
+    filter: blur(.1rem);
+}
+
+/* .ceo-word {
     display: flex;
     align-items: center;
 }
@@ -1451,7 +1501,7 @@ textarea {
 .names span {
     font-size: 14px;
     color: #777;
-}
+} */
 
 /*----------------------- /
 #Footer
