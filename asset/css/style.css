@@ -1397,10 +1397,10 @@ textarea {
 .card::before {
     content: "";
     height: 70px;
-    width: 100px;
+    width: 90px;
     position: absolute;
-    top: -15%;
-    left: -20%;
+    top: -20%;
+    left: -10%;
     border-radius: 50%;
     border: 35px solid #ffffff1a;
     transition: all 0.8s ease;
