@@ -1391,7 +1391,7 @@ textarea {
     position: relative;
     overflow: hidden;
 }
-  
+
 .card::before {
     content: "";
     height: 100px;
@@ -1404,12 +1404,11 @@ textarea {
     transition: all 0.8s ease;
     filter: blur(.2rem);
 }
-  
+
 .text {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    -webkit-column-gap: 10px;
     font-style: italic;
     color: #f0f8ff;
     font-weight: 900;
@@ -1417,12 +1416,12 @@ textarea {
     font-family: "Raleway", sans-serif;
 }
 
-.text i{
+.text i {
     font-size: 45px;
     font-weight: 1000;
     font-style: italic;
 }
-  
+
 .card:hover::before {
     width: 30%;
     height: 80%;
@@ -1431,33 +1430,63 @@ textarea {
     filter: blur(.1rem);
 }
 
-/* 
-
-
-.ceo-item {
+.profile-ceo {
+    color: #fff;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 10px;
-    z-index: 2;
+    margin-top: 20px;
+    padding-top: 10px;
 }
 
-.ceo-item img {
+.pulse-container {
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.pulse-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.pulse-container::before {
+    content: '';
+    position: absolute;
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    object-fit: cover;
+    background-color: rgba(0, 123, 255, 0.3); 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.3);
+    animation: pulse-me 2s linear infinite;
+    z-index: -1;
 }
 
-.names h4 {
-    font-size: 18px;
-    font-weight: 700;
+@keyframes pulse-me {
+    0% {
+        transform: translate(-50%, -50%) scale(0.3);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.4;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1.5);
+        opacity: 0;
+    }
 }
 
-.names span {
-    font-size: 14px;
-    color: #777;
-} */
+.profile-ceo .names span {
+    font-size: 15px;
+    font-style: italic;
+}
 
 /*----------------------- /
 #Footer
