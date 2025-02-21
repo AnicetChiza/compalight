@@ -211,7 +211,7 @@ header .header-content .header-items:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: radial-gradient(circle 430px at 0% 0%, #ffffff9b, #12171dd5), url("../images/home.jpg") fixed no-repeat;
+    background: radial-gradient(circle 330px at 0% 0%, #ffffff9b, #12171dd5), url("../images/home.jpg") fixed no-repeat;
     background-size: cover;
     position: relative;
     overflow: hidden;
@@ -235,6 +235,20 @@ header .header-content .header-items:hover {
     pointer-events: none;
 }
 
+.ray {
+    width: 100%;
+    height: 50px;
+    border-radius: 100px;
+    position: absolute;
+    background-color: #c7c7c7;
+    opacity: 0.4;
+    box-shadow: 0 0 50px #fff;
+    filter: blur(10px);
+    transform-origin: 10%;
+    top: 0%;
+    left: 0;
+    transform: rotate(40deg);
+}
 
 /* .home {
     width: 100%;
