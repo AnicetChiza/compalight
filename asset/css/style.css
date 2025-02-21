@@ -1405,7 +1405,7 @@ textarea {
   }
   
 .text {
-    flex-grow: 1;
+    /* flex-grow: 1; */
     padding: 15px;
     display: flex;
     font-style: italic;
@@ -1417,7 +1417,7 @@ textarea {
   
 .card:hover::before {
     width: 30%;
-    height: 140px;
+    height: 80%;
     top: -40px;
     left: 70%;
     filter: blur(.1rem);
