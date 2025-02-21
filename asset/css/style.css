@@ -1396,10 +1396,10 @@ textarea {
 
 .card::before {
     content: "";
-    height: 100px;
+    height: 70px;
     width: 100px;
     position: absolute;
-    top: -30%;
+    top: -15%;
     left: -20%;
     border-radius: 50%;
     border: 35px solid #ffffff1a;
@@ -1425,7 +1425,7 @@ textarea {
 
 .card:hover::before {
     width: 30%;
-    height: 80%;
+    height: 60%;
     top: -40px;
     left: 70%;
     filter: blur(.1rem);
