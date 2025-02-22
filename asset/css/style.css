@@ -317,6 +317,17 @@ header .header-content .header-items:hover {
         font-size: 18px;
     }
 }
+@media (max-width: 500px) {
+    .home::before {
+        background-image: repeating-linear-gradient(
+            to right, 
+            #ffffff1a 0px, 
+            #ffffff1a 1px, 
+            transparent 1px, 
+            transparent 20%
+        );
+    }
+}
 
 /*------------------------/
 #Hero second page
