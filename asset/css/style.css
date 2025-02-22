@@ -324,7 +324,7 @@ header .header-content .header-items:hover {
             #ffffff1a 0px, 
             #ffffff1a 1px, 
             transparent 1px, 
-            transparent 20%
+            transparent 25%
         );
     }
 }
@@ -1617,16 +1617,17 @@ footer {
 }
 
 .media a i:hover {
-    /* width: 43px;
-    height: 43px; */
     background: none;
     box-shadow: none;
     border: 1px solid #c2c2c25d;
 }
 
 .compalight-sign {
-    margin-top: 30px;
-    font-size: 14px;
+    margin-top: 40px;
+    padding-top: 25px;
+    font-size: 13px;
+    color: #a6a6a6;
+    border-top: 1px solid #c2c2c25d;
 }
 
 .up {
