@@ -409,3 +409,95 @@ textarea{
         padding: 30px 15px;
     }
 }
+
+/* ------------------------- /
+#Profile
+/ ------------------------- */
+.profile{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-container{
+    width: 60%;
+    padding: 30px 30px;
+    border-radius: 5px;
+    border: 1px solid #cecece94;
+}
+
+.profile-icon{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    -webkit-column-gap: 5px;
+}
+
+.profile-icon i{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #4879a4;
+    border: 1px solid #cecece94;
+}
+
+.profile-content{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 20px;
+    padding-top: 20px;
+    gap: 10px;
+    -webkit-column-gap: 10px;
+    border-top: 1px solid #cecece94;
+}
+
+.profile-item{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    -webkit-column-gap: 5px;
+}
+
+.profile-item h5{
+    color: #4879a4;
+}
+
+.profile-item div, a{
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1px solid #cecece94;
+}
+
+.profile-item a{
+    color: #fff;
+    font-style: italic;
+    background-color: #4879a4;
+}
+
+/* Media query */
+@media screen and (max-width: 1170px){
+    .profile-container{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 825px){
+    .profile-container{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .profile-container{
+        width: 95%;
+        padding: 20px 20px;
+    }
+    .profile-content{
+        grid-template-columns: 100%;
+    }
+}
