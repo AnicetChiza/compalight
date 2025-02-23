@@ -549,3 +549,16 @@ textarea{
     font-size: 17px;
     border: 1px solid #cecece94;
 }
+
+/* Media query */
+@media screen and (max-width: 800px){
+    .admin-gallery-container{
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .admin-gallery-container{
+        grid-template-columns: 100%;
+    }
+}
