@@ -501,3 +501,51 @@ textarea{
         grid-template-columns: 100%;
     }
 }
+
+/* ------------------------- /
+#Gallery
+/ ------------------------- */
+.admin-gallery{
+    margin-top: 40px;
+}
+
+.admin-gallery a{
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    color: #fff;
+    background-color: #4879a4;
+    padding: 10px 30px;
+    justify-content: flex-end;
+}
+
+.admin-gallery-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 30px;
+    gap: 15px;
+    -webkit-column-gap: 15px;
+    padding-bottom: 30px;
+}
+
+.admin-gallery-item{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.admin-gallery-item img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.admin-gallery-item form button{
+    width: 100%;
+    outline: none;
+    color: #c54040;
+    padding: 10px 20px;
+    background: unset;
+    font-size: 17px;
+    border: 1px solid #cecece94;
+}
