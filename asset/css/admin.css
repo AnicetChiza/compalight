@@ -583,7 +583,7 @@ textarea{
 }
 
 .admin-blog-container{
-    width: 40%;
+    width: 45%;
 }
 
 .admin-blog-container img{
@@ -599,13 +599,6 @@ textarea{
     font-size: 14px;
     margin-top: 15px;
     -webkit-column-gap: 7px;
-}
-
-.admin-blog-date h5{
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background-color: #c0c0c0;
 }
 
 .admin-blog-details h4 a{
