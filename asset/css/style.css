@@ -238,6 +238,7 @@ header .header-content .header-items:hover {
 .text-container {
     display: flex;
     color: #fff;
+    z-index: 10;
 }
 
 .text-container h1{
@@ -270,6 +271,7 @@ header .header-content .header-items:hover {
     display: flex;
     font-style: italic;
     flex-direction: column;
+    z-index: 10;
 }
 
 .text-box p{
@@ -306,10 +308,18 @@ header .header-content .header-items:hover {
     filter: blur(.2px) opacity(0.7);
 }
 
-.icon {
+.icons {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     font-size: 20px;
     color: #ffffff80;
+    background-color: #141b1fda;
+    border-radius: 4px;
+    filter: blur(.2px) opacity(0.7);
     transition: transform 0.2s ease-out;
 }
 
