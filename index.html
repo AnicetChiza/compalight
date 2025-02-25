@@ -64,18 +64,18 @@
         </div>
 
         <div class="icons-container">
-            <i class="bi bi-chat-dots icon" style="top: 10%; left: 20%;"></i>
-            <i class="bi bi-telephone icon" style="top: 30%; left: 80%;"></i>
-            <i class="bi bi-envelope icon" style="top: 50%; left: 10%;"></i>
-            <i class="bi bi-wifi icon" style="top: 70%; left: 90%;"></i>
-            <i class="bi bi-broadcast icon" style="top: 20%; left: 60%;"></i>
-            <i class="bi bi-megaphone icon" style="top: 80%; left: 30%;"></i>
-            <i class="bi bi-share icon" style="top: 40%; left: 50%;"></i>
+            <i class="bi bi-chat-dots icon" style="top: 10%; left: 75%;"></i>
+            <i class="bi bi-telephone icon" style="top: 30%; left: 30%;"></i>
+            <i class="bi bi-envelope icon" style="top: 50%; left: 80%;"></i>
+            <i class="bi bi-wifi icon" style="top: 70%; left: 50%;"></i>
+            <i class="bi bi-broadcast icon" style="top: 20%; left: 0%;"></i>
+            <i class="bi bi-megaphone icon" style="top: 80%; left: 20%;"></i>
+            <i class="bi bi-share icon" style="top: 40%; left: -5%;"></i>
             <i class="bi bi-globe icon" style="top: 60%; left: 40%;"></i>
-            <i class="bi bi-mic icon" style="top: 15%; left: 70%;"></i>
-            <i class="bi bi-camera icon" style="top: 35%; left: 30%;"></i>
-            <i class="bi bi-play-circle icon" style="top: 55%; left: 75%;"></i>
-            <i class="bi bi-file-earmark-text icon" style="top: 75%; left: 50%;"></i>
+            <i class="bi bi-mic icon" style="top: 15%; left: 50%;"></i>
+            <i class="bi bi-camera icon" style="top: 35%; left: 60%;"></i>
+            <i class="bi bi-play-circle icon" style="top: 55%; left: 15%;"></i>
+            <i class="bi bi-file-earmark-text icon" style="top: 75%; left: 0%;"></i>
         </div>
     </section>
 
@@ -596,8 +596,8 @@
             
             icons.forEach((icon, index) => {
                 const speed = (index + 2) * 3;
-                const moveX = (x / window.innerWidth - 4) * speed;
-                const moveY = (y / window.innerHeight - 4) * speed;
+                const moveX = (x / window.innerWidth - 1) * speed;
+                const moveY = (y / window.innerHeight - 2) * speed;
                 
                 icon.style.transform = `translate(${moveX}px, ${moveY}px)`;
             });
