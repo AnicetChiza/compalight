@@ -252,8 +252,8 @@ header .header-content .header-items:hover {
 }
 
 .cursor {
-    display: flex;
-    /* background-color: #4AA8E4; */
+    /* display: flex; */
+    opacity: 0;
     animation: blink 0.7s infinite;
 }
 
