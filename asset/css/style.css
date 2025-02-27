@@ -173,6 +173,7 @@ header .header-content .header-items:hover .tooltip {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    font-size: 14px;
     transform: translateX(-50%) scale(1);
 }
 
@@ -334,14 +335,10 @@ header .header-content .header-items:hover {
 
 @media screen and (max-width: 730px){
     .text-container h1{
-        font-size: 32px;
+        font-size: 50px;
     }
-    .text-container {
-        font-size: 18px;
-    }
-
     .text-box p{
-        font-size: 18px;
+        font-size: 17px;
     }
 }
 @media (max-width: 500px) {
