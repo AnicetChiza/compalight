@@ -837,7 +837,7 @@ header .header-content .header-items:hover {
 .item-box::before {
     content: "";
     position: absolute;
-    background: #8fbadd3a;
+    background: #4d71b0;
     right: -60px;
     top: -40px;
     width: 140px;
@@ -863,19 +863,19 @@ header .header-content .header-items:hover {
 }
 
 .item-box i {
-    width: 45px;
-    height: 45px;
-    color: #4d71b0;
+    width: 40px;
+    height: 40px;
+    color: #f3f3f3f3;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #4645452f;
+    border: 1px solid #dddddd67;
     transition-delay: 0.4s;
-    transition: 0.8s ease-in-out;
+    transition: 0.5s ease-in-out;
     position: absolute;
-    top: 17px;
-    right: 17px;
+    top: 20px;
+    right: 18px;
 }
 
 .item-box:hover {
@@ -884,7 +884,10 @@ header .header-content .header-items:hover {
 }
 
 .item-box:hover i {
-    color: #fff;
+    width: 45px;
+    height: 45px;
+    color: #4d71b0;
+    background-color: #fff;
     border: 1px solid #dddddd67;
 }
 
