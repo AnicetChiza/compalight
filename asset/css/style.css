@@ -903,6 +903,18 @@ header .header-content .header-items:hover {
     color: #fff;
 }
 
+.item-box:hover div{
+    background-color: #fff;
+}
+
+.item-box:hover div i{
+    color: #4d71b0;
+}
+
+.item-box:hover div::before{
+    background-color: #f0eeee32;
+}
+
 /* .item-box i {
     width: 40px;
     height: 40px;
