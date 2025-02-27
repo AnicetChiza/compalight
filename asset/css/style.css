@@ -826,6 +826,7 @@ header .header-content .header-items:hover {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    text-align: center;
     gap: 10px;
     -webkit-column-gap: 10px;
     box-shadow: 0 0 29px 0 #4458901f;
@@ -837,7 +838,7 @@ header .header-content .header-items:hover {
 .item-box::before {
     content: "";
     position: absolute;
-    background: #4d71b0;
+    /* background: #4d71b0; */
     right: -60px;
     top: -40px;
     width: 140px;
@@ -862,7 +863,44 @@ header .header-content .header-items:hover {
     margin-bottom: 10px;
 }
 
+.item-box div {
+    background-color: #4d71b0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #4d71b0;
+    transition: all 0.3s ease-out 0s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    transform-style: preserve-3d;
+    position: relative;
+    z-index: 2;
+}
+
 .item-box i {
+    color: #fff;
+}
+
+.item-box div::before {
+    position: absolute;
+    content: "";
+    left: -8px;
+    top: -8px;
+    height: 100%;
+    width: 100%;
+    background: #7992a63a;
+    border-radius: 5px;
+    transition: all 0.3s ease-out 0s;
+    transform: translateZ(-1px);
+    z-index: -1;
+}
+
+/* .item-box i {
     width: 40px;
     height: 40px;
     color: #f3f3f3f3;
@@ -889,7 +927,7 @@ header .header-content .header-items:hover {
     color: #4d71b0;
     background-color: #fff;
     border: 1px solid #dddddd67;
-}
+} */
 
 
 /* Media query */
@@ -952,8 +990,8 @@ header .header-content .header-items:hover {
     margin: 0 auto;
     width: 50px;
     height: 50px;
-    background: #ebebec;
     border-radius: 5px;
+    background-color: #4d71b0;
     transition: all 0.3s ease-out 0s;
     display: flex;
     align-items: center;
@@ -962,10 +1000,6 @@ header .header-content .header-items:hover {
     transform-style: preserve-3d;
     position: relative;
     z-index: 2;
-}
-
-.service-container div {
-    background-color: #4d71b0;
 }
 
 .service-container i {
