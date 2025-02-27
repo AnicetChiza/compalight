@@ -838,7 +838,6 @@ header .header-content .header-items:hover {
 .item-box::before {
     content: "";
     position: absolute;
-    /* background: #4d71b0; */
     right: -60px;
     top: -40px;
     width: 140px;
@@ -898,6 +897,10 @@ header .header-content .header-items:hover {
     transition: all 0.3s ease-out 0s;
     transform: translateZ(-1px);
     z-index: -1;
+}
+
+.item-box:hover{
+    color: #fff;
 }
 
 /* .item-box i {
