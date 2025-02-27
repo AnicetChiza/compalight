@@ -993,7 +993,7 @@ header .header-content .header-items:hover {
     flex-direction: column;
     transition-delay: 0.2s;
     transition: 0.4s ease-in-out;
-    border: 1px solid #4645452f;
+    border: 1px solid #cecece94;
 }
 
 .service-container:hover {
@@ -1149,10 +1149,9 @@ header .header-content .header-items:hover {
 /----------------------- */
 
 .blog-container {
-    /* width: 40%; */
     margin-top: 10px;
     padding-bottom: 30px;
-    border-bottom: 1px solid #d1d0d07a;
+    border-bottom: 1px solid #4645452f;
 }
 
 .blog-container img {
@@ -1255,7 +1254,7 @@ header .header-content .header-items:hover {
     -webkit-column-gap: 10px;
     transition-delay: 0.2s;
     transition: 0.4s ease-in-out;
-    border: 1px solid #ffffff1a;
+    border: 1px solid #ffffff39;
 }
 
 .more-articles a:hover{
@@ -1268,7 +1267,6 @@ header .header-content .header-items:hover {
 /*----------------------- /
 #team
 /----------------------- */
-
 .team {
     background-color: #f5f5f5a8;
 }
@@ -1389,7 +1387,6 @@ header .header-content .header-items:hover {
 /*----------------------- /
 #Contact
 /----------------------- */
-
 .contact .contact-info .infos {
     display: flex;
     gap: 10px;
@@ -1652,7 +1649,6 @@ footer {
 
 .footer-container div h3 {
     color: #4d71b0;
-    /* margin-top: 50px; */
     margin-bottom: 20px;
 }
 
@@ -1692,13 +1688,13 @@ footer {
     /* background-color: #fff; */
     transition-delay: 0.2s;
     transition: 0.4s ease-in-out;
-    border: 1px solid #c2c2c27d;
+    border: 1px solid #cecece94;
 }
 
 .media a i:hover {
     background: none;
     box-shadow: none;
-    border: 1px solid #c2c2c25d;
+    border: 1px solid #cecece94;
 }
 
 .compalight-sign {
@@ -1706,7 +1702,7 @@ footer {
     padding-top: 25px;
     font-size: 13px;
     color: #a6a6a6;
-    border-top: 1px solid #c2c2c25d;
+    border-top: 1px solid #cecece94;
 }
 
 .up {
@@ -1753,7 +1749,7 @@ footer {
     transition-delay: 2s;
     transition: 1s ease-in;
     border-radius: 5px;
-    border: 1px solid #4645452f;
+    border: 1px solid #cecece94;
 }
 
 .faq-container {
@@ -1782,7 +1778,7 @@ footer {
 }
 
 .faq-answer {
-    border-top: 1px solid #4645452f;
+    border-top: 1px solid #cecece94;
 }
 
 .faq-answer p {
