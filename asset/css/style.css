@@ -841,8 +841,8 @@ header .header-content .header-items:hover {
     right: -60px;
     top: -40px;
     width: 140px;
-    height: 100px;
-    border-radius: 50%;
+    height: 120px;
+    border-radius: 0px;
     transition: all 0.3s;
     z-index: -1;
 }
@@ -873,6 +873,9 @@ header .header-content .header-items:hover {
     border: 1px solid #4645452f;
     transition-delay: 0.4s;
     transition: 0.8s ease-in-out;
+    position: absolute;
+    top: 17px;
+    right: 17px;
 }
 
 .item-box:hover {
