@@ -968,10 +968,6 @@ header .header-content .header-items:hover {
 /*---------------------------/
 #Services
 /-------------------------- */
-.service{
-    position: relative;
-}
-
 .our-services {
     display: grid;
     gap: 20px;
