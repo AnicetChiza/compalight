@@ -1069,6 +1069,7 @@ header .header-content .header-items:hover {
     padding-bottom: 100px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 10px;
     -webkit-column-gap: 10px;
     background: linear-gradient(to right, #141b1fda 0%, #a6a6a6 100%), url(../images/about/newsletter.jpg) fixed top;
@@ -1098,8 +1099,9 @@ header .header-content .header-items:hover {
     outline: none;
     background-color: #fff;
     border-radius: 35px;
-    padding: 8px 20px;
-    font-family: "Teachers", sans-serif;
+    padding: 15px 20px;
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
 }
 
 .newsletter div input[type=email]{
@@ -1452,9 +1454,7 @@ textarea {
     font-family: "Teachers", sans-serif;
 }
 
-
 /* Media query */
-
 @media screen and (max-width: 950px) {
     .contact .contact-container {
         display: flex;
