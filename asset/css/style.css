@@ -1425,7 +1425,7 @@ textarea {
     margin-top: 15px;
     border-radius: 5px;
     border: 1px solid #cecece94;
-    font-family: "Teachers", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .contact .contact-input {
@@ -1451,7 +1451,7 @@ textarea {
     background-color: #438bb8;
     transition-delay: 0.4s;
     transition: 0.8s ease-in-out;
-    font-family: "Teachers", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 /* Media query */
