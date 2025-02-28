@@ -12,7 +12,7 @@
     font-size: 30px;
     font-weight: 900;
     font-style: italic;
-    color: #4879a4;
+    color: #438bb8;
 }
 
 .article-image img{
@@ -30,7 +30,7 @@
 }
 
 .article-text h2{
-    color: #4879a4;
+    color: #438bb8;
 }
 
 .display-article{
@@ -69,7 +69,7 @@
 }
 
 .commit i, .like i{
-    color: #4879a4;
+    color: #438bb8;
     font-size: 18px;
 }
 
@@ -139,7 +139,7 @@
     color: #c0c0c0;
     border-radius: 5px;
     border: 1px solid #75747458;
-    font-family: "Teachers", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .comments form textarea{
@@ -155,7 +155,7 @@
     width: fit-content;
     display: flex;
     color: #fff;
-    background-color: #4d71b0;
+    background-color: #438bb8;
 }
 
 .all-commits{
@@ -196,7 +196,7 @@
 }
 
 .my-commit h4{
-    color: #4879a4;
+    color: #438bb8;
 }
 
 .my-commit span{

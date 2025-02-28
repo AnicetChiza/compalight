@@ -107,7 +107,6 @@ body {
 /* ---------------------
 #Header
 ----------------------*/
-
 header {
     width: fit-content;
     padding: 20px 40px;
@@ -246,7 +245,7 @@ header .header-content .header-items:hover {
     font-size: 64px;
     font-weight: 800;
     font-style: italic;
-    background: linear-gradient(to right, #4AA8E4, #F6C37C);
+    background: linear-gradient(to right, #438bb8, #F6C37C);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -375,7 +374,7 @@ header .header-content .header-items:hover {
     font-weight: 900;
     font-size: 45px;
     font-style: italic;
-    background: linear-gradient(to right, #4AA8E4, #F6C37C);
+    background: linear-gradient(to right, #438bb8, #F6C37C);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -1696,6 +1695,7 @@ footer {
     right: 30px;
     bottom: 140px;
     z-index: 1200;
+    cursor: pointer;
 }
 
 .up i {
