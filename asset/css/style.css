@@ -1515,7 +1515,6 @@ textarea {
     color: #f0f8ff;
     font-weight: 800;
     font-size: 20px;
-    /* font-family: "Raleway", sans-serif; */
 }
 
 .text i {
@@ -1674,16 +1673,13 @@ footer {
     border-radius: 50%;
     align-items: center;
     justify-content: center;
-    /* background-color: #fff; */
     transition-delay: 0.2s;
     transition: 0.4s ease-in-out;
     border: 1px solid #cecece94;
 }
 
 .media a i:hover {
-    background: none;
-    box-shadow: none;
-    border: 1px solid #cecece94;
+    border: none;
 }
 
 .compalight-sign {
@@ -1730,8 +1726,8 @@ footer {
 /*----------------------------/
 #Faq from faq.html
 /----------------------------*/
-
 .faq-list {
+    font-size: 14px;
     height: fit-content;
     margin-top: 10px;
     padding: 15px 25px;
@@ -1763,7 +1759,7 @@ footer {
 }
 
 .faq-question div i {
-    font-size: 1.2rem;
+    font-size: 18px;
 }
 
 .faq-answer {
