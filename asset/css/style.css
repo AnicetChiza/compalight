@@ -252,7 +252,6 @@ header .header-content .header-items:hover {
 }
 
 .cursor {
-    /* display: flex; */
     opacity: 0;
     animation: blink 0.7s infinite;
 }
@@ -374,8 +373,11 @@ header .header-content .header-items:hover {
 .hero-second-page h2{
     color: #c0c0c0;
     font-weight: 900;
-    font-size: 50px;
+    font-size: 45px;
     font-style: italic;
+    background: linear-gradient(to right, #4AA8E4, #F6C37C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .hero-second-page div{
@@ -398,7 +400,7 @@ header .header-content .header-items:hover {
     }
 }
 
-@media screen and (max-width: 330px){
+@media screen and (max-width: 510px){
     .hero-second-page h2{
         font-size: 35px;
     }
@@ -559,7 +561,6 @@ header .header-content .header-items:hover {
 }
 
 /* Media query */
-
 @media screen and (max-width: 1190px) {
     .about-container {
         padding-left: 0;
