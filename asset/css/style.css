@@ -811,7 +811,7 @@ header .header-content .header-items:hover {
 }
 
 .item-box {
-    padding: 40px 40px;
+    padding: 50px 40px;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -1028,10 +1028,6 @@ header .header-content .header-items:hover {
     transition: all 0.3s ease-out 0s;
     transform: translateZ(-1px);
     z-index: -1;
-}
-
-.service-container h4{
-    color: #438bb8;
 }
 
 /* Media query */
