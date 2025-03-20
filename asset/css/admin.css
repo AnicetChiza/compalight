@@ -35,7 +35,7 @@ body{
     border: none;
     outline: none;
     background: unset;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Nexa-ExtraLight';
 }
 
 .login form input[type='submit']{
@@ -389,7 +389,7 @@ textarea{
     padding: 10px 20px;
     margin-top: 10px;
     border: 1px solid #cecece94;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Nexa-ExtraLight';
 }
 .admin-account form input[type='submit']{
     color: #fff;
@@ -560,7 +560,7 @@ textarea{
 .all-inputs select{
     border: 1px solid #cecece94;
     margin-top: 8px;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Nexa-ExtraLight';
 }
 
 /* Media query */
