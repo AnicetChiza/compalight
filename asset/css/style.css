@@ -440,7 +440,7 @@ header .header-content .header-items:hover {
 
 .about-container img {
     width: 60%;
-    height: 550px;
+    height: 500px;
     object-fit: cover;
     border-radius: 10px;
     animation: animate 2s linear infinite;
@@ -472,17 +472,21 @@ header .header-content .header-items:hover {
     border-radius: 10px;
 }
 
-.about h3{
+.about h2{
     font-weight: 800;
+    /* color: #448bb9; */
 }
 
 .about i {
     font-size: 30px;
     font-style: italic;
+    color: #448bb9;
+    /* color: #f59c27; */
 }
 
 .about p {
     margin-top: 10px;
+    font-weight: 600;
 }
 
 .about a{
