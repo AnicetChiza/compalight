@@ -76,16 +76,15 @@ h6 {
 
 @font-face{
     font-family: 'Louis George Café';
-    src: url('Louis George Cafe Light.ttf') format('truetype');
+    src: url('Louis George Cafe.ttf') format('truetype');
 }
-
 
 /* ---------------------
 #Body
 ----------------------*/
 
 body {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
     color: #141b1fda;
     font-family: 'Louis George Café';
@@ -1360,15 +1359,15 @@ header .header-content .header-items:hover {
     gap: 5px;
     margin-top: 20px;
     -webkit-column-gap: 5px;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .scroll-btn span {
     color: #438bb8;
     background: #fff;
-    padding: 10px 15px;
+    padding: 12px 25px;
     border-radius: 15px;
-    font-size: 14px;
+    /* font-size: 14px; */
     font-style: italic;
     border-radius: 20px;
     cursor: pointer;
