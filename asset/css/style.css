@@ -1257,9 +1257,12 @@ header .header-content .header-items:hover {
 }
 
 .more-articles h2{
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 800;
     text-align: center;
+    background: linear-gradient(to right, #438bb8, #F6C37C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .more-articles a{
