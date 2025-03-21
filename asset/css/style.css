@@ -14,6 +14,19 @@ html {
     scroll-behavior: smooth;
 }
 
+:root {
+    --background-color: #ffffff;
+    --background-color-rgb: 255, 255, 255;
+    --default-color: #212529;
+    --default-color-rgb: 33, 37, 41;
+    --primary-color: #e84545;
+    --primary-color-rgb: 232, 69, 69;
+    --secondary-color: #32353a;
+    --secondary-color-rgb: 50, 53, 58;
+    --contrast-color: #ffffff;
+    --contrast-color-rgb: 255, 255, 255;
+}
+
 /* ---------------------
 #Title
 ----------------------*/
@@ -47,6 +60,9 @@ h6 {
     color: #1977cc33;
     font-style: italic;
     font-family: 'Nexa-Heavy';
+    background: linear-gradient(to right, #448BB9, #F59C27);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .title div p {
@@ -57,13 +73,14 @@ h6 {
 
 .title h2 {
     font-size: 30px;
-    color: #438bb8;
+    color: #448BB9;
     font-style: italic;
 }
 
 .text-intro {
     width: 75%;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
+    font-weight: 600;
 }
 
 /* ---------------------
@@ -231,7 +248,7 @@ header .header-content .header-items:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: linear-gradient(to left, #12171d86 0%, #12171dd5 100%), url("../images/home.jpg") fixed no-repeat;
+    background: linear-gradient(to left, #12171db6 0%, #12171dd5 100%), url("../images/home.jpg") fixed no-repeat;
     background-size: cover;
     position: relative;
     overflow: hidden;
@@ -396,7 +413,7 @@ header .header-content .header-items:hover {
     font-weight: 900;
     font-size: 45px;
     font-style: italic;
-    background: linear-gradient(to right, #438bb8, #F6C37C);
+    background: linear-gradient(to right, #448BB9, #F59C27);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -473,13 +490,15 @@ header .header-content .header-items:hover {
 
 .about h2{
     font-weight: 800;
-    /* color: #448bb9; */
+    color: #448BB9;
 }
 
 .about i {
     font-size: 30px;
     font-style: italic;
-    color: #448bb9;
+    background: linear-gradient(to right, #F59C27, #448BB9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .about p {
@@ -496,7 +515,7 @@ header .header-content .header-items:hover {
     font-size: 13px;
     color: #fff;
     font-weight: 600;
-    background-color: #438bb8;
+    background-color: #448BB9;
     transition-delay: 0.4s;
     transition: 0.5s ease-in-out;
 }
@@ -579,7 +598,7 @@ header .header-content .header-items:hover {
 }
 
 .our-goals i{
-    color: #438bb8;
+    color: #448BB9;
 }
 
 /* Media query */
@@ -668,20 +687,23 @@ header .header-content .header-items:hover {
 }
 
 .list-items ul li {
-    color: #438bb8;
     cursor: pointer;
-    padding: 10px 20px;
+    padding: 10px 18px;
     border-radius: 5px;
-    font-size: 13px;
+    font-size: 14px;
+    font-weight: 700;
     transition-delay: 0s;
     transition: 0.2s ease-in-out;
     border: 1px solid #cecece94;
+    background: linear-gradient(to right, #F59C27, #448BB9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .list-items ul li.active {
     transition-delay: 0s;
     transition: 0.2s ease-in-out;
-    border-left: 4px solid #438bb8;
+    border-left: 4px solid #448BB9;
 }
 
 .mission-item {
@@ -696,19 +718,22 @@ header .header-content .header-items:hover {
     flex-direction: column;
     font-style: italic;
     z-index: 2;
+    font-weight: 600;
     margin-right: -40px;
     background: #0000001a;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    padding: 40px;
+    padding: 25px 30px;
     border: 1px solid #cecece94;
     border-radius: 10px;
 }
 
 .mission-item div i {
     font-size: 25px;
-    color: #8486556e;
     font-style: italic;
+    background: linear-gradient(to right, #F59C27, #448BB9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .mission-item {
@@ -864,7 +889,7 @@ header .header-content .header-items:hover {
 }
   
 .item-box:hover::before {
-    background: #438bb8;
+    background: #448BB9;
     right: 0;
     top: 0;
     width: 100%;
@@ -879,7 +904,7 @@ header .header-content .header-items:hover {
 }
 
 .item-box div {
-    background-color: #438bb8;
+    background-color: #448BB9;
     margin: auto;
     position: absolute;
     right: 0;
@@ -923,42 +948,12 @@ header .header-content .header-items:hover {
 }
 
 .item-box:hover div i{
-    color: #438bb8;
+    color: #448BB9;
 }
 
 .item-box:hover div::before{
     background-color: #f0eeee32;
 }
-
-/* .item-box i {
-    width: 40px;
-    height: 40px;
-    color: #f3f3f3f3;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #dddddd67;
-    transition-delay: 0.4s;
-    transition: 0.5s ease-in-out;
-    position: absolute;
-    top: 20px;
-    right: 18px;
-}
-
-.item-box:hover {
-    color: #fff;
-    background-color: #4d71b0;
-}
-
-.item-box:hover i {
-    width: 45px;
-    height: 45px;
-    color: #4d71b0;
-    background-color: #fff;
-    border: 1px solid #dddddd67;
-} */
-
 
 /* Media query */
 @media screen and (max-width: 1260px) {
@@ -1022,7 +1017,7 @@ header .header-content .header-items:hover {
     width: 50px;
     height: 50px;
     border-radius: 5px;
-    background-color: #438bb8;
+    background-color: #448BB9;
     transition: all 0.3s ease-out 0s;
     display: flex;
     align-items: center;
@@ -1089,8 +1084,8 @@ header .header-content .header-items:hover {
 .newsletter {
     width: 100%;
     color: #fff;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 120px;
+    padding-bottom: 120px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1134,7 +1129,8 @@ header .header-content .header-items:hover {
 
 .newsletter div input[type=submit] {
     color: #fff;
-    background-color: #438bb8;
+    font-weight: 600;
+    background-color: #448BB9;
 }
 
 /* Media query */
@@ -1187,7 +1183,8 @@ header .header-content .header-items:hover {
     align-items: center;
     gap: 10px;
     margin-top: 15px;
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: 600;
     margin-bottom: 10px;
     -webkit-column-gap: 10px;
     color: #a6a6a6;
@@ -1205,11 +1202,11 @@ header .header-content .header-items:hover {
     transition-delay: 0.2s;
     font-weight: 700;
     transition: 0.4s ease-in-out;
-    font-family: "Raleway", sans-serif;
+    font-family: 'NexaBold';
 }
 
 .blog-details .link-title:hover {
-    color: #438bb8;
+    color: #448BB9;
 }
 
 .blog-details p {
@@ -1218,7 +1215,14 @@ header .header-content .header-items:hover {
 }
 
 .link {
-    color: #438bb8;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 800;
+    gap: 4px;
+    -webkit-column-gap: 4px;
+    background: linear-gradient(to right, #438bb8, #F6C37C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* Media query */
