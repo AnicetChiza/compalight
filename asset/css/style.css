@@ -457,7 +457,6 @@ header .header-content .header-items:hover {
 
 .about {
     display: flex;
-    padding: 60px 30px;
     width: 50%;
     flex-direction: column;
     font-style: italic;
@@ -467,7 +466,7 @@ header .header-content .header-items:hover {
     background: #0000001a;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(5px);
-    padding: 40px;
+    padding: 25px 30px;
     border: 1px solid #cecece94;
     border-radius: 10px;
 }
@@ -481,7 +480,6 @@ header .header-content .header-items:hover {
     font-size: 30px;
     font-style: italic;
     color: #448bb9;
-    /* color: #f59c27; */
 }
 
 .about p {
@@ -497,6 +495,7 @@ header .header-content .header-items:hover {
     width: fit-content;
     font-size: 13px;
     color: #fff;
+    font-weight: 600;
     background-color: #438bb8;
     transition-delay: 0.4s;
     transition: 0.5s ease-in-out;
