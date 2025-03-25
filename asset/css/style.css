@@ -1589,6 +1589,16 @@ textarea {
     mask-repeat: no-repeat;
     width: 50px;
     height: 50px;
+    animation: animates 2s linear infinite;
+}
+
+@keyframes animates {
+    0% {
+        transform: translateX(-8px);
+    }
+    50% {
+        transform: translateX(8px);
+    }
 }
 
 .card:hover::before {
