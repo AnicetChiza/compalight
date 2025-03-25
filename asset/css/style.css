@@ -1578,16 +1578,17 @@ textarea {
     font-family: 'Nexa-Heavy';
 }
 
-.text i {
-    font-size: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 1000;
-    font-style: italic;
+.text .image-container{
+    display: inline-block;
     background: linear-gradient(to right, #448BB9, #F59C27);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-mask-image: url('../images/icons/send.png');
+    mask-image: url('../images/icons/send.png');
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
 }
 
 .card:hover::before {
