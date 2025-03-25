@@ -1406,6 +1406,25 @@ header .header-content .header-items:hover {
     box-shadow: 0px 1px 10px #c2c2c25d;
 }
 
+.scroll-btn span:hover{
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+}
+
+@keyframes pulse512 {
+    0% {
+        box-shadow: 0 0 0 0 #448BB9;
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+}
+
 .scroll-btn span i{
     border: 1px solid red;
 }
@@ -1552,17 +1571,28 @@ textarea {
 
 .text {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
     font-style: italic;
     text-align: center;
     color: #f0f8ff;
     font-weight: 800;
-    font-size: 20px;
+    font-size: 22px;
+    font-family: 'Nexa-Heavy';
 }
 
 .text i {
+    font-size: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 1000;
     font-style: italic;
+    background: linear-gradient(to right, #448BB9, #F59C27);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .card:hover::before {
@@ -1639,15 +1669,18 @@ textarea {
         width: 80%;
     }
 }
-@media screen and (max-width: 730px){
+@media screen and (max-width: 770px){
     .card{
         width: 100%;
     }
 }
 @media screen and (max-width: 600px){
+    .card{
+        padding: 50px 15px;
+    }
     .text{
         font-size: 16px;
-        font-weight: 800;
+        /* font-family: 'NexaBold'; */
     }
 }
 
