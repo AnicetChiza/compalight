@@ -1407,8 +1407,6 @@ header .header-content .header-items:hover {
 }
 
 .scroll-btn span:hover{
-    background-position: right center;
-    background-size: 200% auto;
     -webkit-animation: pulse 2s infinite;
     animation: pulse512 1.5s infinite;
 }
@@ -1418,16 +1416,13 @@ header .header-content .header-items:hover {
         box-shadow: 0 0 0 0 #448BB9;
     }
     70% {
-        box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+        box-shadow: 0 0 0 7px #da674400;
     }
     100% {
-        box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+        box-shadow: 0 0 0 0 #da674400;
     }
 }
 
-.scroll-btn span i{
-    border: 1px solid red;
-}
 /* media query */
 @media screen and (max-width: 670px){
     .team .member{
