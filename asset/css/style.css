@@ -1713,6 +1713,10 @@ footer {
     width: 40%;
 }
 
+.footer-container .apropos img{
+    width: 400px;
+}
+
 .footer-container .apropos p {
     color: #a6a6a6;
 }
