@@ -1594,10 +1594,10 @@ textarea {
 
 @keyframes animates {
     0% {
-        transform: translateX(-8px);
+        transform: translateY(-8px);
     }
     50% {
-        transform: translateX(8px);
+        transform: translateY(8px);
     }
 }
 
