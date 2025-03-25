@@ -1732,6 +1732,7 @@ footer {
 .our-footer a {
     color: #141b1fda;
     transition-delay: 0.2s;
+    font-weight: 600;
     transition: 0.4s ease-in-out;
 }
 
