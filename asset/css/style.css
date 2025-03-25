@@ -1252,7 +1252,7 @@ header .header-content .header-items:hover {
     padding-bottom: 100px;
     color: #c0c0c0;
     font-style: italic;
-    background: linear-gradient(to left, #12171d83 0%, #12171d83 100%), url('../images/about/compalight_background.png') fixed no-repeat;
+    background: linear-gradient(to left, #12171dd5 0%, #12171dd5 100%), url('../images/about/identity.png') fixed no-repeat;
     /* background: linear-gradient(to left, #12171dd5 0%, #12171dd5 100%), url(../images/bg.jpg) fixed no-repeat; */
     background-size: cover;
 }
