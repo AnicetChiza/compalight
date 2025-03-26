@@ -1370,21 +1370,8 @@ header .header-content .header-items:hover {
 
 .more-articles a:hover{
     -webkit-animation: pulse 2s infinite;
-    animation: pulse511 1.5s infinite;
+    animation: pulse510 1.5s infinite;
 }
-
-@keyframes pulse511 {
-    0% {
-        box-shadow: 0 0 0 0 #448ab9a3;
-    }
-    70% {
-        box-shadow: 0 0 0 8px #da674400;
-    }
-    100% {
-        box-shadow: 0 0 0 0 #da674400;
-    }
-}
-
 
 /*----------------------- /
 #team
