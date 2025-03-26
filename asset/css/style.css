@@ -354,7 +354,7 @@ header .header-content .header-items:hover {
 
 @media screen and (max-width: 730px){
     .logo{
-        right: 80px;
+        right: 50px;
     }
     .logo img{
         width: 200px;
@@ -382,9 +382,9 @@ header .header-content .header-items:hover {
 #Hero second page
 /----------------------- */
 .hero-second-page{
-    height: 40vh;
+    height: 45vh;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     flex-direction: column;
     gap: 10px;
     -webkit-column-gap: 10px;
