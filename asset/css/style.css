@@ -701,16 +701,90 @@ header .header-content .header-items:hover {
 }
 
 .mission-item {
-    width: 60%;
+    width: 55%;
     padding: 20px;
     display: flex;
     flex-direction: column;
     margin: auto;
     gap: 20px;
-    -webkit-column-gap: 20px;
-    border-radius: 10px;
     margin-top: 30px;
     border: 1px solid #cecece94;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+/* Span pour l'animation */
+.mission-item span {
+    position: absolute;
+    display: block;
+    border-radius: 20px;
+    z-index: 10;
+    width: 20px;
+}
+
+/* Ligne en haut */
+.mission-item span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, #438bb8, #F6C37C);
+    animation: border-anim1 4s linear infinite;
+}
+
+/* Ligne droite */
+.mission-item span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, #438bb8, #F6C37C);
+    animation: border-anim2 4s linear infinite;
+    animation-delay: 1s;
+}
+
+/* Ligne en bas */
+.mission-item span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, #438bb8, #F6C37C);
+    animation: border-anim3 4s linear infinite;
+    animation-delay: 2s;
+}
+
+/* Ligne gauche */
+.mission-item span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, #438bb8, #F6C37C);
+    animation: border-anim4 4s linear infinite;
+    animation-delay: 3s;
+}
+
+/* Animation des bordures */
+@keyframes border-anim1 {
+    0% { left: -100%; }
+    50%, 100% { left: 100%; }
+}
+
+@keyframes border-anim2 {
+    0% { top: -100%; }
+    50%, 100% { top: 100%; }
+}
+
+@keyframes border-anim3 {
+    0% { right: -100%; }
+    50%, 100% { right: 100%; }
+}
+
+@keyframes border-anim4 {
+    0% { bottom: -100%; }
+    50%, 100% { bottom: 100%; }
 }
 
 .mission-item div {
@@ -720,6 +794,7 @@ header .header-content .header-items:hover {
     flex-direction: column;
     font-style: italic;
     z-index: 2;
+    border-radius: 5px;
     font-weight: 600;
     margin-right: -40px;
     background: #0000001a;
@@ -727,7 +802,6 @@ header .header-content .header-items:hover {
     -webkit-backdrop-filter: blur(20px);
     padding: 25px 30px;
     border: 1px solid #cecece94;
-    border-radius: 10px;
 }
 
 .mission-item div i {
@@ -742,7 +816,7 @@ header .header-content .header-items:hover {
     width: 100%;
     height: 230px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .goal {
