@@ -288,7 +288,7 @@ header .header-content .header-items:hover {
 }
 
 .text-container h1{
-    line-height: 65px;
+    line-height: 77px;
     font-size: 60px;
     font-weight: 800;
     font-style: italic;
@@ -297,7 +297,6 @@ header .header-content .header-items:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 
 .cursor {
     opacity: 0;
@@ -361,6 +360,7 @@ header .header-content .header-items:hover {
     }
     .text-container h1{
         font-size: 50px;
+        line-height: 64px;
     }
     .text-box p{
         font-size: 17px;
@@ -711,7 +711,6 @@ header .header-content .header-items:hover {
     border: 1px solid #cecece94;
     position: relative;
     overflow: hidden;
-    border-radius: 5px;
 }
 
 /* Span pour l'animation */
@@ -1296,10 +1295,19 @@ header .header-content .header-items:hover {
     align-items: center;
     font-weight: 800;
     gap: 4px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 13px;
+    border: 1px solid #cecece94;
     -webkit-column-gap: 4px;
     background: linear-gradient(to right, #438bb8, #F6C37C);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.link:hover{
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse511 1.5s infinite;
 }
 
 /* Media query */
