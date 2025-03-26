@@ -410,14 +410,17 @@ header .header-content .header-items:hover {
 .hero-second-page div{
     display: flex;
     align-items: center;
+    font-style: italic;
     color: #c0c0c0;
     gap: 10px;
     -webkit-column-gap: 10px;
-    font-weight: 600;
+    font-weight: 800;
+    font-family: 'NexaBold';
 }
 
 .hero-second-page div i{
     font-size: 25px;
+    transform: skewX(-10deg);
 }
 
 /* Media query */
