@@ -1796,7 +1796,6 @@ textarea {
     }
     .text{
         font-size: 16px;
-        /* font-family: 'NexaBold'; */
     }
 }
 
@@ -2102,15 +2101,19 @@ footer {
 }
 
 .view-image div i{
-    color: #fff;
-    font-size: 28px;
+    font-size: 32px;
     cursor: pointer;
     transition-delay: 0.3s;
     transition: 0.4s ease-in-out;
+    background: linear-gradient(to right, #438bb8, #F6C37C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .view-image div i:hover{
-    color: #4d71b0;
+    background: linear-gradient(to right, #438bb8, #F6C37C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .photo{
