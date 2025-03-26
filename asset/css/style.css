@@ -109,7 +109,6 @@ h6 {
 /* ---------------------
 #Body
 ----------------------*/
-
 body {
     font-size: 16px;
     font-weight: 400;
@@ -1694,6 +1693,22 @@ footer {
     color: #a6a6a6;
 }
 
+.available{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    -webkit-column-gap: 10px;
+    margin-top: 25px;
+    font-family: 'Nexa-Heavy';
+    background: linear-gradient(to right, #438bb8, #F6C37C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.available i{
+    font-size: 25px;
+}
+
 .footer-container div h3 {
     color: #438bb8;
     margin-bottom: 20px;
@@ -1770,14 +1785,11 @@ footer {
     box-shadow: 0px 1px 10px #c2c2c25d;
 }
 
-.compalight-bg{
-    margin-bottom: 0;
-}
-
-.compalight-bg img{
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
+.compalight-background{
+    height: 230px;
+    background-image: url("../images/about/compalight_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Media query */
@@ -1859,7 +1871,6 @@ footer {
         padding: 5px 10px;
     }
 }
-
 
 /* -------------------------------- /
 #Gallery
