@@ -353,6 +353,12 @@ header .header-content .header-items:hover {
 }
 
 @media screen and (max-width: 730px){
+    .logo{
+        right: 80px;
+    }
+    .logo img{
+        width: 200px;
+    }
     .text-container h1{
         font-size: 50px;
     }
