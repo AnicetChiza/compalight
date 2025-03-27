@@ -382,7 +382,7 @@ header .header-content .header-items:hover {
 #Hero second page
 /----------------------- */
 .hero-second-page{
-    height: 45vh;
+    height: 40vh;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
@@ -548,8 +548,10 @@ header .header-content .header-items:hover {
 
 .about-message{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
+    margin: auto;
     gap: 20px;
     -webkit-column-gap: 20px;
     padding-top: 100px;
@@ -559,10 +561,32 @@ header .header-content .header-items:hover {
     background-size: cover;
 }
 
+.about-message div{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse510 1.5s infinite;
+}
+
+.about-message div img{
+    width: 100%;
+    filter: invert(1) brightness(1);
+}
+
 .about-message p{
-    width: 80%;
+    width: 70%;
     font-style: italic;
-    font-size: 20px;
+    font-size: 24px;
+    font-family: 'Nexa-Heavy';
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about-message i{
@@ -701,7 +725,7 @@ header .header-content .header-items:hover {
 }
 
 .mission-item {
-    width: 55%;
+    width: 60%;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -902,7 +926,6 @@ header .header-content .header-items:hover {
     }
 }
 
-
 /*---------------------------/
 #Choose us
 /-------------------------- */
@@ -1043,7 +1066,6 @@ header .header-content .header-items:hover {
         margin-top: 0px;
     }
 }
-
 
 /*---------------------------/
 #Services
@@ -1205,7 +1227,7 @@ header .header-content .header-items:hover {
         box-shadow: 0 0 0 0 #e8eaeaa3;
     }
     70% {
-        box-shadow: 0 0 0 8px #da674400;
+        box-shadow: 0 0 0 10px #da674400;
     }
     100% {
         box-shadow: 0 0 0 0 #da674400;
@@ -1307,7 +1329,7 @@ header .header-content .header-items:hover {
 
 .link:hover{
     -webkit-animation: pulse 2s infinite;
-    animation: pulse511 1.5s infinite;
+    animation: pulse512 1.5s infinite;
 }
 
 /* Media query */
@@ -1663,14 +1685,27 @@ textarea {
 
 .card::before {
     content: "";
-    height: 70px;
-    width: 90px;
+    width: 200px;
+    height: 200px;
+    top: 90px;
+    left: 70%;
+    border-radius: 50%;
     position: absolute;
+    filter: blur(.1rem);
+    border: 35px solid #ffffff1a;
+    transition: all 0.8s ease;
+}
+
+.card:hover::before {
+    /* content: ""; */
+    height: 90px;
+    width: 90px;
+    /* position: absolute; */
     top: -20%;
     left: -10%;
     border-radius: 50%;
-    border: 35px solid #ffffff1a;
-    transition: all 0.8s ease;
+    /* border: 35px solid #ffffff1a;
+    transition: all 0.8s ease; */
     filter: blur(.2rem);
 }
 
@@ -1711,14 +1746,6 @@ textarea {
     }
 }
 
-.card:hover::before {
-    width: 30%;
-    height: 60%;
-    top: -40px;
-    left: 70%;
-    filter: blur(.1rem);
-}
-
 .profile-ceo {
     color: #fff;
     display: flex;
@@ -1741,6 +1768,7 @@ textarea {
     object-fit: cover;
     position: relative;
     z-index: 1;
+    box-shadow: 0 0 0 10px #d9e9fa1a;
 }
 
 .pulse-container::before {
@@ -1799,6 +1827,14 @@ textarea {
     }
 }
 
+@media screen and (max-width: 460px){
+    .card::before{
+        width: 140px;
+        height: 140px;
+        top: 150px;
+        left: 55%;
+    }
+}
 
 /*----------------------- /
 #Footer
@@ -1871,22 +1907,23 @@ footer {
 .media div {
     display: flex;
     flex-direction: row;
-    gap: 10px;
     align-items: center;
-    -webkit-column-gap: 10px;
+    gap: 20px;
+    -webkit-column-gap: 20px;
 }
 
 .media a i {
     font-size: 14px;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     display: flex;
     border-radius: 50%;
     align-items: center;
     justify-content: center;
     transition-delay: 0.2s;
     transition: 0.4s ease-in-out;
-    border: 1px solid #cecece94;
+    border: 1px solid #cecece37;
+    box-shadow: 0 0 0 7px #d9e9fa36;
 }
 
 .media a i:hover {
@@ -1897,10 +1934,12 @@ footer {
 
 .compalight-sign {
     margin-top: 40px;
-    padding-top: 25px;
     font-size: 13px;
     color: #a6a6a6;
-    border-top: 1px solid #cecece94;
+    text-align: center;
+    padding: 25px 15px;
+    border-radius: 8px;
+    background-color: #f5f5f5a8;
 }
 
 .up {
