@@ -1079,23 +1079,23 @@ header .header-content .header-items:hover {
 .circle-container{
     width: fit-content;
     border-radius: 50%;
-    width: 600px;
-    height: 600px;
+    width: 530px;
+    height: 530px;
     padding: 30px 30px 30px 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 3px dashed #cecece94;
+    border: 2px dashed #448BB9;
     animation: rotate 30s linear infinite;
 }
 
 .circle-content{
-    width: 380px;
-    height: 380px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     padding: 10px 10px;
     padding: 30px 30px 30px 30px;
-    border: 2px dashed #cecece94;
+    border: 2px dashed #448BB9;
     animation: rotate 20s linear infinite reverse;
 }
 
@@ -1108,9 +1108,19 @@ header .header-content .header-items:hover {
     }
 }
 
-.circle-content img{
+.circle-content img {
     width: 100%;
-    transform: rotate(0deg);
+    transform: rotate(-20s);
+    animation: counter-rotate 0s linear infinite;
+}
+
+@keyframes counter-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
 }
 
 /*---------------------------/
