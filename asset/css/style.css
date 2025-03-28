@@ -1126,6 +1126,9 @@ header .header-content .header-items:hover {
 /*---------------------------/
 #Services
 /-------------------------- */
+.service{
+    background-color: #f5f5f5a8;
+}
 .our-services {
     display: grid;
     gap: 20px;
