@@ -1075,6 +1075,7 @@ header .header-content .header-items:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 .circle-container{
     width: fit-content;
