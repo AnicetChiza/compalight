@@ -1,7 +1,6 @@
 /* ---------------------
 #Reset 
 ----------------------*/
-
 * {
     margin: 0;
     padding: 0;
@@ -30,7 +29,6 @@ html {
 /* ---------------------
 #Title
 ----------------------*/
-
 h1,
 h2,
 h3,
@@ -1071,6 +1069,34 @@ header .header-content .header-items:hover {
 }
 
 /*---------------------------/
+#compalight-animation
+/-------------------------- */
+.circle-container{
+    width: fit-content;
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    padding: 30px 30px 30px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #cecece94;
+}
+
+.circle-content{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    padding: 10px 10px;
+    padding: 30px 30px 30px 30px;
+    border: 1px solid #cecece94;
+}
+
+.circle-content img{
+    width: 100%;
+}
+
+/*---------------------------/
 #Services
 /-------------------------- */
 .our-services {
@@ -1700,15 +1726,11 @@ textarea {
 }
 
 .card:hover::before {
-    /* content: ""; */
     height: 90px;
     width: 90px;
-    /* position: absolute; */
     top: -20%;
     left: -10%;
     border-radius: 50%;
-    /* border: 35px solid #ffffff1a;
-    transition: all 0.8s ease; */
     filter: blur(.2rem);
 }
 
