@@ -1098,7 +1098,7 @@ header .header-content .header-items:hover {
         box-shadow: 0 0 0 0 #448ab950;
     }
     70% {
-        box-shadow: 0 0 0 40px #da674400;
+        box-shadow: 0 0 0 100px #da674400;
     }
     100% {
         box-shadow: 0 0 0 0 #da674400;
