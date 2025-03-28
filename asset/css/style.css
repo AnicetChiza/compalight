@@ -1077,6 +1077,7 @@ header .header-content .header-items:hover {
     justify-content: center;
     position: relative;
 }
+
 .circle-container{
     width: fit-content;
     border-radius: 50%;
@@ -1088,6 +1089,20 @@ header .header-content .header-items:hover {
     justify-content: center;
     border: 2px dashed #448BB9;
     animation: rotate 30s linear infinite;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse516 1.5s infinite;
+}
+
+@keyframes pulse516 {
+    0% {
+        box-shadow: 0 0 0 0 #448ab950;
+    }
+    70% {
+        box-shadow: 0 0 0 40px #da674400;
+    }
+    100% {
+        box-shadow: 0 0 0 0 #da674400;
+    }
 }
 
 .circle-content{
@@ -1121,6 +1136,40 @@ header .header-content .header-items:hover {
     }
     100% {
         transform: rotate(-360deg);
+    }
+}
+
+/* Media query */
+@media screen and (max-width: 690px){
+    .circle-container{
+        width: 400px;
+        height: 400px;
+    }
+    .circle-content{
+        width: 280px;
+        height: 280px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .circle-container{
+        width: 340px;
+        height: 340px;
+    }
+    .circle-content{
+        width: 220px;
+        height: 220px;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .circle-container{
+        width: 290px;
+        height: 290px;
+    }
+    .circle-content{
+        width: 210px;
+        height: 210px;
     }
 }
 
