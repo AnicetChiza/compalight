@@ -1510,7 +1510,8 @@ header .header-content .header-items:hover {
 .project-container {
     display: flex;
     align-items: center;
-    background-color: #f5f5f5a8;
+    background: #f5f5f5a8;
+    margin-top: -20px;
 }
 
 .project-presentation-image {
@@ -1550,13 +1551,27 @@ header .header-content .header-items:hover {
     .project-container{
         flex-direction: column-reverse;
         align-items: none;
+        background: none;
     }   
     .project-presentation-image, .project-text-box {
         flex: none;
     }
     .project-presentation-image img{
-        -webkit-mask: linear-gradient(to bottom, transparent, white 90%, white 100%);
-        mask: linear-gradient(to bottom, transparent, white 90%, white 100%);
+        padding-left: 60px;
+        padding-right: 60px;
+        height: 300px;
+        -webkit-mask: linear-gradient(to top, #ffffff00 0%, #ffffff 70%);
+        mask: linear-gradient(to top, #ffffff00 0%, #ffffff 70%);
+    }
+    .project-text-box{
+        margin-top: -50px;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .project-presentation-image img{
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
