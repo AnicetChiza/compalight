@@ -1518,6 +1518,27 @@ header .header-content .header-items:hover {
     object-fit: contain;
 }
 
+.project-text-box{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    -webkit-column-gap: 15px;
+    font-weight: 600;
+}
+
+.project-text-box a{
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    width: fit-content;
+    font-size: 14px;
+    border-radius: 30px;
+    border: 1px solid #cecece94;
+    background-color: #448BB9;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse513 1.5s infinite;
+}
+
 /*----------------------- /
 #team
 /----------------------- */
