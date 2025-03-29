@@ -1510,11 +1510,12 @@ header .header-content .header-items:hover {
 .project-container {
     display: flex;
     align-items: center;
+    background-color: #f5f5f5a8;
 }
 
 .project-presentation-image {
     flex: 1;
-    position: relative;
+    /* position: relative; */
 }
 
 .project-presentation-image img {
@@ -1544,6 +1545,27 @@ header .header-content .header-items:hover {
     animation: pulse513 1.5s infinite;
 }
 
+/* Media query */
+@media screen and (max-width: 845px){
+    .project-container{
+        flex-direction: column-reverse;
+        align-items: none;
+    }   
+    .project-presentation-image, .project-text-box {
+        flex: none;
+    }
+    .project-presentation-image img{
+        -webkit-mask: linear-gradient(to bottom, transparent, white 90%, white 100%);
+        mask: linear-gradient(to bottom, transparent, white 90%, white 100%);
+    }
+}
+
+@media screen and (max-width: 440px){
+    .project-text-box a{
+        text-align: center;
+        width: 100%;
+    }
+}
 
 /*----------------------- /
 #team
