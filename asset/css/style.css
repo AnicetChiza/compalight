@@ -269,15 +269,12 @@ header .header-content .header-items:hover {
     pointer-events: none;
 }
 
-.logo{
-    position: absolute;
-    top: 50px;
-    right: 100px;
-}
-
 .logo img{
     width: 300px;
-    transform: skewX(-10deg);
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .text-container {
@@ -350,12 +347,15 @@ header .header-content .header-items:hover {
     }
 }
 
+@media screen and (max-width: 850px){
+    .logo img{
+        width: 200px;
+    }
+}
+
 @media screen and (max-width: 730px){
     .logo{
         right: 50px;
-    }
-    .logo img{
-        width: 200px;
     }
     .text-container h1{
         font-size: 50px;
