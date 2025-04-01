@@ -2404,3 +2404,26 @@ footer {
         -webkit-column-gap: 10px;
     }
 }
+
+/*----------------------- /
+#Realisations
+/----------------------- */
+.realisation-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+    -webkit-column-gap: 20px;
+}
+
+.realisation-item{
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #cecece94;
+}
+
+.realisation-image img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
