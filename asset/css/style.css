@@ -620,7 +620,7 @@ header .header-content .header-items:hover {
 
 .our-goal p{
     padding: 30px 30px;
-    font-style: italic;
+    /* font-style: italic; */
     font-weight: 600;
     transition-delay: 0.4s;
     transition: 0.5s ease-in-out;
@@ -633,6 +633,7 @@ header .header-content .header-items:hover {
 }
 
 .our-goals i{
+    font-size: 20px;
     color: #448BB9;
 }
 
