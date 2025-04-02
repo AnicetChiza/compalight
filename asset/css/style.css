@@ -749,7 +749,7 @@ header .header-content .header-items:hover {
 }
 
 /* Span pour l'animation */
-.mission-item span {
+.line span {
     position: absolute;
     display: block;
     border-radius: 20px;
@@ -757,7 +757,7 @@ header .header-content .header-items:hover {
 }
 
 /* Ligne en haut */
-.mission-item span:nth-child(1) {
+.line span:nth-child(1) {
     top: 0;
     left: -100%;
     width: 100%;
@@ -767,18 +767,19 @@ header .header-content .header-items:hover {
 }
 
 /* Ligne droite */
-.mission-item span:nth-child(2) {
+.line span:nth-child(2) {
     top: -100%;
     right: 0;
     width: 1px;
     height: 100%;
+    border-radius: 5px;
     background: linear-gradient(180deg, #438bb8, #F6C37C);
     animation: border-anim2 4s linear infinite;
     animation-delay: 1s;
 }
 
 /* Ligne en bas */
-.mission-item span:nth-child(3) {
+.line span:nth-child(3) {
     bottom: 0;
     right: -100%;
     width: 100%;
@@ -789,7 +790,7 @@ header .header-content .header-items:hover {
 }
 
 /* Ligne gauche */
-.mission-item span:nth-child(4) {
+.line span:nth-child(4) {
     bottom: -100%;
     left: 0;
     width: 1px;
@@ -1233,6 +1234,7 @@ header .header-content .header-items:hover {
 
 .service-container p{
     font-size: 14px;
+    font-weight: 600;
 }
 
 .service-container i {
@@ -1334,19 +1336,16 @@ header .header-content .header-items:hover {
     color: #fff;
     font-weight: 600;
     background-color: #448BB9;
-}
-
-.newsletter div input[type=submit]:hover{
     -webkit-animation: pulse 2s infinite;
     animation: pulse510 1.5s infinite;
 }
 
 @keyframes pulse510 {
     0% {
-        box-shadow: 0 0 0 0 #e8eaeaa3;
+        box-shadow: 0 0 0 0 #c4dae9a3;
     }
     70% {
-        box-shadow: 0 0 0 10px #da674400;
+        box-shadow: 0 0 0 8px #da674400;
     }
     100% {
         box-shadow: 0 0 0 0 #da674400;
@@ -2421,9 +2420,10 @@ footer {
     display: grid;
     grid-template-columns: 50% 50%;
     padding: 15px;
-    border-radius: 5px;
     margin-bottom: 15px;
     border: 1px solid #8080802f;
+    position: relative;
+    overflow: hidden;
 }
 
 .project-image{
@@ -2466,7 +2466,7 @@ footer {
     -webkit-column-gap: 5px;
 }
 
-.project-text .project-link span{
+.project-text .project-link p{
     padding: 8px 25px;
     border-radius: 20px;
     color: #448BB9;
