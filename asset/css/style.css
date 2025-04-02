@@ -481,7 +481,7 @@ header .header-content .header-items:hover {
     z-index: 2;
     margin-left: -80px;
     background: #0000001a;
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(60px);
     -webkit-backdrop-filter: blur(10px);
     padding: 25px 30px;
     border: 1px solid #cecece94;
@@ -535,6 +535,7 @@ header .header-content .header-items:hover {
     gap: 10px;
     font-weight: 600;
     -webkit-column-gap: 10px;
+    background-color: #fff;
     box-shadow: 0px 1px 10px #4458901c;
     transition: 0.6s ease-in-out;
     transition-delay: 0.4s;
@@ -565,17 +566,29 @@ header .header-content .header-items:hover {
 }
 
 .about-message div{
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     margin-left: auto;
     margin-right: auto;
-    padding: 15px;
+    padding: 20px 20px;
     -webkit-animation: pulse 2s infinite;
-    animation: pulse510 1.5s infinite;
+    animation: pulse520 1.5s infinite;
+}
+
+@keyframes pulse520 {
+    0% {
+        box-shadow: 0 0 0 0 #c4dae952;
+    }
+    70% {
+        box-shadow: 0 0 0 18px #da674400;
+    }
+    100% {
+        box-shadow: 0 0 0 0 #da674400;
+    }
 }
 
 .about-message div img{
