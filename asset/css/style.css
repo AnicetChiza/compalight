@@ -476,21 +476,19 @@ header .header-content .header-items:hover {
     display: flex;
     width: 50%;
     flex-direction: column;
-    font-style: italic;
     font-size: 15px;
     z-index: 2;
     margin-left: -80px;
     background: #0000001a;
     backdrop-filter: blur(60px);
     -webkit-backdrop-filter: blur(10px);
-    padding: 25px 30px;
+    padding: 30px 40px;
     border: 1px solid #cecece94;
     border-radius: 10px;
 }
 
 .about p {
     margin-top: 10px;
-    font-weight: 600;
 }
 
 .about-btn{
@@ -522,24 +520,6 @@ header .header-content .header-items:hover {
       box-shadow: 0 0 0 20px #ffffff1a, 0 0 0 40px hsla(0, 0%, 100%, 0.102), 0 0 0 60px #ffffff1a, 0 0 0 80px #ffffff00;
     }
 }
-
-/* .about a{
-    color: #141b1fda;
-    margin-top: 15px;
-    padding: 12px 20px;
-    border-radius: 25px;
-    width: fit-content;
-    font-size: 13px;
-    color: #fff;
-    font-weight: 600;
-    background-color: #448BB9;
-    transition-delay: 0.4s;
-    transition: 0.5s ease-in-out;
-}
-
-.about a:hover{
-    color: #ffffffd3;
-} */
 
 /* ----------------------- */
 .about-details-container{
@@ -1366,8 +1346,10 @@ header .header-content .header-items:hover {
 
 .newsletter div input[type=submit] {
     color: #fff;
-    font-weight: 600;
-    background-color: #448BB9;
+    cursor: pointer;
+    display: inline-block;
+    background-color: transparent;
+    border: 1px solid #f5f5f5a8;
     -webkit-animation: pulse 2s infinite;
     animation: pulse510 1.5s infinite;
 }
