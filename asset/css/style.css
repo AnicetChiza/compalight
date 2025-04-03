@@ -488,20 +488,42 @@ header .header-content .header-items:hover {
     border-radius: 10px;
 }
 
-.about i {
-    font-size: 30px;
-    font-style: italic;
-    background: linear-gradient(to right, #F59C27, #448BB9);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 .about p {
     margin-top: 10px;
     font-weight: 600;
 }
 
-.about a{
+.about-btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #448BB9;
+    border-radius: 4px;
+    min-width: 150px;
+    padding: 10px 20px;
+    margin-top: 15px;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    overflow: hidden;
+    width: fit-content;
+}
+
+.about-link {
+    animation: ripple 0.6s linear infinite;
+}
+  
+@keyframes ripple {
+    0% {
+      box-shadow: 0 0 0 0 #ffffff1a, 0 0 0 20px #ffffff1a, 0 0 0 40px #ffffff1a, 0 0 0 60px #ffffff1a;
+    }
+  
+    100% {
+      box-shadow: 0 0 0 20px #ffffff1a, 0 0 0 40px hsla(0, 0%, 100%, 0.102), 0 0 0 60px #ffffff1a, 0 0 0 80px #ffffff00;
+    }
+}
+
+/* .about a{
     color: #141b1fda;
     margin-top: 15px;
     padding: 12px 20px;
@@ -517,7 +539,7 @@ header .header-content .header-items:hover {
 
 .about a:hover{
     color: #ffffffd3;
-}
+} */
 
 /* ----------------------- */
 .about-details-container{
@@ -620,7 +642,6 @@ header .header-content .header-items:hover {
 
 .our-goal p{
     padding: 30px 30px;
-    /* font-style: italic; */
     font-weight: 600;
     transition-delay: 0.4s;
     transition: 0.5s ease-in-out;
@@ -635,6 +656,7 @@ header .header-content .header-items:hover {
 .our-goals i{
     font-size: 20px;
     color: #448BB9;
+
 }
 
 /* Media query */
