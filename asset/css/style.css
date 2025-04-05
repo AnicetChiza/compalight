@@ -2314,6 +2314,10 @@ footer {
     color: #448BB9;
 }
 
+.our-footer i{
+    font-size: 13px;
+}
+
 .media div {
     display: flex;
     flex-direction: row;
