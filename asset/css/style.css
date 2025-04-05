@@ -1228,6 +1228,9 @@ header .header-content .header-items:hover {
 .service-container {
     padding: 60px 40px;
     border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
     gap: 15px;
     -webkit-column-gap: 15px;
     text-align: center;
@@ -1235,26 +1238,44 @@ header .header-content .header-items:hover {
     flex-direction: column;
     background-color: #fff;
     transition-delay: 0.2s;
-    /* font-style: italic; */
     transition: 0.4s ease-in-out;
     box-shadow: 0 0 29px 0 #4458901f;
 }
 
-.service-container:hover {
-    transform: translateY(7px);
+.service-container::before{
+    content: "";
+    position: absolute;
+    right: -60px;
+    top: -40px;
+    width: 140px;
+    height: 120px;
+    border-radius: 0px;
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+.service-container:hover::before {
+    background: #448BB9;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
 }
 
 .service-container div {
-    margin: 0 auto;
+    background-color: #448BB9;
+    margin: auto;
+    position: absolute;
+    right: 0;
     width: 50px;
     height: 50px;
     border-radius: 5px;
-    background-color: #448BB9;
     transition: all 0.3s ease-out 0s;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     transform-style: preserve-3d;
     position: relative;
     z-index: 2;
@@ -1281,6 +1302,22 @@ header .header-content .header-items:hover {
     transition: all 0.3s ease-out 0s;
     transform: translateZ(-1px);
     z-index: -1;
+}
+
+.service-container:hover{
+    color: #fff;
+}
+
+.service-container:hover div{
+    background-color: #fff;
+}
+
+.service-container:hover div i{
+    color: #448BB9;
+}
+
+.service-container:hover div::before{
+    background-color: #f0eeee32;
 }
 
 /* Media query */
@@ -1599,7 +1636,7 @@ header .header-content .header-items:hover {
 
 .more-articles a{
     padding: 15px 30px;
-    color: #c0c0c0;
+    color: #fff;
     border-radius: 30px;
     font-size: 14px;
     font-weight: 500;
@@ -1610,6 +1647,27 @@ header .header-content .header-items:hover {
     transition-delay: 0.2s;
     transition: 0.4s ease-in-out;
     border: 1px solid #ffffff39;
+    background-color: #ffffff1c;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    overflow: hidden;
+    width: fit-content;
+}
+
+.article-icon{
+    animation: ripples 0.6s linear infinite;
+}
+  
+@keyframes ripples {
+    0% {
+      box-shadow: 0 0 0 0 #ffffff1a, 0 0 0 25px #ffffff1a, 0 0 0 45px #ffffff1a, 0 0 0 65px #ffffff1a;
+    }
+  
+    100% {
+      box-shadow: 0 0 0 25px #ffffff1a, 0 0 0 45px #ffffff1a, 0 0 0 65px #ffffff1a, 0 0 0 85px #ffffff00;
+    }
 }
 
 .more-articles a i{
@@ -1628,6 +1686,7 @@ header .header-content .header-items:hover {
     align-items: center;
     background: #f5f5f5a8;
     margin-top: -20px;
+    font-style: italic;
 }
 
 .project-presentation-image {
@@ -1651,6 +1710,11 @@ header .header-content .header-items:hover {
 }
 
 .project-text-box a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    width: fit-content;
     color: #fff;
     padding: 15px 30px;
     border-radius: 30px;
@@ -1658,7 +1722,24 @@ header .header-content .header-items:hover {
     font-size: 14px;
     border: 1px solid #cecece94;
     background-color: #448BB9;
-    animation: pulse513 1.5s infinite;
+}
+
+.project-text-box a:hover{
+    animation: pulse513 1.5s infinite; 
+}
+
+.project-icon{
+    animation: ripple 0.6s linear infinite;
+}
+  
+@keyframes ripple {
+    0% {
+      box-shadow: 0 0 0 0 #ffffff1a, 0 0 0 20px #ffffff1a, 0 0 0 40px #ffffff1a, 0 0 0 60px #ffffff1a;
+    }
+  
+    100% {
+      box-shadow: 0 0 0 20px #ffffff1a, 0 0 0 40px hsla(0, 0%, 100%, 0.102), 0 0 0 60px #ffffff1a, 0 0 0 80px #ffffff00;
+    }
 }
 
 /* Media query */
@@ -1911,24 +1992,26 @@ textarea {
     -webkit-column-gap: 15px;
 }
 
-.contact .contact-input button {
+.contact .contact-input .contact-btn {
     border: none;
     outline: none;
+    cursor: pointer;
     background: unset;
+    display: inline-block;
+    position: relative;
     width: fit-content;
-    color: #fff;
+    color: #448BB9;
     margin: auto;
     font-weight: 600;
     margin-top: 10px;
-    padding: 15px 25px;
+    padding: 15px 30px;
     border-radius: 30px;
-    background-color: #438bb8;
-    transition-delay: 0.4s;
-    transition: 0.8s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.699);
+    border: 1px solid #cecece94;
+    transition: all 1.5s;
+    overflow: hidden;
+    z-index: 1;
     font-family: 'Nexa-ExtraLight';
-}
-
-.contact .contact-input button:hover{
     -webkit-animation: pulse 2s infinite;
     animation: pulse513 1.5s infinite;
 }
@@ -1943,6 +2026,28 @@ textarea {
     100% {
         box-shadow: 0 0 0 0 #da674400;
     }
+}
+
+.contact .contact-input .contact-btn::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -40px;
+    background-color: #448BB9;
+    z-index: -1;
+    transition: all 1s;
+}
+
+.contact .contact-input .contact-btn:hover::before {
+    width: 160%;
+    border: none;
+}
+
+.contact .contact-input .contact-btn:hover{
+    color: #fff;
+    border: 1px solid #448BB9;
 }
 
 /* Media query */
