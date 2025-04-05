@@ -2084,7 +2084,7 @@ textarea {
 #CEO word
 /----------------------- */ 
 .card {
-    width: 60%;
+    width: 65%;
     padding: 50px 30px;
     border-radius: 8px;
     background: linear-gradient(to left, #12171d86 0%, #12171dd5 100%);
@@ -2243,6 +2243,11 @@ textarea {
         height: 140px;
         top: 150px;
         left: 55%;
+    }
+
+    .pulse-container{
+        width: 90px;
+        height: 90px;
     }
 }
 
