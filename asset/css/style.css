@@ -1492,6 +1492,7 @@ header .header-content .header-items:hover {
 }
 
 .link {
+    width: fit-content;
     display: flex;
     align-items: center;
     gap: 5px;
