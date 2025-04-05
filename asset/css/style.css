@@ -1506,12 +1506,6 @@ header .header-content .header-items:hover {
     border-radius: 30px;
     color: #448BB9;
     border: 1px solid #8080802f;
-
-    display: inline-block;
-    position: relative;
-    transition: all 1.5s;
-    background-color: transparent;
-    z-index: 1;
 }
 
 .link i{
@@ -1521,34 +1515,34 @@ header .header-content .header-items:hover {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    color: #448BB9 !important;
     border: 1px solid #8080802f;
-
-    display: inline-block;
     position: relative;
     overflow: hidden;
     background-color: transparent;
-    z-index: 1;
+     z-index: 1;
+    transition: color 1s, border 1s;
 }
 
-.link i::before, .link .view-blog::before{
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 0%;
-    top: 0;
-    left: 0px;
-    background-color: #448BB9;
-    z-index: -1;
-    transition: all 1s;
+.link i::before {
+    /* content: ""; */
+    /* position: absolute; */
+    /* height: 100%; */
+    /* width: 0%; */
+    /* top: 0; */
+    /* left: 0px; */
+    /* background-color: #448BB9; */
+    /* z-index: -1; */
+    /* transition: all 1s; */
 }
 
-.link i:hover::before, .link .view-blog:hover::before{
+.link i:hover::before{
     width: 160%;
 }
 
-.link i:hover, .link .view-blog:hover{
-    color: #fff;
-    border: 1px solid #fff;
+.link i:hover {
+    color: #fff !important;
+    border: 1px solid #448BB9;
 }
 
 /* .link:hover .view-blog{
