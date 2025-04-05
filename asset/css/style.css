@@ -2564,7 +2564,7 @@ footer {
     font-weight: 600;
 }
 
-.project-text a{
+.project-text .project-link {
     font-size: 14px;
     display: flex;
     align-items: center;
@@ -2572,16 +2572,42 @@ footer {
     font-weight: 600;
     gap: 5px;
     -webkit-column-gap: 5px;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden; /* Assure que le fond ne déborde pas */
 }
 
-.project-text .project-link p{
+/* Animation de fond sur le conteneur principal */
+.project-text .project-link .bg-anim {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;  /* Commence à 0% */
+    height: 100%;
+    background-color: #448BB9;
+    z-index: -1;
+    transition: width 1s ease;
+}
+
+/* Survol du lien entier */
+.project-text .project-link:hover .bg-anim {
+    width: 100%;  /* L'animation se déploie sur toute la largeur */
+}
+
+/* Style du texte */
+.project-text .project-link .text-link-project {
     padding: 8px 25px;
     border-radius: 20px;
     color: #448BB9;
     border: 1px solid #8080802f;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;  /* Place le texte devant l'animation */
 }
 
-.project-text .project-link i{
+/* Style de l'icône */
+.project-text .project-link .icon-wrap {
     width: 40px;
     height: 40px;
     display: flex;
@@ -2589,7 +2615,22 @@ footer {
     justify-content: center;
     border-radius: 50%;
     border: 1px solid #8080802f;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;  /* Place l'icône devant l'animation */
 }
+
+/* Appliquer les changements de couleur au survol */
+.project-text .project-link:hover .text-link-project {
+    color: #fff;
+    border-color: #fff;
+}
+
+.project-text .project-link:hover .icon-wrap {
+    color: #fff;
+    border-color: #fff;
+}
+
 
 /* Media query */
 @media screen and (max-width: 1100px){
