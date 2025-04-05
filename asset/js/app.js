@@ -133,13 +133,13 @@ let visibleCount = getVisibleCount(); // Initialiser le nombre d'images visibles
 // Fonction pour obtenir visibleCount selon la taille d'écran
 function getVisibleCount() {
     if (window.innerWidth >= 1230) {
-        return 3; // Ordinateur large
+        return 3;
     } else if (window.innerWidth >= 970) {
-        return 2; // Ordinateur moyen
+        return 2;
     } else if (window.innerWidth >= 670) {
-        return 2; // Tablette
+        return 2;
     } else {
-        return 1; // Mobile
+        return 1;
     }
 }
 
