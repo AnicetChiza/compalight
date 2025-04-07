@@ -56,7 +56,6 @@ h6 {
 .title div h4 {
     font-size: 15px;
     color: #1977cc33;
-    font-style: italic;
     font-family: 'Nexa-Heavy';
     background: linear-gradient(to right, #448BB9, #F59C27);
     -webkit-background-clip: text;
@@ -64,15 +63,14 @@ h6 {
 }
 
 .title div p {
-    padding: 0.5px;
-    width: 70px;
+    padding: 0.3px;
+    width: 80px;
     background-color: #ddd;
 }
 
 .title h2 {
-    font-size: 30px;
+    font-size: 35px;
     color: #448BB9;
-    font-style: italic;
 }
 
 .text-intro {
@@ -654,7 +652,7 @@ header .header-content .header-items:hover {
     -webkit-column-gap: 15px;
 }
 
-.our-goal p{
+.our-goals p{
     padding: 30px 30px;
     font-weight: 600;
     border-radius: 5px;
@@ -664,26 +662,26 @@ header .header-content .header-items:hover {
     box-shadow: 0px 1px 10px #4458901c;
 }
 
-.our-goal p:hover{
+.our-goals p:hover{
     transform: translateY(5px);
 }
 
-.our-goal p:nth-child(2){
+.our-goals p:nth-child(2){
     color: #fff;
     background-color: #12171dbb;
 }
 
-.our-goal p:nth-child(3){
+.our-goals p:nth-child(3){
     color: #fff;
     background-color: #12171dbb;
 }
 
-.our-goal p:nth-child(6){
+.our-goals p:nth-child(6){
     color: #fff;
     background-color: #12171dbb;
 }
 
-.our-goal p:nth-child(7){
+.our-goals p:nth-child(7){
     color: #fff;
     background-color: #12171dbb;
 }
@@ -711,27 +709,27 @@ header .header-content .header-items:hover {
     .our-goals{
         grid-template-columns: auto;
     }
-    .our-goal p:nth-child(1){
+    .our-goals p:nth-child(1){
         color: #fff;
         background-color: #12171dbb;
     }
     
-    .our-goal p:nth-child(3){
+    .our-goals p:nth-child(3){
         color: #fff;
         background-color: #12171dbb;
     }
     
-    .our-goal p:nth-child(5){
+    .our-goals p:nth-child(5){
         color: #fff;
         background-color: #12171dbb;
     }
 
-    .our-goal p:nth-child(2){
+    .our-goals p:nth-child(2){
         color: #141b1fda;
         background-color: #fff;
     }
     
-    .our-goal p:nth-child(6){
+    .our-goals p:nth-child(6){
         color: #141b1fda;
         background-color: #fff
     }
@@ -1189,6 +1187,19 @@ header .header-content .header-items:hover {
 #compalight-animation
 /-------------------------- */
 .compalight-animation{
+    position: relative;
+}
+
+.compalight-animation .light{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    opacity: 0.8;
+}
+
+.comaplight-animation-container{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1241,7 +1252,7 @@ header .header-content .header-items:hover {
     }
 }
 
-.circle-content img {
+.circle-content .image-anim {
     width: 100%;
 }
 
