@@ -272,21 +272,21 @@ header .header-content .header-items:hover {
     position: absolute;
     top: 40px;
     right: 80px;
-    /* left: 50%;
-    transform: translateX(0); */
 }
 
 .text-container {
     display: flex;
     color: #fff;
     z-index: 10;
+    width: fit-content;
+    transform: skew(-10deg);
+    background-color: #141b1f69;
 }
 
 .text-container h1{
-    line-height: 77px;
-    font-size: 60px;
+    line-height: 78px;
+    font-size: 64px;
     font-weight: 800;
-    font-style: italic;
     font-family: 'Nexa-Heavy';
     background: linear-gradient(to right, #438bb8, #F6C37C);
     -webkit-background-clip: text;
@@ -313,7 +313,7 @@ header .header-content .header-items:hover {
     color: #d3d3d3;
     display: flex;
     flex-direction: column;
-    font-style: italic;
+    /* font-style: italic; */
     margin-top: 15px;
     z-index: 10;
     font-family: 'Nexa-Heavy';
@@ -353,13 +353,13 @@ header .header-content .header-items:hover {
     }
 }
 
-@media screen and (max-width: 730px){
+@media screen and (max-width: 740px){
     .logo{
         right: 50px;
     }
     .text-container h1{
         font-size: 50px;
-        line-height: 64px;
+        line-height: 62px;
     }
     .text-box p{
         font-size: 17px;
@@ -374,6 +374,13 @@ header .header-content .header-items:hover {
             transparent 1px, 
             transparent 25%
         );
+    }
+}
+
+@media screen and (max-width: 370px){
+    .text-container h1{
+        font-size: 40px;
+        line-height: 52px;
     }
 }
 
@@ -403,6 +410,7 @@ header .header-content .header-items:hover {
     background: linear-gradient(to right, #448BB9, #F59C27);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    
 }
 
 .hero-second-page div{
