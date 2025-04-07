@@ -463,10 +463,10 @@ header .header-content .header-items:hover {
 
 @keyframes animate {
     0% {
-        transform: translateY(-5px);
+        transform: translateY(-7px);
     }
     50% {
-        transform: translateY(5px);
+        transform: translateY(7px);
     }
 }
 
@@ -1197,6 +1197,7 @@ header .header-content .header-items:hover {
     width: 200px;
     height: 200px;
     opacity: 0.8;
+    animation: animate 2s linear infinite;
 }
 
 .comaplight-animation-container{
@@ -1212,6 +1213,8 @@ header .header-content .header-items:hover {
     width: 600px;
     height: 600px;
     padding: 30px 30px 30px 30px;
+    margin-top: 35px;
+    margin-bottom: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1257,6 +1260,13 @@ header .header-content .header-items:hover {
 }
 
 /* Media query */
+@media screen and (max-width: 890px){
+    .compalight-animation .light{
+        width: 150px;
+        height: 150px;
+    }
+}
+
 @media screen and (max-width: 710px){
     .circle-container{
         width: 400px;
@@ -1276,6 +1286,13 @@ header .header-content .header-items:hover {
         100% {
             box-shadow: 0 0 0 0 #da674400;
         }
+    }
+}
+
+@media screen and (max-width: 580px){
+    .compalight-animation .light{
+        width: 120px;
+        height: 120px;
     }
 }
 
