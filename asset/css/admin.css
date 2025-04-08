@@ -214,8 +214,9 @@ textarea{
 
 .menu-dash a{
     color: #fff;
-    padding: 8px 25px;
-    border-radius: 25px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: 600;
     border: 1px solid #438bb8;
     background-color: #438bb8;
 }
@@ -658,5 +659,72 @@ textarea{
     }
     .admin-blog-container{
         width: 100%;
+    }
+}
+
+/* ------------------------- /
+#Team
+/ ------------------------- */
+.admin-team{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 30px;
+    gap: 15px;
+    -webkit-column-gap: 15px;
+    padding-bottom: 30px;
+}
+
+.admin-team-member{
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-team-member img{
+    width: 100%;
+    height: 310px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.admin-team-name{
+    margin-top: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border:  1px solid #cecece94;
+}
+
+.admin-team-member form{
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+    -webkit-column-gap: 10px;
+}
+
+.admin-team-member form a{
+    padding: 10px 20px;
+    color: #448bb9;
+    width: 100%;
+    text-align: center;
+}
+
+.admin-team-member form button{
+    background: unset;
+    padding: 10px 20px;
+    color: #c54040;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #cecece94;
+}
+
+/* Media query */
+@media screen and (max-width: 800px){
+    .admin-team{
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .admin-team{
+        grid-template-columns: 100%;
     }
 }
