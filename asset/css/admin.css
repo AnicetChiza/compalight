@@ -400,6 +400,7 @@ textarea{
 }
 .admin-account form input[type='submit']{
     color: #fff;
+    font-weight: 600;
     background-color: #438bb8;
 }
 
