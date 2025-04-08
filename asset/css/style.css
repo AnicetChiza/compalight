@@ -955,11 +955,13 @@ header .header-content .header-items:hover {
 .mission-image strong{
     position: absolute;
     bottom: 20px;
-    right: 20px;
+    right: 18px;
     padding: 10px 20px;
     border-radius: 5px;
     color: #448BB9;
+    font-style: italic;
     background-color: #fff;
+    font-family: 'Nexa-Heavy';
 }
 
 .goal {
