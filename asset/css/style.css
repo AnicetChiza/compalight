@@ -959,7 +959,6 @@ header .header-content .header-items:hover {
     padding: 10px 20px;
     border-radius: 5px;
     color: #448BB9;
-    font-style: italic;
     background-color: #fff;
     font-family: 'Nexa-Heavy';
 }
@@ -1800,8 +1799,8 @@ header .header-content .header-items:hover {
 .project-container {
     display: flex;
     align-items: center;
-    background: #f5f5f5a8;
-    margin-top: -20px;
+    background: #f5f5f577;
+    margin-top: -30px;
     font-style: italic;
 }
 
