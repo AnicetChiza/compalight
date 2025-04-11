@@ -79,25 +79,6 @@
     border: 1px solid #cecece94;
 }
 
-.like-article{
-    display: flex;
-}
-
-.commit, .like{
-    padding: 12px 20px;
-    font-weight: 700;
-    border: 1px solid #cecece94;
-    font-family: 'Nexa-Heavy';
-    color: #4879a4;
-}
-
-.like-article div{
-    display: flex;
-    align-items: center;
-    -webkit-column-gap: 5px;
-    cursor: pointer;
-}
-
 .medias{
     display: flex;
     align-items: center;
@@ -249,11 +230,7 @@
 @media screen and (max-width: 530px){
     .comments form input[type=submit]{
         width: 100%;
-    }
-
-    .like-article{
-        flex-wrap: wrap;
-    }
+    }\
 }
 
 @media screen and (max-width: 400px){
