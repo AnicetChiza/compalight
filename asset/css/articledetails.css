@@ -167,14 +167,22 @@
 
 .commit-container{
     display: flex;
-    gap: 20px;
-    -webkit-column-gap: 20px;
+    flex-direction: column;
+    gap: 8px;
+    -webkit-column-gap: 8px;
     padding: 20px 30px;
     border-radius: 5px;
     background-color: #f4f4f4af;
 }
 
-.people-commit i{
+.commit-item{
+    display: flex;
+    gap: 10px;
+    -webkit-column-gap: 10px;
+    align-items: center;
+}
+
+.commit-item i{
     width: 50px;
     height: 50px;
     font-size: 20px;
@@ -185,26 +193,31 @@
     border: 1px solid #75747458;
 }
 
-.my-commit{
-    display: flex;
-    flex-direction: column;
-    font-style: italic;
-}
-
-.my-commit p{
-    margin-top: 10px;
-    font-size: 14px;
-}
-
-.my-commit h4{
+.commit-item h4{
     color: #438bb8;
 }
 
-.my-commit span{
-    font-size: 12px;
+.commit-item .commit-date, .commit-hour{
+    font-size: 13px;
     margin-top: 5px;
     font-weight: 600;
+}
+
+.commit-item .commit-date{
     color: #bbbbbb;
+}
+
+.commit-item strong, .commit-hour{
+    font-size: 13px;
+    color: #4879a4;
+}
+
+.commit-text {
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+    margin-top: 10px;
+    font-size: 14px;
 }
 
 /* Media query */
@@ -230,7 +243,7 @@
 @media screen and (max-width: 530px){
     .comments form input[type=submit]{
         width: 100%;
-    }\
+    }
 }
 
 @media screen and (max-width: 400px){
