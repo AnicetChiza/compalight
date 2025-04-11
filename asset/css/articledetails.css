@@ -178,6 +178,7 @@
 .commit-item{
     display: flex;
     gap: 10px;
+    font-style: italic;
     -webkit-column-gap: 10px;
     align-items: center;
 }
@@ -218,6 +219,24 @@
     font-style: italic;
     margin-top: 10px;
     font-size: 14px;
+}
+
+.feedback{
+    display: flex;
+    align-items: center;
+    font-style: italic;
+    justify-content: flex-end;
+    gap: 5px;
+    -webkit-column-gap: 5px;
+    color: #438bb8;
+}
+
+.feedback span{
+    font-size: 13px;
+}
+
+.feedback i{
+    font-size: 28px;
 }
 
 /* Media query */
