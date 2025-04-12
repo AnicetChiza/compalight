@@ -160,7 +160,10 @@
 }
 
 .all-commits{
-    margin-top: px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    -webkit-column-gap: 10px;
     border-top-left-radius: 5px;
     text-align: left;
 }
@@ -173,6 +176,11 @@
     padding: 20px 30px;
     border-radius: 5px;
     background-color: #f4f4f4af;
+}
+
+.reply{
+    width: 90%;
+    margin-left: auto;
 }
 
 .commit-item{
@@ -262,6 +270,9 @@
 @media screen and (max-width: 530px){
     .comments form input[type=submit]{
         width: 100%;
+    }
+    .reply{
+        width: 95%;
     }
 }
 
