@@ -75,7 +75,7 @@
     border-radius: 10px;
     height: fit-content;
     font-style: italic;
-    color: #141b1f7a;
+    color: #4879a4;
     border: 1px solid #cecece94;
 }
 
@@ -162,8 +162,8 @@
 .all-commits{
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    -webkit-column-gap: 10px;
+    gap: 15px;
+    -webkit-column-gap: 15px;
     border-top-left-radius: 5px;
     text-align: left;
 }
@@ -171,16 +171,17 @@
 .commit-container{
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    -webkit-column-gap: 8px;
+    gap: 10px;
+    -webkit-column-gap: 10px;
     padding: 20px 30px;
     border-radius: 5px;
-    background-color: #f4f4f4af;
+    border: 1px solid #cecece94;
 }
 
 .reply{
     width: 90%;
     margin-left: auto;
+    border: 1px solid #cecece94;
 }
 
 .commit-item{
