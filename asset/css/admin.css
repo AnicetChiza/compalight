@@ -82,23 +82,6 @@ textarea{
     font-weight: 600;
 }
 
-.register{
-    margin-top: 10px;
-    font-size: 13px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    -webkit-column-gap: 5px;
-    justify-content: center;
-}
-
-.register a{
-    color: #4879a4;
-    border: none;
-    padding: unset;
-    font-weight: 600;
-}
-
 /* Media query */
 @media screen and (max-width: 1250px){
     .login form{
