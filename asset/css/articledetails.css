@@ -79,6 +79,13 @@
     border: 1px solid #cecece94;
 }
 
+.brief-article h4{
+    font-size: 14px;
+    background: linear-gradient(to right, #438bb8, #F6C37C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .medias{
     display: flex;
     align-items: center;
@@ -112,9 +119,9 @@
 }
 
 .comments{
-    margin-top: 15px;
-    padding-top: 20px;
-    border-top: 1px solid #75747458;
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid #cecece94;
 }
 
 .comments span{
@@ -152,6 +159,8 @@
 .comments form input[type=submit]{
     color: #4879a4;
     font-weight: 600;
+    padding: 15px 30px;
+    width: 100%;
     border: none;
     width: fit-content;
     display: flex;
