@@ -168,6 +168,14 @@
     background-color: #438bb8;
 }
 
+.article-commits .title{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #fff;
+    padding: 20px 0px;
+}
+
 .all-commits{
     display: flex;
     flex-direction: column;
