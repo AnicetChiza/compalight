@@ -868,3 +868,27 @@ textarea{
         margin-top: 8px;
     }
 }
+
+/* ------------------------- /
+#Admin F.A.Q
+/ ------------------------- */
+.faq-list form{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    -webkit-column-gap: 5px;
+}
+
+.faq-list form a{
+    color: #448bb9;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.faq-list form button {
+    color: #c54040;
+    padding: 12px 20px;
+    border-radius: 5px;
+    background: unset;
+    border: 1px solid #cecece94;
+}
