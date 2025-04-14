@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ajouter une realisation</title>
+    <title>Contacts</title>
 
     <!--css-->
     <link rel="stylesheet" href="../asset/css/style.css">
@@ -16,18 +16,13 @@
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
-    <!-- Font family-->
-    <link href="https://fonts.googleapis.com/css2?family=Kulim+Park:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
-
 </head>
 <body>
 
     <section class="admin-section">
         <div class="first-bloc">
             <nav>
-                <a href="dashboard.html">
+                <a href="admindashboard.html">
                     <i class="bi bi-clipboard-pulse"></i>
                     <span>Dashboard</span>
                 </a>
@@ -39,7 +34,7 @@
                     <i class="bi bi-image"></i>
                     <span>Gallery</span>
                 </a>
-                <a class="activ" href="adminrealisation.html">
+                <a href="adminrealisation.html">
                     <i class="bi bi-list-check"></i>
                     <span>Réalisations</span>
                 </a>
@@ -51,7 +46,7 @@
                     <i class="bi bi-send"></i>
                     <span>Newsletter</span>
                 </a>
-                <a href="admincontact.html">
+                <a class="activ" href="admincontact.html">
                     <i class="bi bi-telephone-plus"></i>
                     <span>Contacts</span>
                 </a>
@@ -66,38 +61,18 @@
                 </form>
             </nav>
         </div>
-
         <div class="second-bloc">
             <div class="menu-dash">
                 <i class="bi bi-list-nested hamburger"></i>
             </div>
             <div class="overlay-dash"></div>
-            <i class="bi bi-x-lg exit-dash"></i>
+            <i class="bi bi-x-lg exit-dash"></i> 
             
-            <div class="admin-account">
-                <form action="">
-                    <h3>Ajouter la réalisation</h3>
-                    <div class="all-inputs">
-                        <input class="my-input" type="text" placeholder="Ajouter le nom de la réalisation">
-                    </div>
-                    <div class="all-inputs">
-                        <input class="my-input" type="text" placeholder="Ajouter une petite descrption">
-                    </div>
-                    <div class="all-inputs">
-                        <input class="my-input" type="url" placeholder="Ajouter le lien de ton site">
-                    </div>
-                    <div class="all-inputs">
-                        <input class="my-input" type="file">
-                    </div>
-                    
-
-                    <input class="submit" type="submit" value="Ajouter la réalisation">
-                </form>
-            </div>
+            
         </div>
     </section>
-
-    <script src="../asset/js/admin.js"></script>
     
+    <!-- Javascript -->
+    <script src="../asset/js/admin.js"></script>
 </body>
 </html>
