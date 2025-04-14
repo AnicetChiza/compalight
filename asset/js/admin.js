@@ -60,4 +60,4 @@ const placeholders = {
         inputsContainer.appendChild(wrapper);
       }
     });
-  });
+});

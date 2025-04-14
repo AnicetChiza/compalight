@@ -83,12 +83,15 @@
                         <input class="my-input" type="text" placeholder="Ajouter une petite descrption">
                     </div>
                     <div class="all-inputs">
-                        <input class="my-input" type="url" placeholder="Ajouter le lien de ton site">
-                    </div>
-                    <div class="all-inputs">
                         <input class="my-input" type="file">
                     </div>
                     
+                    <div id="section-options">
+                        <label><input type="checkbox" value="website"> <strong>Website</strong></label>
+                        <label><input type="checkbox" value="logo"> <strong>Logo</strong></label>
+                    </div>
+                      
+                    <div id="dynamic-fields"></div>
 
                     <input class="submit" type="submit" value="Ajouter la réalisation">
                 </form>
@@ -97,6 +100,38 @@
     </section>
 
     <script src="../asset/js/admin.js"></script>
+    <script>
+        const inputPlaceholders = {
+            website: "Entrer le lien du site web",
+        };
+
+    const allowedInputs = ["website"]; // Seuls ces éléments génèrent un champ
+
+    const sectionOptions = document.getElementById("section-options");
+    const dynamicFields = document.getElementById("dynamic-fields");
+    const optionCheckboxes = sectionOptions.querySelectorAll("input[type='checkbox']");
+
+    sectionOptions.addEventListener("change", () => {
+        // Réinitialiser les champs visibles
+        dynamicFields.innerHTML = "";
+
+        optionCheckboxes.forEach(option => {
+        const key = option.value;
+
+        if (option.checked && allowedInputs.includes(key)) {
+            const field = document.createElement("div");
+            field.className = "field-block";
+
+            const input = document.createElement("input");
+            input.type = "url";
+            input.placeholder = inputPlaceholders[key] || "Entrer un lien";
+
+            field.appendChild(input);
+            dynamicFields.appendChild(field);
+        }
+        });
+    });
+    </script>
     
 </body>
 </html>
