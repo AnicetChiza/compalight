@@ -2963,22 +2963,59 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
-    height: 100%;
+    justify-content: center;
+    height: 100vh;
+    padding: 15px;
 }
 
 .email-reply-container{
     width: 55%;
+    border-radius: 4px;
+    padding: 20px 30px;
     border: 1px solid #cecece94;
 }
 
-.email-logo img{
-    width: 250px;
+.email-logo{
+    padding-bottom: 10px;
 }
 
-.compalight-identity img{
-    width: 55%;
-    height: 80px;
-    opacity: 0.3;
-    object-fit: cover;
+.email-logo img{
+    width: 200px;
+    display: flex;
+    margin-left: auto;
+}
+
+.email-reply-heading h4{
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 2px;
+    background-color: #448BB9;
+}
+
+.email-message{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 10px;
+    -webkit-column-gap: 10px;
+}
+
+.email-reply .compalight-sign{
+    font-size: 13px;
+}
+
+/* Media query */
+@media screen and (max-width: 1024px){
+    .email-reply-container{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .email-reply-container{
+        width: 100%;
+    }
+    .email-reply-container{
+        padding: 10px 20px;
+    }
 }
