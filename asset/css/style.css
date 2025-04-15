@@ -2955,3 +2955,30 @@ footer {
         font-size: 140px;
     }
 }
+
+/*----------------------------/
+#Email reply
+/----------------------------*/
+.email-reply{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    height: 100%;
+}
+
+.email-reply-container{
+    width: 55%;
+    border: 1px solid #cecece94;
+}
+
+.email-logo img{
+    width: 250px;
+}
+
+.compalight-identity img{
+    width: 55%;
+    height: 80px;
+    opacity: 0.3;
+    object-fit: cover;
+}
