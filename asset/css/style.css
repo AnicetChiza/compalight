@@ -357,7 +357,7 @@ header .header-content .header-items:hover {
     .logo{
         right: 50px;
     }
-    .text-container h1{
+    .text-container h1, .hero-second-page h2{
         font-size: 50px;
         line-height: 62px;
     }
@@ -388,7 +388,7 @@ header .header-content .header-items:hover {
 #Hero second page
 /----------------------- */
 .hero-second-page{
-    height: 40vh;
+    height: 43vh;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
@@ -407,10 +407,10 @@ header .header-content .header-items:hover {
     color: #c0c0c0;
     font-weight: 900;
     font-size: 60px;
+    line-height: 65px;
     background: linear-gradient(to right, #448BB9, #F59C27);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
 }
 
 .hero-second-page div{
@@ -436,11 +436,12 @@ header .header-content .header-items:hover {
 }
 
 @media screen and (max-width: 510px){
-    .hero-second-page{
+    /* .hero-second-page{
         height: 35vh;
-    }
+    } */
     .hero-second-page h2{
         font-size: 35px;
+        line-height: 50px;
     }
 }
 
@@ -1052,7 +1053,7 @@ header .header-content .header-items:hover {
 #Choose us
 /-------------------------- */
 .choose-us {
-    background-color: #f5f5f5a8;
+    background-color: #fff;
 }
 
 .choose-container, .choose-us .title {
@@ -1076,8 +1077,11 @@ header .header-content .header-items:hover {
     text-align: center;
     gap: 10px;
     -webkit-column-gap: 10px;
-    background-color: #448BB9;
-    color: #fff;
+    /* background-color: #fff; */
+    background: linear-gradient(135deg,#0000 18.75%,#f3f3f3 0 31.25%,#0000 0),
+      repeating-linear-gradient(45deg,#f3f3f3 -6.25% 6.25%,#ffffff 0 18.75%);
+    background-size: 15px 15px;
+    color: #141b1fda;
     transition: all 0.3s ease-in-out;
     z-index: 1;
     border-radius: 5px;
@@ -1096,8 +1100,8 @@ header .header-content .header-items:hover {
 }
   
 .item-box:hover::before {
-    background-color: #fff;
-    color: #448BB9;
+    background-color: #448ab9b9;
+    color: #fff;
     right: 0;
     top: 0;
     width: 100%;
@@ -1108,12 +1112,13 @@ header .header-content .header-items:hover {
 
 .item-box h4 {
     font-size: 20px;
+    font-weight: 500;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .item-box div {
-    background-color: #fff;
+    background-color: #448BB9;
     margin: auto;
     position: absolute;
     right: 0;
@@ -1131,7 +1136,7 @@ header .header-content .header-items:hover {
 }
 
 .item-box i {
-    color: #448BB9;
+    color: #fff;
 }
 
 .item-box div::before {
@@ -1141,7 +1146,7 @@ header .header-content .header-items:hover {
     top: -8px;
     height: 100%;
     width: 100%;
-    background-color: #f0eeee32;
+    background-color: #7992a63a;
     border-radius: 5px;
     transition: all 0.3s ease-out 0s;
     transform: translateZ(-1px);
@@ -1149,19 +1154,19 @@ header .header-content .header-items:hover {
 }
 
 .item-box:hover{
-    color: #141b1fda;
-}
-
-.item-box:hover div{
-    background-color: #448BB9;
-}
-
-.item-box:hover div i{
     color: #fff;
 }
 
+.item-box:hover div{
+    background-color: #fff;
+}
+
+.item-box:hover div i{
+    color: #448BB9;
+}
+
 .item-box:hover div::before{
-    background: #7992a63a;
+    background: #f0eeee32;
 }
 
 .item-box p{
@@ -1949,7 +1954,7 @@ header .header-content .header-items:hover {
 
 .team .member .member-info-content {
     position: absolute;
-    left: 30px;
+    left: 60px;
     right: 0;
     bottom: 30px;
     transition: bottom 0.4s;
