@@ -505,7 +505,7 @@ header .header-content .header-items:hover {
     background: #448BB9;
     border-radius: 4px;
     min-width: 150px;
-    padding: 12px 30px;
+    padding: 15px 45px;
     margin-top: 15px;
     color: #fff;
     font-weight: 600;
@@ -516,6 +516,7 @@ header .header-content .header-items:hover {
 
 .about-link{
     animation: ripple 0.6s linear infinite;
+    transform: skewX(-10deg);
 }
   
 @keyframes ripple {
@@ -1363,10 +1364,8 @@ header .header-content .header-items:hover {
     background: linear-gradient(135deg,#0000 9.75%,#f3f3f3c5 0 31.25%,#0000 0),
       repeating-linear-gradient(45deg,#f3f3f3c5 -6.25% 6.25%,#ffffffb9 0 9.75%);
     background-size: 15px 15px;
-    /* background-color: #fff; */
     transition-delay: 0.2s;
     transition: 0.4s ease-in-out;
-    /* box-shadow: 0 0 29px 0 #4458901f; */
 }
 
 .service-container::before{
@@ -1857,6 +1856,7 @@ header .header-content .header-items:hover {
 
 .project-icon{
     animation: ripple 0.6s linear infinite;
+    transform: skewX(-10deg);
 }
   
 @keyframes ripple {
