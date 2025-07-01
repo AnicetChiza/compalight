@@ -809,7 +809,6 @@ header .header-content .header-items:hover {
     display: flex;
     gap: 10px;
     -webkit-column-gap: 10px;
-    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -833,18 +832,25 @@ header .header-content .header-items:hover {
     border-left: 4px solid #448BB9;
 }
 
+.all-list-items{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
 .mission-item {
-    width: 60%;
+    width: 100%;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    gap: 15px;
-    -webkit-column-gap: 15px;
     margin-top: 30px;
     border: 1px solid #cecece94;
     position: relative;
     overflow: hidden;
+}
+
+.mission-item-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    -webkit-column-gap: 15px;
 }
 
 /* Span pour l'animation */
@@ -923,11 +929,10 @@ header .header-content .header-items:hover {
 .mission-item .mission-text-box {
     display: flex;
     padding: 50px 30px;
-    width: 100%;
     flex-direction: column;
+    justify-content: center;
     z-index: 2;
     border-radius: 5px;
-    margin-right: -40px;
     background: #0000001a;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -945,9 +950,10 @@ header .header-content .header-items:hover {
 
 .mission-item .mission-image img {
     width: 100%;
-    height: 230px;
+    height: 100%;
     object-fit: cover;
     border-radius: 5px;
+    border: 1px solid #cecece94;
 }
 
 .mission-image{
@@ -956,11 +962,11 @@ header .header-content .header-items:hover {
 
 .mission-image strong{
     position: absolute;
-    bottom: 20px;
+    top: 18px;
     right: 18px;
     padding: 10px 20px;
     border-radius: 5px;
-    color: #448BB9;
+    color: #141b1fda;
     background-color: #fff;
     font-family: 'Nexa-Heavy';
 }
@@ -975,21 +981,24 @@ header .header-content .header-items:hover {
 
 /* Media query */
 @media screen and (max-width: 1200px) {
-    .list-items{
+    .list-items, .all-list-items{
         padding-left: 0px;
         padding-right: 0px;
     }
 }
 
-@media screen and (max-width: 910px){
-    .mission-item{
-        width: 80%;
+@media screen and (max-width: 780px){
+    .mission-item-container{
+        grid-template-columns: 1fr;
+    }
+    .mission-item .mission-image img{
+        height: 270px;
     }
 }
 
-@media screen and (max-width: 690px){
-    .mission-item{
-        width: 100%;
+@media screen and (max-width: 460px){
+    .mission .list-items ul{
+        justify-content: center;
     }
 }
 
