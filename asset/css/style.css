@@ -313,7 +313,6 @@ header .header-content .header-items:hover {
     color: #d3d3d3;
     display: flex;
     flex-direction: column;
-    /* font-style: italic; */
     margin-top: 15px;
     z-index: 10;
     font-family: 'Nexa-Heavy';
@@ -1218,83 +1217,94 @@ header .header-content .header-items:hover {
     position: relative;
 }
 
-.compalight-animation .light{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 230px;
-    height: 230px;
-    opacity: 0.3;
-    animation: animate 2s linear infinite;
-}
-
-.comaplight-animation-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.compalight-anim {
     position: relative;
-}
-
-.circle-container{
-    width: fit-content;
-    border-radius: 50%;
-    width: 600px;
-    height: 600px;
-    padding: 30px 30px 30px 30px;
-    margin-top: 35px;
-    margin-bottom: 35px;
+    width: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px dashed #448ab977;
-    animation: rotate 30s linear infinite;
-    -webkit-animation: pulse 2s infinite;
-    animation: pulse516 1.5s infinite;
 }
 
-@keyframes pulse516 {
+.compalight-anim::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    height: 800px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #F59C27 0%, transparent 60%);
+    opacity: 0.5;
+    filter: blur(70px);
+}
+
+.compalight-anim::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg,#0000 9.75%,#f3f3f333 0 31.25%,#0000 0),
+                repeating-linear-gradient(45deg,#f3f3f333 -6.25% 6.25%,#ffffffb9 0 9.75%);
+    background-size: 15px 15px;
+    z-index: 0;
+}
+
+.compalight-icons {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid #cecece94;
+    background-color: #fff;
+    color: #448BB9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    -webkit-animation: pulse 2s infinite;
+        animation: pulse520 1.5s infinite;
+}
+
+.compalight-icons img{
+  width: 50px;
+}
+
+.floating-icons {
+    position: absolute;
+    left: 48.5%;
+    top: 47%;
+    width: 0;
+    height: 0;
+    z-index: 1;
+}
+
+.floating-icons i {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #448BB9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 29px 0 #4458901f;
+    transition: transform 0.3s ease-out;
+}
+
+@keyframes pulse520 {
     0% {
         box-shadow: 0 0 0 0 #448ab950;
     }
     70% {
-        box-shadow: 0 0 0 100px #da674400;
+        box-shadow: 0 0 0 50px #da674400;
     }
     100% {
         box-shadow: 0 0 0 0 #da674400;
     }
 }
 
-.circle-content{
-    width: 430px;
-    height: 430px;
-    border-radius: 50%;
-    padding: 10px 10px;
-    padding: 30px 30px 30px 30px;
-    border: 2px dashed #448ab977;
-    animation: rotate 20s linear infinite reverse;
-}
-
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-.circle-content .image-anim {
-    width: 100%;
-}
-
 /* Media query */
-@media screen and (max-width: 890px){
-    .compalight-animation .light{
-        width: 150px;
-        height: 150px;
-    }
-}
-
 @media screen and (max-width: 710px){
     .circle-container{
         width: 400px;
@@ -1314,13 +1324,6 @@ header .header-content .header-items:hover {
         100% {
             box-shadow: 0 0 0 0 #da674400;
         }
-    }
-}
-
-@media screen and (max-width: 580px){
-    .compalight-animation .light{
-        width: 120px;
-        height: 120px;
     }
 }
 

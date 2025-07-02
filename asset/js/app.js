@@ -179,3 +179,21 @@ window.addEventListener('resize', () => {
 
 // Initialiser la visibilité au chargement de la page
 updateVisibility();
+
+/*-----------------------------/
+#Compalight-anim
+/-----------------------------*/
+const icons = document.querySelectorAll('.floating-icons i');
+const radius = 180;
+const total = icons.length;
+
+icons.forEach((icon, index) => {
+  const angle = (index / total) * 2 * Math.PI;
+
+  const x = radius * Math.cos(angle);
+  const y = radius * Math.sin(angle);
+
+//   icon.style.left = `50%`;
+//   icon.style.top = `50%`;
+  icon.style.transform = `translate(${x}px, ${y}px)`;
+});
