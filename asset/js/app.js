@@ -184,7 +184,7 @@ updateVisibility();
 #Compalight-anim
 /-----------------------------*/
 const icons = document.querySelectorAll('.floating-icons i');
-const radius = 180;
+const radius = 200;
 const total = icons.length;
 
 icons.forEach((icon, index) => {
