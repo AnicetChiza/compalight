@@ -183,17 +183,30 @@ updateVisibility();
 /*-----------------------------/
 #Compalight-anim
 /-----------------------------*/
-const icons = document.querySelectorAll('.floating-icons i');
-const radius = 200;
-const total = icons.length;
+function updateIconPositions() {
+  const icons = document.querySelectorAll('.floating-icons i');
+  const total = icons.length;
 
-icons.forEach((icon, index) => {
-  const angle = (index / total) * 2 * Math.PI;
+  // Définir le rayon selon la largeur de l'écran
+  let radius = 200;
 
-  const x = radius * Math.cos(angle);
-  const y = radius * Math.sin(angle);
+  if (window.innerWidth <= 380) {
+    radius = 130;
+  } else if (window.innerWidth <= 510) {
+    radius = 150;
+  }
 
-//   icon.style.left = `50%`;
-//   icon.style.top = `50%`;
-  icon.style.transform = `translate(${x}px, ${y}px)`;
-});
+  icons.forEach((icon, index) => {
+    const angle = (index / total) * 2 * Math.PI;
+    const x = radius * Math.cos(angle);
+    const y = radius * Math.sin(angle);
+    icon.style.transform = `translate(${x}px, ${y}px)`;
+  });
+}
+
+// Appel initial
+updateIconPositions();
+
+// Réagir au redimensionnement
+window.addEventListener('resize', updateIconPositions);
+

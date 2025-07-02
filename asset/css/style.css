@@ -1285,47 +1285,27 @@ header .header-content .header-items:hover {
 }
 
 /* Media query */
-@media screen and (max-width: 710px){
-    .circle-container{
-        width: 400px;
-        height: 400px;
+@media screen and (max-width: 515px){
+    .compalight-icons{
+        width: 150px;
+        height: 150px;
     }
-    .circle-content{
-        width: 280px;
-        height: 280px;
+    .compalight-icons img{
+        width: 60px;
     }
-    @keyframes pulse516 {
-        0% {
-            box-shadow: 0 0 0 0 #448ab950;
-        }
-        70% {
-            box-shadow: 0 0 0 70px #da674400;
-        }
-        100% {
-            box-shadow: 0 0 0 0 #da674400;
-        }
-    }
-}
-
-@media screen and (max-width: 450px){
-    .circle-container{
-        width: 340px;
-        height: 340px;
-    }
-    .circle-content{
-        width: 220px;
-        height: 220px;
+    .floating-icons {
+        left: 44%;
+        top: 47%;
     }
 }
 
 @media screen and (max-width: 380px){
-    .circle-container{
-        width: 290px;
-        height: 290px;
+    .compalight-icons{
+        width: 130px;
+        height: 130px;
     }
-    .circle-content{
-        width: 210px;
-        height: 210px;
+    .compalight-icons img{
+        width: 50px;
     }
 }
 
@@ -1353,8 +1333,8 @@ header .header-content .header-items:hover {
     text-align: center;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(135deg,#0000 9.75%,#f3f3f3c5 0 31.25%,#0000 0),
-      repeating-linear-gradient(45deg,#f3f3f3c5 -6.25% 6.25%,#ffffffb9 0 9.75%);
+    background-color: #fff;
+    box-shadow: 0 0 29px 0 #4458901f;
     background-size: 15px 15px;
     transition-delay: 0.2s;
     transition: 0.4s ease-in-out;
