@@ -185,7 +185,7 @@ header .header-content .header-items .tooltip {
     transform-origin: bottom;
     background-color: #fff;
     transform: translateX(-40%) scale(0.8);
-    box-shadow: 0px 0px 10px 0px #0a0a0a5d;
+    box-shadow: 0 0 29px 0 #181e2f54;
 }
 
 header .header-content .header-items .tooltip::before {
@@ -247,11 +247,12 @@ header .header-content .header-items:hover {
     background-size: cover;
     position: relative;
     overflow: hidden;
+    z-index: 2;
 }
 
 .home::before {
     content: '';
-    position: fixed;
+    position: absolute;
     inset: 0;
     background-image: 
         linear-gradient(to right, #ffffff08 1px, transparent 1px),
@@ -368,7 +369,7 @@ header .header-content .header-items:hover {
 #Hero second page
 /----------------------- */
 .hero-second-page{
-    height: 43vh;
+    height: 50vh;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
@@ -376,6 +377,17 @@ header .header-content .header-items:hover {
     -webkit-column-gap: 10px;
     background: linear-gradient(to right, #181c22d0 0%, #181c22d0 100%), url('../images/home.jpg') no-repeat fixed center;
     background-size: cover;
+}
+
+.hero-second-page::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: 
+        linear-gradient(to right, #ffffff08 1px, transparent 1px),
+        linear-gradient(to bottom, #ffffff08 1px, transparent 1px);
+    background-size: 50px 50px;
+    z-index: 0;
 }
 
 .hero-second-page a{
@@ -578,6 +590,7 @@ header .header-content .header-items:hover {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    position: relative;
     margin: auto;
     gap: 20px;
     -webkit-column-gap: 20px;
@@ -586,6 +599,18 @@ header .header-content .header-items:hover {
     color: #c0c0c0;
     background: linear-gradient(to left, #12171dd5 0%, #12171dd5 100%), url(../images/bg.jpg) fixed no-repeat;
     background-size: cover;
+}
+
+.about-message::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: 
+        linear-gradient(to right, #ffffff08 1px, transparent 1px),
+        linear-gradient(to bottom, #ffffff08 1px, transparent 1px);
+    background-size: 50px 50px;
+    z-index: 0;
+    pointer-events: none;
 }
 
 .about-message div{
@@ -598,17 +623,17 @@ header .header-content .header-items:hover {
     margin-left: auto;
     margin-right: auto;
     padding: 30px 30px;
-    border: 1px solid #cecece10;
+    background-color: #ffffff15;
     -webkit-animation: pulse 2s infinite;
-    animation: pulse520 1.5s infinite;
+    animation: pulse522 1.5s infinite;
 }
 
-@keyframes pulse520 {
+@keyframes pulse522 {
     0% {
-        box-shadow: 0 0 0 0 #c4dae94d;
+        box-shadow: 0 0 0 0 #a1bfd35e;
     }
     70% {
-        box-shadow: 0 0 0 40px #da674400;
+        box-shadow: 0 0 0 30px #da674400;
     }
     100% {
         box-shadow: 0 0 0 0 #da674400;
@@ -617,16 +642,21 @@ header .header-content .header-items:hover {
 
 .about-message div img{
     width: 100%;
-    filter: invert(1) brightness(1);
+    transform: skewX(-5deg);
 }
 
 .about-message p{
     width: 70%;
     font-style: italic;
-    font-size: 24px;
-    font-family: 'Nexa-Heavy';
+    font-size: 20px;
+    color: #6C757D;
+    font-weight: 800;
+    /* font-family: 'Nexa-Heavy'; */
     margin-left: auto;
     margin-right: auto;
+    /* background: linear-gradient(to right, #448BB9, #F6C37C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
 }
 
 .about-message i{
