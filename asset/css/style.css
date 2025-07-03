@@ -180,7 +180,8 @@ header .header-content .header-items .tooltip {
     border-radius: 4px;
     transition: all 0.3s;
     padding: 10px 10px;
-    color: #252525dc;
+    color: #448BB9;
+    /* color: #252525dc; */
     pointer-events: none;
     transform-origin: bottom;
     background-color: #fff;
@@ -388,6 +389,7 @@ header .header-content .header-items:hover {
         linear-gradient(to bottom, #ffffff08 1px, transparent 1px);
     background-size: 50px 50px;
     z-index: 0;
+    pointer-events: none;
 }
 
 .hero-second-page a{
@@ -399,7 +401,6 @@ header .header-content .header-items:hover {
     color: #c0c0c0;
     font-weight: 900;
     font-size: 60px;
-    line-height: 65px;
     background: linear-gradient(to right, #448BB9, #F59C27);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -456,7 +457,7 @@ header .header-content .header-items:hover {
 
 .about-container img {
     width: 60%;
-    height: 500px;
+    height: 450px;
     object-fit: cover;
     border-radius: 10px;
     animation: animate 2s linear infinite;
@@ -497,7 +498,7 @@ header .header-content .header-items:hover {
     background: #448BB9;
     border-radius: 4px;
     min-width: 150px;
-    padding: 15px 45px;
+    padding: 12px 45px;
     margin-top: 15px;
     color: #fff;
     font-weight: 600;
@@ -938,7 +939,7 @@ header .header-content .header-items:hover {
 .mission-image strong{
     position: absolute;
     top: 18px;
-    right: 18px;
+    left: 18px;
     padding: 10px 20px;
     border-radius: 5px;
     color: #141b1fda;
@@ -1456,8 +1457,21 @@ header .header-content .header-items:hover {
     align-items: center;
     gap: 10px;
     -webkit-column-gap: 10px;
+    position: relative;
     background: linear-gradient(to right, #141b1fda 0%, #a6a6a6 100%), url(../images/about/newsletter.jpg) fixed top;
     background-size: cover;
+}
+
+.newsletter::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: 
+        linear-gradient(to right, #ffffff08 1px, transparent 1px),
+        linear-gradient(to bottom, #ffffff08 1px, transparent 1px);
+    background-size: 50px 50px;
+    z-index: 0;
+    pointer-events: none;
 }
 
 .newsletter-text{
@@ -1717,8 +1731,21 @@ header .header-content .header-items:hover {
     padding-bottom: 100px;
     color: #c0c0c0;
     font-style: italic;
+    position: relative;
     background: linear-gradient(to left, #12171dd5 0%, #12171dd5 100%), url(../images/bg.jpg) fixed no-repeat;
     background-size: cover;
+}
+
+.more-articles::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: 
+        linear-gradient(to right, #ffffff08 1px, transparent 1px),
+        linear-gradient(to bottom, #ffffff08 1px, transparent 1px);
+    background-size: 50px 50px;
+    z-index: 0;
+    pointer-events: none;
 }
 
 .more-articles h2{
