@@ -429,9 +429,9 @@ header .header-content .header-items:hover {
 }
 
 @media screen and (max-width: 510px){
-    /* .hero-second-page{
+    .hero-second-page{
         height: 35vh;
-    } */
+    }
     .hero-second-page h2{
         font-size: 35px;
         line-height: 50px;

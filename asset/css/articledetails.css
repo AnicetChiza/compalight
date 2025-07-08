@@ -8,6 +8,14 @@
     -webkit-column-gap: 20px;
 }
 
+.article-details{
+    display: grid;
+    gap: 30px;
+    -webkit-column-gap: 30px;
+    margin-top: 30px;
+    grid-template-columns: auto 30%;
+}
+
 .article-details-title h1{
     font-size: 30px;
     font-weight: 900;
@@ -17,8 +25,9 @@
 
 .article-image img{
     width: 100%;
-    height: 500px;
+    height: 600px;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .article-text{
@@ -54,11 +63,11 @@
 }
 
 .display-article{
-    display: grid;
+    /* display: grid;
     gap: 30px;
     -webkit-column-gap: 30px;
     margin-top: 30px;
-    grid-template-columns: auto 30%;
+    grid-template-columns: auto 30%; */
 }
 
 .second-bloc .our-article{
@@ -71,19 +80,22 @@
 }
 
 .brief-article{
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
     padding: 20px 20px;
     border-radius: 10px;
     height: fit-content;
     font-style: italic;
-    color: #4879a4;
+    color: #448bb9;
     border: 1px solid #cecece94;
 }
 
 .brief-article h4{
     font-size: 14px;
-    background: linear-gradient(to right, #438bb8, #F6C37C);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+    color: #141b1f7a;
 }
 
 .medias{
@@ -268,13 +280,13 @@
 
 /* Media query */
 @media screen and (max-width: 1090px){
-    .display-article{
+    .article-details{
         grid-template-columns: auto 40%;
     }
 }
 
 @media screen and (max-width: 900px){
-    .display-article{
+    .article-details{
         grid-template-columns: auto;
     }
 
