@@ -17,7 +17,7 @@
 }
 
 .article-details-title h1{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 900;
     font-style: italic;
     color: #438bb8;
@@ -62,14 +62,6 @@
     -webkit-text-fill-color: transparent;
 }
 
-.display-article{
-    /* display: grid;
-    gap: 30px;
-    -webkit-column-gap: 30px;
-    margin-top: 30px;
-    grid-template-columns: auto 30%; */
-}
-
 .second-bloc .our-article{
     margin-top: 40px;
 }
@@ -81,7 +73,7 @@
 
 .brief-article{
     position: sticky;
-    top: 0;
+    top: 10px;
     bottom: 0;
     z-index: 10;
     padding: 20px 20px;
@@ -289,7 +281,9 @@
     .article-details{
         grid-template-columns: auto;
     }
-
+    .brief-article{
+        position: relative;
+    }
     .about-ntech{
         padding: 40px 40px;
     }
