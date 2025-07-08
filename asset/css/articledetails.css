@@ -92,10 +92,10 @@
 
 .medias{
     display: flex;
-    align-items: center;
+    flex-direction: column;
     gap: 5px;
     -webkit-column-gap: 5px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .medias div{
