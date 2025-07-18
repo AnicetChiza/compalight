@@ -50,7 +50,7 @@
     font-size: 14px;
     padding-top: 5px;
     padding-bottom: 5px;
-    border-left: 5px solid #438bb8;
+    border-left: 5px solid #448bb9;
     border-bottom: 1px solid #ddddddf6;
 }
 
@@ -69,57 +69,6 @@
 .second-bloc .display-article{
     grid-template-columns: 100%;
     margin-bottom: 30px;
-}
-
-.brief-article{
-    position: sticky;
-    top: 10px;
-    bottom: 0;
-    z-index: 10;
-    padding: 20px 20px;
-    border-radius: 10px;
-    height: fit-content;
-    font-style: italic;
-    color: #448bb9;
-    border: 1px solid #cecece94;
-}
-
-.brief-article h4{
-    font-size: 14px;
-    font-weight: 500;
-    color: #141b1f7a;
-}
-
-.medias{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    -webkit-column-gap: 5px;
-    margin-top: 20px;
-}
-
-.medias div{
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    -webkit-column-gap: 5px;
-}
-
-.medias a{
-    width: 35px;
-    height: 35px;
-    display: flex;
-    font-size: 13px;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    transition-delay: 0.4s;
-    transition: 0.7s ease-in-out;
-    border: 1px solid #75747458;
-}
-
-.medias a:hover{
-    border: none;
 }
 
 /* Articles reactions */
@@ -258,7 +207,7 @@
     position: sticky;
     top: 0;
     bottom: 0;
-    z-index: 10;
+    z-index: 2;
     background-color: #fff;
     padding: 20px 0px;
 }
@@ -308,7 +257,7 @@
 }
 
 .commit-item h4{
-    color: #438bb8;
+    color: #448bb9;
 }
 
 .commit-item .commit-date, .commit-hour{
@@ -323,7 +272,7 @@
 
 .commit-item strong, .commit-hour{
     font-size: 13px;
-    color: #4879a4;
+    color: #448bb9;
 }
 
 .commit-text {
@@ -334,14 +283,22 @@
     font-size: 14px;
 }
 
+.feedback-content{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-style: italic;
+    gap: 5px;
+    -webkit-column-gap: 5px;
+}
+
 .feedback{
     display: flex;
     align-items: center;
     font-style: italic;
-    justify-content: flex-end;
     gap: 5px;
     -webkit-column-gap: 5px;
-    color: #438bb8;
+    color: #448bb9;
 }
 
 .feedback span{
@@ -391,7 +348,7 @@
 }
 
 .comments form input[type=submit]{
-    color: #4879a4;
+    color: #448bb9;
     font-weight: 600;
     padding: 15px 30px;
     width: 100%;
@@ -400,6 +357,59 @@
     display: flex;
     color: #fff;
     background-color: #438bb8;
+}
+
+.brief-article{
+    position: sticky;
+    text-align: center;
+    top: 10px;
+    bottom: 0;
+    z-index: 10;
+    padding: 15px 15px;
+    border-radius: 10px;
+    height: fit-content;
+    font-style: italic;
+    color: #448bb9;
+    border: 1px solid #cecece94;
+}
+
+.brief-article p{
+    font-size: 15px;
+    color: #141b1f7a;
+    font-family: 'NexaBold';
+}
+
+.medias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    -webkit-column-gap: 5px;
+    margin-top: 10px;
+}
+
+.medias div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    -webkit-column-gap: 5px;
+}
+
+.medias a{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    font-size: 13px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    transition-delay: 0.4s;
+    transition: 0.7s ease-in-out;
+    border: 1px solid #75747458;
+}
+
+.medias a:hover{
+    border: none;
 }
 
 /* Media query */
