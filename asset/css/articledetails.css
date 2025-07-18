@@ -122,6 +122,39 @@
     border: none;
 }
 
+/* Articles reactions */
+.article-reactions{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    -webkit-column-gap: 15px;
+}
+
+.article-reactions div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    -webkit-column-gap: 10px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: 1px solid #cecece94;
+}
+
+.article-reactions div i{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.article-reactions div span{
+    font-size: 14px;
+    font-weight: 600;
+    color: #141b1f7a;
+    padding-left: 10px;
+    color: #448bb9;
+    border-left: 3px solid #F6C37C;
+}
+
+
 .article-commits .title{
     position: sticky;
     top: 0;
