@@ -126,34 +126,133 @@
 .article-reactions{
     display: flex;
     align-items: center;
-    gap: 15px;
-    -webkit-column-gap: 15px;
+    gap: 6px;
+    -webkit-column-gap: 6px;
 }
 
-.article-reactions div{
+.article-reactions .reaction{
     display: flex;
     align-items: center;
     gap: 10px;
     -webkit-column-gap: 10px;
-    padding: 10px 25px;
+    padding: 8px 25px;
     border-radius: 5px;
     border: 1px solid #cecece94;
 }
 
-.article-reactions div i{
+.article-reactions .reaction i{
     font-size: 20px;
     cursor: pointer;
 }
 
-.article-reactions div span{
+.article-reactions .reaction span{
     font-size: 14px;
     font-weight: 600;
     color: #141b1f7a;
     padding-left: 10px;
     color: #448bb9;
+    font-weight: 500;
+    font-family: 'Nexa-Heavy';
     border-left: 3px solid #F6C37C;
 }
 
+.like-container {
+    position: relative;
+    display: inline-block;
+}
+
+.fireworks {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transform: scale(0.5);
+}
+
+.checked-like-fx {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 10px;
+    left: 40px;
+    border-radius: 50%;
+    box-shadow:
+        0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff,
+        0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff,
+        0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff,
+        0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff,
+        0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff,
+        0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff,
+        0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff,
+        0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff,
+        0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff,
+        0 0 #fff;
+    opacity: 0;
+}
+
+.animate-fireworks {
+    animation: fireworks-bang 1.25s ease-out forwards,
+               fireworks-gravity 1.25s ease-in forwards,
+               fireworks-position 6.25s linear forwards;
+    animation-duration: 1.25s, 1.25s, 6.25s;
+    opacity: 1;
+}
+
+@keyframes fireworks-bang {
+    to {
+        box-shadow:
+            114px -107px #8800ff, 212px -166px #a600ff, 197px -6px #ff006a,
+            179px -329px #3300ff, -167px -262px #ff0062, 233px 65px #ff008c,
+            81px 42px #0051ff, -13px 54px #00ff2b, -60px -183px #0900ff,
+            127px -259px #ff00e6, 117px -122px #00b7ff, 95px 20px #ff8000,
+            115px 1px #0004ff, -160px -328px #00ff40, 69px -242px #000dff,
+            -208px -230px #ff0400, 30px -15px #e6ff00, 235px -15px #fb00ff,
+            80px -232px #d5ff00, 175px -173px #00ff3c, -187px -176px #aaff00,
+            4px 26px #ff6f00, 227px -106px #ff0099, 119px 17px #00ffd5,
+            -102px 4px #ff0088, -16px -4px #00fff7, -201px -310px #00ffdd,
+            64px -181px #f700ff, -234px -15px #00fffb, -184px -263px #aa00ff,
+            96px -303px #0037ff, -139px 10px #0026ff, 25px -205px #00ff2b,
+            -129px -322px #40ff00, -235px -187px #26ff00, -136px -237px #0091ff,
+            -82px -321px #6a00ff, 7px -267px #ff00c8, -155px 30px #0059ff,
+            -85px -73px #6a00ff, 60px -199px #55ff00, -9px -289px #00ffaa,
+            -208px -167px #00ff80, -13px -299px #ff0004, 179px -164px #ff0044,
+            -112px 12px #0051ff, -209px -125px #ff00bb, 14px -101px #00ff95,
+            -184px -292px #ff0099;
+    }
+}
+
+@keyframes fireworks-gravity {
+    to {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+}
+
+@keyframes fireworks-position {
+    0%, 19.9% {
+        margin-top: 10%;
+        margin-left: 40%;
+    }
+    20%, 39.9% {
+        margin-top: 40%;
+        margin-left: 30%;
+    }
+    40%, 59.9% {
+        margin-top: 20%;
+        margin-left: 70%;
+    }
+    60%, 79.9% {
+        margin-top: 30%;
+        margin-left: 20%;
+    }
+    80%, 99.9% {
+        margin-top: 30%;
+        margin-left: 80%;
+    }
+}
+
+
+/* End of reaction bloc */
 
 .article-commits .title{
     position: sticky;

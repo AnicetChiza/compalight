@@ -209,3 +209,4 @@ updateIconPositions();
 
 // Réagir au redimensionnement
 window.addEventListener('resize', updateIconPositions);
+

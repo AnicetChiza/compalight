@@ -80,15 +80,19 @@
 
                     <!-- Articles reactions -->
                     <div class="article-reactions">
-                        <div>
-                            <i class="bi bi-hand-thumbs-up"></i>
+                        <div class="like-container reaction">
+                            <i class="bi bi-hand-thumbs-up" id="like-button"></i>
                             <span>204</span>
+                            <div class="fireworks">
+                                <div class="checked-like-fx"></div>
+                            </div>
                         </div>
-                        <div>
+
+                        <div class="reaction">
                             <i class="bi bi-chat-quote"></i>
                             <span>302</span>
                         </div>
-                        <div>
+                        <div class="reaction">
                             <i class="bi bi-eye"></i>
                             <span>234</span>
                         </div>
@@ -285,5 +289,16 @@
 
     <!-- javascript -->
     <script src="asset/js/app.js"></script>
+    <script>
+        const likeButton = document.getElementById('like-button');
+        const fireworks = document.querySelector('.checked-like-fx');
+
+        likeButton.addEventListener('click', () => {
+            fireworks.classList.remove('animate-fireworks'); // Reset animation
+            void fireworks.offsetWidth;                      // Force reflow (redémarrage)
+            fireworks.classList.add('animate-fireworks');    // Déclenche animation
+        });
+
+    </script>
 </body>
 </html>
